@@ -51,20 +51,25 @@
                 <p>Бүх талбарыг бөглөнө үү!</p>
                 <ul>
                     <li><img height="25px" src="img_ts/icon_pro.png" alt="icon">
-                        //label tag ashiglah!!!!!!
-                        <input type="text" placeholder="Овог*" required />
+                        <label for="lastname">Овог:</label>
+                        <input type="text" id="lastname" placeholder="Овог*" required />
                     </li>
                     <li><img  height="25px" src="img_ts/icon_pro.png" alt="icon">
-                        <input type="text" placeholder="Нэр*" required/>
+                        <label for="firstname">Нэр:</label>
+                        <input type="text" id="firstname" placeholder="Нэр*" required/>
                     </li>
                     <li>
-                        <input type="date" placeholder="mm/dd/yyyy" required/><img width="25px" height="25px" src="img_ts/Icon_cal.png" alt="icon">
+                        <label for="dateandtime">Он Сар Өдөр:</label>
+                        <input type="date" id="dateandtime" placeholder="mm/dd/yyyy" required/>
+                        <img width="25px" height="25px" src="img_ts/Icon_cal.png" alt="icon">
                     </li>
                     <li>
-                        <input type="text" placeholder="Zip Code*" required/>
+                        <label for="zipcode">Zip Code*:</label>
+                        <input type="text" id="zipcode" placeholder="Zip Code*" required/>
                     </li>
                     <li>
-                        <input type="text" placeholder="Утасны дугаар*" required/>
+                        <label for="phonenumber">Утасны дугаар:</label>
+                        <input type="text" id="phonenumber" placeholder="Утасны дугаар*" required/>
                     </li>
                 </ul>
             </section>
@@ -72,12 +77,19 @@
                 <h1>Нууц үг</h1>
                 <p>Бүртгэлээ үүсгэх сүүлийн алхам. Хамгийн багадаа 8 тэмдэгт. Хамгийн багадаа: 1 том үсэг, 1 тоо агуулсан байх ёстой.</p>
                 <ul>
-                    <li><input type="password" placeholder="Нууц үг үүсгэх" required /></li>
-                    <li><input type="password" placeholder="Нууц үгээ баталгаажуулна уу*" required/></li>
+                    <li>
+                        <label for="pass">Нууц үг үүсгэх:</label>
+                        <input type="password" id="pass" placeholder="Нууц үг үүсгэх" required />
+                    </li>
+                    <li>
+                        <label for="password">Нууц үгээ баталгаажуулна уу:</label>
+                        <input type="password" id="password" placeholder="Нууц үгээ баталгаажуулна уу*" required/>
+                    </li>
                 </ul>
             </section>
             <section>
-                <input type="checkbox">Би Prime Cineplex-ээс имэйл хүлээн авахыг зөвшөөрч байна.
+                <label for="accept_button">Би Prime Cineplex-ээс имэйл хүлээн авахыг зөвшөөрч байна.</label>
+                <input type="checkbox" id="accept_button">
                 <button type="button">Бүртгэл үүсгэх</button>
             </section>
         </main>
