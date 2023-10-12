@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><img src="Images/header_fb_icon.png" style="height: 10px;" alt="facebook icon"></a></li>
-                <li><a href="https://www.instagram.com/primecineplex_mongolia/"><img src="Images/header_ig_icon.png" style="height: 10px;" alt="instagram icon"></a></li>
-                <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><img src="Images/header_yt_icon.png" style="height: 10px;" alt="youtube icon"></a></li>
-                <li><a href="mailto:info@primecineplex.mn"><img src="Images/footer_mail-icon.png" style="height: 10px;" alt="mail icon"></a></li>
+                <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><img src="Images/header_fb_icon.png" width="10" height="10" alt="facebook icon"></a></li>
+                <li><a href="https://www.instagram.com/primecineplex_mongolia/"><img src="Images/header_ig_icon.png" width="10" height="10" alt="instagram icon"></a></li>
+                <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><img src="Images/header_yt_icon.png" width="10" height="10" alt="youtube icon"></a></li>
+                <li><a href="mailto:info@primecineplex.mn"><img src="Images/footer_mail-icon.png" width="10" height="10" alt="mail icon"></a></li>
             </ul>
         </nav>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="Images/logo.jpg" style="height: 50px;" alt="primeLogo"></a></li>
+                <li><a href="index.html"><img src="Images/logo.jpg" width="50" height="50" alt="primeLogo"></a></li>
                 <li><a href="nowplaying.html">КИНО</a></li>
                 <li><a href="">ЗӨВХӨН МАНАЙД</a></li>
                 <li><a href="">ҮЙЛЧИЛГЭЭ</a></li>
@@ -28,29 +28,61 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <img src="Images/smallPoster1.jpg" alt="Poster1" style="height: 25%; width: 25%;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/aS2Ybs4d2Lc?si=8Av8BGJUgXWdgiGz&amp;start=18" style="border: none;" allowfullscreen></iframe>
+    <main>
+        <img src="Images/smallPoster1.jpg" alt="Poster1" width="25" height="25">
+        <iframe title="example website" width="560" height="315" src="https://www.youtube.com/embed/aS2Ybs4d2Lc?si=8Av8BGJUgXWdgiGz&amp;start=18" style="border: none;" allowfullscreen></iframe>
         <h2>SUZUME</h2>
         <h4>PG • 2 цаг 2 минут •  Адал явдал, Драм, Уран зөгнөлт •  2023.11.06</h4>
         <p>17 настай Сүзүмэ бяцхан охин байхдаа ээжийгээ алдсан. Сургууль руугаа явах замдаа нэгэн нууцлаг залуутай тааралдана. Гэвч түүний сониуч зан нь Японы нийт хүн амд аюул учруулах гамшгийг өдөөж, Сүзүмэ бүх зүйлийг засах аянд гарав.</p>
         <nav>
             <ul>
-                <li><input type="button" value="Зайсан салбар"></li>
-                <li><input type="button" value="Ботаник салбар"></li>
-                <li><input type="button" value="Энканто салбар"></li>
+                <li>
+                    <label for="location">Зайсан салбар</label>
+                    <input type="radio" id="location" name="location">
+                </li>
+
+                <li>
+                    <label for="location">Ботаник салбар</label>
+                    <input type="radio" id="location" name="location">
+                </li>
+
+                <li>
+                    <label for="location">Энканто салбар</label>
+                    <input type="radio" id="location" name="location">
+                </li>
             </ul>
             <ul>
-                <li><input type="button" value="28"></li>
-                <li><input type="button" value="29"></li>
-                <li><input type="button" value="30"></li>
-                <li><input type="button" value="2"></li>
-                <li><input type="button" value="3"></li>
-                <li><input type="button" value="4"></li>
-                <li><input type="button" value="5"></li>
+                <li>
+                    <label for="date">10 сарын 28</label>
+                    <input type="radio" id="date" name="date">
+                </li>
+                <li>
+                    <label for="date">10 сарын 29</label>
+                    <input type="radio" id="date" name="date">
+                </li>
+                <li>
+                    <label for="date">11 сарын 1</label>
+                    <input type="radio" id="date" name="date">
+                </li>
+                <li>
+                    <label for="date">11 сарын 2</label>
+                    <input type="radio" id="date" name="date">
+                </li>
+                <li>
+                    <label for="date">11 сарын 3</label>
+                    <input type="radio" id="date" name="date">
+                </li>
+                <li>
+                    <label for="date">11 сарын 4</label>
+                    <input type="radio" id="date" name="date">
+                </li>
+                <li>
+                    <label for="date">11 сарын 5</label>
+                    <input type="radio" id="date" name="date">
+                </li>
             </ul>
             <ul>
-                <li><a href="https://suudalsongolt.html">11:00 AM</a></li>
+                <li><a href="https://suudalsongolt.html">11:00 PM</a></li>
                 <li><a href="https://suudalsongolt.html">13:00 PM</a></li>
                 <li><a href="https://suudalsongolt.html">15:00 PM</a></li>
                 <li><a href="https://suudalsongolt.html">17:00 PM</a></li>
@@ -58,124 +90,138 @@
                 <li><a href="https://suudalsongolt.html">21:00 PM</a></li>
             </ul>
         </nav>
-        <img src="Images/imdb_logo.png" alt="Poster1" style="height: 50px; width: 50px;">
+        <img src="Images/imdb_logo.png" alt="IMDB Logo" height="50" width="50">
         <h5>10/10</h5>
-        <img src="Images/rottentomatoes_logo.png" alt="Poster1" style="height: 50px; width: 50px;">
+        <img src="Images/rottentomatoes_logo.png" alt="ROTTEN TOMATOES logo" width="50" height="50">
         <h5>100%</h5>
-        <img src="Images/smallPoster1.jpg" alt="Poster1" style="height: 50px; width: 50px;">
+        <img src="Images/smallPoster1.jpg" alt="Poster1" width="50" height="50">
         <h5>5/5</h5>
-    </div>
+    
     <div>
-        <img src="img_mandah/directorSuzume.png" alt="Poster1" style="height: 50px; width: 50px;">
-        <h5>Макото Шинкай</h5>
-        <p>Макото Шинкай гэгддэг Макото Ниицү нь Японы хүүхэлдэйн киноны найруулагч, кино найруулагч, зохиолч, манга зураач юм.Шинкай 1996 онд Nihon Falcom-тай хамтран видео тоглоомын аниматороор ажлын гараагаа эхэлсэн бөгөөд анхны видео анимейшн гарснаар кино найруулагч гэдгээрээ хүлээн зөвшөөрөгдсөн. Тэр болон түүний муур.</p>
-        <img src="img_mandah/actor1.png" alt="Poster1" style="height: 50px; width: 50px;">
-        <h5>Нанока Хара</h5>
-        <p>Нанока Хара 2003 оны наймдугаар сарын 26-нд Японы Токио хотод төрсөн. Тэр бол Сүзүмэ (2022), Та яагаад тамд тоглодоггүй юм бэ? (2013) болон Самурай Сентай Шинкенгэр (2009).</p>
-        <img src="img_mandah/actor2.png" alt="Poster1" style="height: 50px; width: 50px;">
-        <h5>Хокуто Мацумура</h5>
-        <p>Хокуто Мацумура бол Японы дуучин, жүжигчин юм. Тэрээр SixTONES шүтээн хамтлагийн гишүүн юм.</p>
-        <img src="img_mandah/actor3.png" alt="Poster1" style="height: 50px; width: 50px;">
-        <h5>Рюноскэ Камики</h5>
-        <p>Рюноскэ Камики бол Японы жүжигчин юм. Тэрээр энэ салбарт 25 жил ажилласан гайхалтай хүүхэд хэмээн үнэлэгддэг тэрээр уран бүтээлээрээ олон шагнал хүртсэн.</p>
-        <img src="img_mandah/actor4.png" alt="Poster1" style="height: 50px; width: 50px;">
-        <h5>Кана Ханазава</h5>
-        <p>Кана Ханазава бол Японы жүжигчин, хоолойт жүжигчин, дуучин юм. Анимэ урлагт дуу хоолойгоо хүргэсэн тэрээр 2003 онд дебют хийснээсээ хойш хэд хэдэн кино, телевизийн уран бүтээлийг цуглуулсан.</p>
-        <img src="img_mandah/actor5.png" alt="Poster1" style="height: 50px; width: 50px;">
-        <h5>Розали Чианг</h5>
-        <p>Розали Чианг бол Америкийн жүжигчин, загвар өмсөгч, зохиолч юм. Түүнийг 2022 оны Pixar киноны "Turning Red" киноны Мейлин Лигийн дүрд тоглосноор нь илүү сайн мэддэг.</p>
-    </div>
-    <div>
-        <img src="img_mandah/SUZUME/review/user1.png" alt="">
-        <h4>Жон Феннесси</h4>
-        &#9733; &#9733; &#9733; &#9733; &#9734;
-        <p><time datetime="2023-10-21">2023-10-021</time></p>
-        <p>Миний сайн найз Ричард Гринвэй "Энэ кино бол түүний энэ жил үзсэн хамгийн шилдэг кино" гэж хэлсний дараа надад энэ киног санал болгосон. Өнөөдөр түүний киног хоёр дахь удаагаа үзэж байгаа нь би үүнийг үзэх гэж тэмдэглэсэн. Би үнэхээр дуртай гэж хэлэх ёстой!
 
-            Энэ бол Макото Шинкайгийн найруулсан миний үзсэн хоёр дахь кино бөгөөд 2020 онд тэд "Weathering with You" киног Vue кино театрт үзүүлсэн нь гайхалтай болсон. Түүнийг Хаяо Миязакигийн бүтээл маш их нөлөөлсөн гэж хэлж болно, мөн IMDB-ийн мэдээлснээр түүний хамгийн дуртай кино нь Лапута: Тэнгэрийн цайз бөгөөд энэ нь бас гайхалтай юм. Түүний хоёр кино хоёулаа шүүмжлэлтэй, арилжааны амжилт үзүүлж байсан бөгөөд тус бүр нь бүх цаг үеийн хамгийн их ашиг олсон Японы кинонуудын нэг юм. Сүзүмэ Понё, Аватар, Харри Поттер, Нууцын танхим зэрэг жагсаалтын 14-т бичигддэг.
-            
-            Түүний өмнөх киноны нэгэн адил анимейшн нь таныг хурдан хөдөлж буй үзэсгэлэнтэй дүрслэлээр татдаг бөгөөд энэ нь кино театрын дэлгэц рүү цэвэрхэн зугтах боломжийг олгодог тод тод урлагийн бүтээлүүд юм. Зарим хүмүүсийн хувьд энэ нь удаан шатдаг байж болох ч энэ нь танд урлагийн чиглэлийг үнэлэх цаг өгдөг учраас би үүнд дуртай. Зохиол нь өөрөө хариуцлага, бие даасан байдал, анхны харцаар дурлах, амьдралын өсөн нэмэгдэж буй зовлон зүдгүүрийг даван туулах тухай маш эгдүүтэй чин сэтгэлээсээ хөгшрөлтийн түүх юм. Зарим хүмүүсийн хувьд энэ нь киноны туршид гол дүрийн хөгжилд оруулсан хөрөнгө оруулалтаас болж үе үе нулимс унагаж магадгүй юм. Хааяа маш хачирхалтай, хөгжилтэй үзэгдлүүд байдаг гэж бүү санаа зов. Надад хамгийн их зарагддаг зүйл бол киноны хэв маягт тохирсон сэдэвчилсэн хөгжим, дууны хөгжим юм.
-            
-            Над шиг Studio Ghibli-ийн шүтэн бишрэгчид энэ сайхан бүтээлд үнэхээр дуртай байх болно. Кино театраас гарахаас өмнө үзээрэй, учир нь энэ нь кино театрын туршлагыг мэдрэх нь гарцаагүй.</p>
-        <img src="img_mandah/SUZUME/review/user2.png" alt="">
-        <h4>Наян Саркар</h4>
-        &#9733; &#9733; &#9733; &#9734; &#9734;
-        <p><time datetime="2023-10-08">2023-10-08</time></p>
-        <p>Энэ бол аялал байсан гэж хэлэхэд би үнэхээр үүнийг хэлж байна. Кино эхлээгүй байхад бүх бие минь чичирч байгааг мэдэрсэн. Энэ бол миний удаан хугацааны туршид харж байсан нээлтийн өгүүллийн сайн гүйцэтгэсэн загвар байлаа. Энэ кино бол өөрийн гэсэн шилдэг бүтээл хэдий ч энэ кинонд байгаа бага зэргийн дутагдалтай талуудыг үл тоомсорлож болохгүй. Энэхүү кино нь үзэгчдийг өөрийн үзэмжээрээ татаж, хүссэн зугаа цэнгэлээрээ завгүй байлгаж чаддаг.
+        <article>
+            <img src="img_mandah/directorSuzume.png" alt="Poster1" width="50" height="50">
+            <h5>Макото Шинкай</h5>
+            <p>Макото Шинкай гэгддэг Макото Ниицү нь Японы хүүхэлдэйн киноны найруулагч, кино найруулагч, зохиолч, манга зураач юм.Шинкай 1996 онд Nihon Falcom-тай хамтран видео тоглоомын аниматороор ажлын гараагаа эхэлсэн бөгөөд анхны видео анимейшн гарснаар кино найруулагч гэдгээрээ хүлээн зөвшөөрөгдсөн. Тэр болон түүний муур.</p>
+        </article>
 
-            "Хос догдлом уран зөгнөлөөр тайван бус аялал"
+        <article>
+            <img src="img_mandah/actor1.png" alt="Poster1" width="50" height="50">
+            <h5>Нанока Хара</h5>
+            <p>Нанока Хара 2003 оны наймдугаар сарын 26-нд Японы Токио хотод төрсөн. Тэр бол Сүзүмэ (2022), Та яагаад тамд тоглодоггүй юм бэ? (2013) болон Самурай Сентай Шинкенгэр (2009).</p>
+        </article>
+
+        <article>
+            <img src="img_mandah/actor2.png" alt="Poster1" width="50" height="50">
+            <h5>Хокуто Мацумура</h5>
+            <p>Хокуто Мацумура бол Японы дуучин, жүжигчин юм. Тэрээр SixTONES шүтээн хамтлагийн гишүүн юм.</p>
+        </article>
             
-            Тайлбар:
-            
-               Энд гол сэдэв бол түүхийг хүргэх явдал байв. Үзэгч бүр энэ киноны ялгаруулж буй хүчийг мэдэрдэг. Энэ түүх нь нэг найруулагчийн өмнөх бүтээлүүдээс харахад хачирхалтай санагдаж болохуйц ямар ч төөрөгдөл агуулаагүй болно. Гэхдээ энэ хүргэлтийн энгийн байдал нь үүнийг шилдэг бүтээл гэж үзэхэд хангалттай байв. Энэхүү 2 цаг 2 минутын урт кино нь "Зам аялал" киноны төрөл бөгөөд кино нь байнгын үйл ажиллагаа, чөлөөт уур амьсгалыг харуулсан кино юм. Энэ хэсэг нь үнэхээр хүнд адал явдалт, инээдмийн үзэгдлүүдээс бүрдсэн байв. Зохиолын хөгжил нь маш хүнлэг, тэр байтугай төсөөллийн ертөнц, уран зөгнөлт түүх ч гэсэн киноны баатруудын хийсэн үйлдлүүдийг ажиглагч хүн амархан холбож чаддаг. Энэхүү завгүй үйл явдлын өрнөлөөр энэ кино цаана нь гүн гүнзгий бөгөөд гунигтай утга учрыг гайхалтайгаар дүрсэлсэн байдаг. (Та өөрөө олж мэдэх хэрэгтэй болно)
-            
-            Хөдөлгөөнт дүрс:
-            
-               Киноны үеэр миний анхаарлыг хамгийн их татсан зүйл бол түүний гайхалтай "дэлгэцийн найруулга" юм. Хэдийгээр энэ нэр томъёо нь "Live-Action" салбарт илүү их хэрэглэгддэг боловч, Сэр Макото Шинкай энэ удаад маш сайхан ажил хийжээ. Бидний ихэнх нь түүнийг хүүхэлдэйн киноны чанараараа хэрхэн алдартай болохыг аль хэдийн мэддэг байсан бөгөөд энэ удаад ч энэ нь онцгой тохиолдол биш юм. Аниматорууд усны долгион, үсний зураас, сүүдрийн бүтэц, гэрлийн тусгал зэргээр хэрхэн тоглосон нь миний нүдээр урлагийн тансаг хэлбэр юм. Өнгөт палитр нь ихэвчлэн өвөл-хаврын дүр төрх байсан бөгөөд киноны сэдэвтэй (хагас хот, хот) маш сайн нийцдэг. Эцэст нь Сүзүмэ дэх хөдөлгөөнт дүрсний талаар ярихыг хүссэн гол зүйл бол тайван бус уур амьсгал юм. Кино нь дэлгэцэн дээр нэг дор олон зүйл өрнөж, зохих хурдацтай явагдаж байгаа бөгөөд аниматорууд дэлгэцийг бүхэлд нь маш бүтээлчээр ашиглаж, булан бүрийг ажил хийх боломжтой болгосон. Энэ төрлийн бүтээлч байдал нь анимэйшн дээр маш ховор байдаг, учир нь энэ нь маш их хүчин чармайлт шаарддаг, өмнөх Шинкай кинонууд ч ийм хэмжээний амьд байгаагүй бөгөөд "Ghibli Studio"-оос гадуур ийм түвшний ажлыг үзэх боломжтой болсон нь намайг үнэхээр гайхшруулдаг (Заавал оруулах ёстой) , арын хөдөлгөөнт контент нь огтхон ч анхаарал сарниулаагүй, тэр ч байтугай нийт үйлдвэрлэлд өөр өнгө аясыг өгдөг.</p>
+        <article>
+            <img src="img_mandah/actor3.png" alt="Poster1" width="50" height="50">
+            <h5>Рюноскэ Камики</h5>
+            <p>Рюноскэ Камики бол Японы жүжигчин юм. Тэрээр энэ салбарт 25 жил ажилласан гайхалтай хүүхэд хэмээн үнэлэгддэг тэрээр уран бүтээлээрээ олон шагнал хүртсэн.</p>
+        </article>
         
-        <img src="img_mandah/SUZUME/review/user3.png" alt="">
-        <h4>Жас Эксплорес</h4>
-        &#9733; &#9733; &#9734;&#9734;&#9734;
-        <p><time datetime="2023-10-06">2023-10-06</time></p>
-        <p>OMG!! Сүзүмэ бол өнөөг хүртэл Макото Шинкайгийн хамгийн итгэмээргүй шилдэг бүтээл юм. Шинкай бүтээлүүдийнхээ төгсгөлүүдийг нээлттэйгээр өгөх хандлагатай байдаг бөгөөд энэ нь үзэгчдийн төсөөлөлд маш их зүйлийг үлдээдэг бөгөөд тэдгээр нь ихэвчлэн гашуун амттай байдаг. Сүзүмэгийн Соутатай хийсэн аялал үнэхээр ТААЛАГДСАН, учир нь тэд Япон улсыг газар хөдлөлтөөс аврахын төлөө хамтран ажиллаад зогсохгүй, энэ нь мэдээжийн хэрэг хөндөх нь зүйтэй эмзэг сэдэв бөгөөд адал явдлын туршид өөрсдийгөө хүн гэдгээрээ илүү ихийг судлах болно.
-
-            Нэмж дурдахад, хоёрдогч дүрүүд нь өвөрмөц зан чанар, инээдтэй онигоогоор үнэхээр мартагдашгүй байдаг. Төгсгөл нь жаахан гэнэтийн байж магадгүй, учир нь миний хэзээ ч харж байгаагүй эргэлт гарч байгаа ч би THAT төгсгөл болон бүхэл бүтэн киноны холболтын талаар бодох тусам бүх зүйл илүү утга учиртай болдог.
-            
-            Тиймээс, хэрэв та үзэж амжаагүй бол SUZUME үзэхийг ИЛҮҮ САНАЛ болгож байна. Шинкайгийн бүтээлүүд бүгдээрээ маш их үнэлэгддэг бөгөөд тэрээр SUZUME болон бүх үйл явдалд амьдралаар амьсгалснаар өөрийн мастераа ахиулсан гэдгийг хэлэх нь илүүц биз. Эцэст нь дууны дуу нь үнэхээр уянгалаг бөгөөд үг нь утга учираас давсан. Ерөнхийдөө SUZUME-г үзээрэй, та нар дараа нь надад баярлалаа!!!</p>
-        <img src="img_mandah/SUZUME/review/user4.png" alt="">
-        <h4>Алекс З</h4>
-        &#9733; &#9733; &#9733; &#9733; &#9733;
-        <p><time datetime="2023-10-15">2023-10-15</time></p>
-        <p>Watching this movie after having seen "Your Name" and "Weathering With you", Suzume definitely did not disappoint and most the audience reviews here were spot on although I can see some didn't enjoy the story plot as much I did.
-
-            I think the story plot is excellent. Makoto Shinkai's last two movies were all excellent in telling stories and this is no different. It is quite heavy I must admit but it contains a lot of things that you can talk to your children about. 
-            
-            It is a story of courage, responsibility, team work, sacrifice, love, and perhaps, most of all, tragedy/loss and recovery. In other words, things that we can relate as human beings.
-            
-            The animation is superb. I thought "Weathering With You" was great but this movie takes it to the next level. Watching drawn animated blue sky and Tokyo and its environment were sublime. Motion and voice acting were smooth and the VA's emotion were laid bare for everyone to see/listen.
-            
-            And there were funny moments too. No doubt serves as a comedic relief for a heavy movie, which is great because I don't remember there were any funny moments with Makoto Shinkai's other 2 cinematic movies.
-            
-            If there is one thing that makes a movie great, it is one that endures in your mind and you can keep talking / discussing about it to your children/colleague/friend/etc and you feel like you want to watch it again like I did with "Your Name". This movie is one of them.
-            
-            If there is one flaw in this movie, there is a sense of rush towards the end of the movie and given this movie already runs for more than 2 hours, inevitably some questions would not be answered and this is a shame. 4.5 / 5</p>
-         <h3>SUZUME</h3>   
-         &#9734; &#9734; &#9734; &#9734; &#9734;
-         <p>Одон дээр даран үнэлгээ өгнө үү</p>
-         <p>Энд сэтгэгдлээ бичнэ үү</p>
-         <textarea name="myTextarea" id="textareaId" cols="30" rows="10"></textarea>
-         <button>Илгээх</button>
+        <article>
+            <img src="img_mandah/actor4.png" alt="Poster1" width="50" height="50">
+            <h5>Кана Ханазава</h5>
+            <p>Кана Ханазава бол Японы жүжигчин, хоолойт жүжигчин, дуучин юм. Анимэ урлагт дуу хоолойгоо хүргэсэн тэрээр 2003 онд дебют хийснээсээ хойш хэд хэдэн кино, телевизийн уран бүтээлийг цуглуулсан.</p>
+        </article>
+        
+        <article>
+            <img src="img_mandah/actor5.png" alt="Poster1" width="50" height="50">
+            <h5>Розали Чианг</h5>
+            <p>Розали Чианг бол Америкийн жүжигчин, загвар өмсөгч, зохиолч юм. Түүнийг 2022 оны Pixar киноны "Turning Red" киноны Мейлин Лигийн дүрд тоглосноор нь илүү сайн мэддэг.</p>
+        </article>
+        
     </div>
+
+    <div>
+        <article>
+            <img src="img_mandah/SUZUME/review/user1.png" alt="" width="50" height="50">
+            <h4>Жон Феннесси</h4>
+            <p>Өгсөн үнэлгээ: <meter value="0.8"></meter></p>
+            <p><time datetime="2023-10-21">2023-10-021</time></p>
+            <p>Миний сайн найз Ричард Гринвэй "Энэ кино бол түүний энэ жил үзсэн хамгийн шилдэг кино" гэж хэлсний дараа надад энэ киног санал болгосон. Өнөөдөр түүний киног хоёр дахь удаагаа үзэж байгаа нь би үүнийг үзэх гэж тэмдэглэсэн. Би үнэхээр дуртай гэж хэлэх ёстой!
+                Энэ бол Макото Шинкайгийн найруулсан миний үзсэн хоёр дахь кино бөгөөд 2020 онд тэд "Weathering with You" киног Vue кино театрт үзүүлсэн нь гайхалтай болсон. Түүнийг Хаяо Миязакигийн бүтээл маш их нөлөөлсөн гэж хэлж болно, мөн IMDB-ийн мэдээлснээр түүний хамгийн дуртай кино нь Лапута: Тэнгэрийн цайз бөгөөд энэ нь бас гайхалтай юм. Түүний хоёр кино хоёулаа шүүмжлэлтэй, арилжааны амжилт үзүүлж байсан бөгөөд тус бүр нь бүх цаг үеийн хамгийн их ашиг олсон Японы кинонуудын нэг юм. Сүзүмэ Понё, Аватар, Харри Поттер, Нууцын танхим зэрэг жагсаалтын 14-т бичигддэг.
+                Түүний өмнөх киноны нэгэн адил анимейшн нь таныг хурдан хөдөлж буй үзэсгэлэнтэй дүрслэлээр татдаг бөгөөд энэ нь кино театрын дэлгэц рүү цэвэрхэн зугтах боломжийг олгодог тод тод урлагийн бүтээлүүд юм. Зарим хүмүүсийн хувьд энэ нь удаан шатдаг байж болох ч энэ нь танд урлагийн чиглэлийг үнэлэх цаг өгдөг учраас би үүнд дуртай. Зохиол нь өөрөө хариуцлага, бие даасан байдал, анхны харцаар дурлах, амьдралын өсөн нэмэгдэж буй зовлон зүдгүүрийг даван туулах тухай маш эгдүүтэй чин сэтгэлээсээ хөгшрөлтийн түүх юм. Зарим хүмүүсийн хувьд энэ нь киноны туршид гол дүрийн хөгжилд оруулсан хөрөнгө оруулалтаас болж үе үе нулимс унагаж магадгүй юм. Хааяа маш хачирхалтай, хөгжилтэй үзэгдлүүд байдаг гэж бүү санаа зов. Надад хамгийн их зарагддаг зүйл бол киноны хэв маягт тохирсон сэдэвчилсэн хөгжим, дууны хөгжим юм.
+                Над шиг Studio Ghibli-ийн шүтэн бишрэгчид энэ сайхан бүтээлд үнэхээр дуртай байх болно. Кино театраас гарахаас өмнө үзээрэй, учир нь энэ нь кино театрын туршлагыг мэдрэх нь гарцаагүй.</p>
+        </article>
+            
+        <article>
+            <img src="img_mandah/SUZUME/review/user2.png" alt="" width="50" height="50">
+            <h4>Наян Саркар</h4>
+            <p>Өгсөн үнэлгээ: <meter value="0.7"></meter></p>
+            <p><time datetime="2023-10-08">2023-10-08</time></p>
+            <p>Энэ бол аялал байсан гэж хэлэхэд би үнэхээр үүнийг хэлж байна. Кино эхлээгүй байхад бүх бие минь чичирч байгааг мэдэрсэн. Энэ бол миний удаан хугацааны туршид харж байсан нээлтийн өгүүллийн сайн гүйцэтгэсэн загвар байлаа. Энэ кино бол өөрийн гэсэн шилдэг бүтээл хэдий ч энэ кинонд байгаа бага зэргийн дутагдалтай талуудыг үл тоомсорлож болохгүй. Энэхүү кино нь үзэгчдийг өөрийн үзэмжээрээ татаж, хүссэн зугаа цэнгэлээрээ завгүй байлгаж чаддаг.
+                "Хос догдлом уран зөгнөлөөр тайван бус аялал"
+                Тайлбар:
+                Энд гол сэдэв бол түүхийг хүргэх явдал байв. Үзэгч бүр энэ киноны ялгаруулж буй хүчийг мэдэрдэг. Энэ түүх нь нэг найруулагчийн өмнөх бүтээлүүдээс харахад хачирхалтай санагдаж болохуйц ямар ч төөрөгдөл агуулаагүй болно. Гэхдээ энэ хүргэлтийн энгийн байдал нь үүнийг шилдэг бүтээл гэж үзэхэд хангалттай байв. Энэхүү 2 цаг 2 минутын урт кино нь "Зам аялал" киноны төрөл бөгөөд кино нь байнгын үйл ажиллагаа, чөлөөт уур амьсгалыг харуулсан кино юм. Энэ хэсэг нь үнэхээр хүнд адал явдалт, инээдмийн үзэгдлүүдээс бүрдсэн байв. Зохиолын хөгжил нь маш хүнлэг, тэр байтугай төсөөллийн ертөнц, уран зөгнөлт түүх ч гэсэн киноны баатруудын хийсэн үйлдлүүдийг ажиглагч хүн амархан холбож чаддаг. Энэхүү завгүй үйл явдлын өрнөлөөр энэ кино цаана нь гүн гүнзгий бөгөөд гунигтай утга учрыг гайхалтайгаар дүрсэлсэн байдаг. (Та өөрөө олж мэдэх хэрэгтэй болно)
+                Хөдөлгөөнт дүрс:
+                Киноны үеэр миний анхаарлыг хамгийн их татсан зүйл бол түүний гайхалтай "дэлгэцийн найруулга" юм. Хэдийгээр энэ нэр томъёо нь "Live-Action" салбарт илүү их хэрэглэгддэг боловч, Сэр Макото Шинкай энэ удаад маш сайхан ажил хийжээ. Бидний ихэнх нь түүнийг хүүхэлдэйн киноны чанараараа хэрхэн алдартай болохыг аль хэдийн мэддэг байсан бөгөөд энэ удаад ч энэ нь онцгой тохиолдол биш юм. Аниматорууд усны долгион, үсний зураас, сүүдрийн бүтэц, гэрлийн тусгал зэргээр хэрхэн тоглосон нь миний нүдээр урлагийн тансаг хэлбэр юм. Өнгөт палитр нь ихэвчлэн өвөл-хаврын дүр төрх байсан бөгөөд киноны сэдэвтэй (хагас хот, хот) маш сайн нийцдэг. Эцэст нь Сүзүмэ дэх хөдөлгөөнт дүрсний талаар ярихыг хүссэн гол зүйл бол тайван бус уур амьсгал юм. Кино нь дэлгэцэн дээр нэг дор олон зүйл өрнөж, зохих хурдацтай явагдаж байгаа бөгөөд аниматорууд дэлгэцийг бүхэлд нь маш бүтээлчээр ашиглаж, булан бүрийг ажил хийх боломжтой болгосон. Энэ төрлийн бүтээлч байдал нь анимэйшн дээр маш ховор байдаг, учир нь энэ нь маш их хүчин чармайлт шаарддаг, өмнөх Шинкай кинонууд ч ийм хэмжээний амьд байгаагүй бөгөөд "Ghibli Studio"-оос гадуур ийм түвшний ажлыг үзэх боломжтой болсон нь намайг үнэхээр гайхшруулдаг (Заавал оруулах ёстой) , арын хөдөлгөөнт контент нь огтхон ч анхаарал сарниулаагүй, тэр ч байтугай нийт үйлдвэрлэлд өөр өнгө аясыг өгдөг.</p>
+        </article>
+
+        <article>
+            <img src="img_mandah/SUZUME/review/user3.png" alt="" width="50" height="50">
+            <h4>Жас Эксплорес</h4>
+            <p>Өгсөн үнэлгээ: <meter value="0.5"></meter></p>
+            <p><time datetime="2023-10-06">2023-10-06</time></p>
+            <p>OMG!! Сүзүмэ бол өнөөг хүртэл Макото Шинкайгийн хамгийн итгэмээргүй шилдэг бүтээл юм. Шинкай бүтээлүүдийнхээ төгсгөлүүдийг нээлттэйгээр өгөх хандлагатай байдаг бөгөөд энэ нь үзэгчдийн төсөөлөлд маш их зүйлийг үлдээдэг бөгөөд тэдгээр нь ихэвчлэн гашуун амттай байдаг. Сүзүмэгийн Соутатай хийсэн аялал үнэхээр ТААЛАГДСАН, учир нь тэд Япон улсыг газар хөдлөлтөөс аврахын төлөө хамтран ажиллаад зогсохгүй, энэ нь мэдээжийн хэрэг хөндөх нь зүйтэй эмзэг сэдэв бөгөөд адал явдлын туршид өөрсдийгөө хүн гэдгээрээ илүү ихийг судлах болно.
+                Нэмж дурдахад, хоёрдогч дүрүүд нь өвөрмөц зан чанар, инээдтэй онигоогоор үнэхээр мартагдашгүй байдаг. Төгсгөл нь жаахан гэнэтийн байж магадгүй, учир нь миний хэзээ ч харж байгаагүй эргэлт гарч байгаа ч би THAT төгсгөл болон бүхэл бүтэн киноны холболтын талаар бодох тусам бүх зүйл илүү утга учиртай болдог.
+                Тиймээс, хэрэв та үзэж амжаагүй бол SUZUME үзэхийг ИЛҮҮ САНАЛ болгож байна. Шинкайгийн бүтээлүүд бүгдээрээ маш их үнэлэгддэг бөгөөд тэрээр SUZUME болон бүх үйл явдалд амьдралаар амьсгалснаар өөрийн мастераа ахиулсан гэдгийг хэлэх нь илүүц биз. Эцэст нь дууны дуу нь үнэхээр уянгалаг бөгөөд үг нь утга учираас давсан. Ерөнхийдөө SUZUME-г үзээрэй, та нар дараа нь надад баярлалаа!!!</p>
+        </article>
+            
+        <article>
+            <img src="img_mandah/SUZUME/review/user4.png" alt="" width="50" height="50">
+            <h4>Алекс З</h4>
+            <p>Өгсөн үнэлгээ: <meter value="0.9"></meter></p>
+            <p><time datetime="2023-10-15">2023-10-15</time></p>
+            <p>Watching this movie after having seen "Your Name" and "Weathering With you", Suzume definitely did not disappoint and most the audience reviews here were spot on although I can see some didn't enjoy the story plot as much I did.
+                I think the story plot is excellent. Makoto Shinkai's last two movies were all excellent in telling stories and this is no different. It is quite heavy I must admit but it contains a lot of things that you can talk to your children about. 
+                It is a story of courage, responsibility, team work, sacrifice, love, and perhaps, most of all, tragedy/loss and recovery. In other words, things that we can relate as human beings.            
+                The animation is superb. I thought "Weathering With You" was great but this movie takes it to the next level. Watching drawn animated blue sky and Tokyo and its environment were sublime. Motion and voice acting were smooth and the VA's emotion were laid bare for everyone to see/listen. 
+                And there were funny moments too. No doubt serves as a comedic relief for a heavy movie, which is great because I don't remember there were any funny moments with Makoto Shinkai's other 2 cinematic movies.
+                If there is one thing that makes a movie great, it is one that endures in your mind and you can keep talking / discussing about it to your children/colleague/friend/etc and you feel like you want to watch it again like I did with "Your Name". This movie is one of them.
+                If there is one flaw in this movie, there is a sense of rush towards the end of the movie and given this movie already runs for more than 2 hours, inevitably some questions would not be answered and this is a shame. 4.5 / 5</p>
+        </article>
+            
+        <h3>SUZUME</h3>   
+        <h5>Үнэлгээ өгнө үү: <meter value="0" id="ratingMeter"></meter></h5>
+        <h5>Сэтгэгдлээ бичнэ үү: <label for="textareaId"></label></h5>
+        <textarea id="textareaId" name="myTextarea" cols="30" rows="10"></textarea>  
+        <button>Илгээх</button>
+    </div>
+    </main>
     <footer>
         <div>
-             <address>
-                 <ul>
-                     <li>
-                         <img src="Images/footer_location-icon.png" alt="Location Icon" style="height: 30px;">
-                         <p>Монгол улс, Улаанбаатар хот, <br>
-                             Хан-Уул дүүрэг 11-р хороо, <br>
-                             Дүнжингаравын гудамж, <br>
-                             Зайсан Хилл Цогцолбор, 1-р давхар</p>
-                     </li>
-                     <li>
-                         <img src="Images/footer_mail-icon.png" alt="Location Icon" style="height: 30px;">
-                         <a href="mailto:info@primecineplex.mn">info@primecineplex.mn</a>
-                     </li>
-                     <li>
-                         <img src="Images/footer_phone-icon.png" alt="Location Icon" style="height: 30px;">
-                         <p>+976-7510-0000</p>
-                     </li>
-                 </ul>
-             </address>
+            <address>
+                <ul>
+                    <li>
+                        <img src="Images/footer_location-icon.png" alt="Location Icon" width="30" height="30">
+                        <p>Монгол улс, Улаанбаатар хот, <br>
+                            Хан-Уул дүүрэг 11-р хороо, <br>
+                            Дүнжингаравын гудамж, <br>
+                            Зайсан Хилл Цогцолбор, 1-р давхар</p>
+                    </li>
+                    <li>
+                        <img src="Images/footer_mail-icon.png" alt="Location Icon" width="30" height="30">
+                        <a href="mailto:info@primecineplex.mn">info@primecineplex.mn</a>
+                    </li>
+                    <li>
+                        <img src="Images/footer_phone-icon.png" alt="Location Icon" width="30" height="30">
+                        <a href="tel:+976-7510-0000">+976-7510-0000</a>
+                    </li>
+                </ul>
+            </address>
         </div>
         <div>
-             <label for="location">Салбараа сонгоно уу:</label>
-             <select id="location" name="location">
-                <option value="option1">Зайсан Хилл Комплекс</option>
-                <option value="option2">Энканто товер</option>
-                <option value="option3">Ботаник центер</option>
-             </select>
-             <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" style="height: 50px;" alt="google map photo"></a></p>
+             <h6>Зайсан Хилл Комплекс</h6>
+             <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" width="50" height="50" alt="google map photo"></a></p>
+             <h6>Энканто товер</h6>
+             <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" width="50" height="50" alt="google map photo"></a></p>
+             <h6>Ботаник центер</h6>
+             <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" width="50" height="50" alt="google map photo"></a></p>
         </div> 
      </footer>
 </body>
