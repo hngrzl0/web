@@ -10,12 +10,14 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><address><img src="Images/header_fb_icon.png" style="height: 10px;" alt="facebook icon"></address></a></li>
-                    <li><a href="https://www.instagram.com/primecineplex_mongolia/"><address><img src="Images/header_ig_icon.png" style="height: 10px;" alt="instagram icon"></address></a></li>
-                    <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><address><img src="Images/header_yt_icon.png" style="height: 10px;" alt="youtube icon"></address></a></li>
-                    <li><a href="mailto:info@primecineplex.mn"><address><img src="Images/footer_mail-icon.png" style="height: 10px;" alt="mail icon"></address></a></li>
-                </ul>
+                <address>
+                    <ul>
+                        <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><img src="Images/header_fb_icon.png" style="height: 10px;" alt="facebook icon"></a></li>
+                        <li><a href="https://www.instagram.com/primecineplex_mongolia/"><img src="Images/header_ig_icon.png" style="height: 10px;" alt="instagram icon"></a></li>
+                        <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><img src="Images/header_yt_icon.png" style="height: 10px;" alt="youtube icon"></a></li>
+                        <li><a href="mailto:info@primecineplex.mn"><img src="Images/footer_mail-icon.png" style="height: 10px;" alt="mail icon"></a></li>
+                    </ul>
+                </address>
             </nav>
             <nav>
                 <ul>
@@ -29,67 +31,92 @@
             </nav>
         </header>
         <main>
-            <div>
+            <section>
                 <h1>Нэвтрэх нэр</h1>
                 <p>Бүх талбарыг бөглөнө үү!</p>
                 <ul>
-                    <li><input type="email" placeholder="Имэйл хаяг (энэ нь таны хэрэглэгчийн нэр байх болно)*" required /></li>
-                    <li><input type="email" placeholder="Имэйлээ баталгаажуулах*" required/></li>
+                    <li>
+                        <label for="email_req">Email:</label>
+                        <input type="email" id="email_req" placeholder="Имэйл хаяг (энэ нь таны хэрэглэгчийн нэр байх болно)*" required />
+                    </li>
+                    <li>
+                        <label for="email_req2">Баталгаажуулах:</label>
+                        <input type="email" id="email_req2" placeholder="Имэйлээ баталгаажуулах*" required/>
+                    </li>
                 </ul>
-            </div>
+            </section>
             
-            <div">
+            <section>
                 <h1>Хувийн мэдээлэл</h1>
                 <p>Бүх талбарыг бөглөнө үү!</p>
                 <ul>
-                    <li><img height="25px" src="img_ts/icon_pro.png" alt="icon"><input type="text" placeholder="Овог*" required /></li>
-                    <li><img  height="25px" src="img_ts/icon_pro.png" alt="icon"><input type="text" placeholder="Нэр*" required/></li>
-                    <li><input type="date" placeholder="mm/dd/yyyy" required/><img width="25px" height="25px" src="img_ts/Icon_cal.png" alt="icon"></li>
-                    <li><input type="text" placeholder="Zip Code*" required/></li>
-                    <li><input type="text" placeholder="Утасны дугаар*" required/></li>
+                    <li><img height="25px" src="img_ts/icon_pro.png" alt="icon">
+                        <label for="lastname">Овог:</label>
+                        <input type="text" id="lastname" placeholder="Овог*" required />
+                    </li>
+                    <li><img  height="25px" src="img_ts/icon_pro.png" alt="icon">
+                        <label for="firstname">Нэр:</label>
+                        <input type="text" id="firstname" placeholder="Нэр*" required/>
+                    </li>
+                    <li>
+                        <label for="dateandtime">Он Сар Өдөр:</label>
+                        <input type="date" id="dateandtime" placeholder="mm/dd/yyyy" required/>
+                        <img width="25px" height="25px" src="img_ts/Icon_cal.png" alt="icon">
+                    </li>
+                    <li>
+                        <label for="zipcode">Zip Code*:</label>
+                        <input type="text" id="zipcode" placeholder="Zip Code*" required/>
+                    </li>
+                    <li>
+                        <label for="phonenumber">Утасны дугаар:</label>
+                        <input type="text" id="phonenumber" placeholder="Утасны дугаар*" required/>
+                    </li>
                 </ul>
-            </div>
-            <div>
+            </section>
+            <section>
                 <h1>Нууц үг</h1>
                 <p>Бүртгэлээ үүсгэх сүүлийн алхам. Хамгийн багадаа 8 тэмдэгт. Хамгийн багадаа: 1 том үсэг, 1 тоо агуулсан байх ёстой.</p>
                 <ul>
-                    <li><input type="password" placeholder="Нууц үг үүсгэх" required /></li>
-                    <li><input type="password" placeholder="Нууц үгээ баталгаажуулна уу*" required/></li>
+                    <li>
+                        <label for="pass">Нууц үг үүсгэх:</label>
+                        <input type="password" id="pass" placeholder="Нууц үг үүсгэх" required />
+                    </li>
+                    <li>
+                        <label for="password">Нууц үгээ баталгаажуулна уу:</label>
+                        <input type="password" id="password" placeholder="Нууц үгээ баталгаажуулна уу*" required/>
+                    </li>
                 </ul>
-            </div>
-            <div>
-                
-                <input type="checkbox">Би Prime Cineplex-ээс имэйл хүлээн авахыг зөвшөөрч байна.
+            </section>
+            <section>
+                <label for="accept_button">Би Prime Cineplex-ээс имэйл хүлээн авахыг зөвшөөрч байна.</label>
+                <input type="checkbox" id="accept_button">
                 <button type="button">Бүртгэл үүсгэх</button>
-            </div>
+            </section>
         </main>
         <footer>
             <div>
-                 <ul>
-                    <li>
-                        <img src="Images/footer_location-icon.png" style="height: 30px;" alt="location icon">
-                         <p><address>Монгол улс, Улаанбаатар хот, <br>
-                            Хан-Уул дүүрэг 11-р хороо, <br>
-                            Дүнжингаравын гудамж, <br>
-                            Зайсан Хилл Цогцолбор, 1-р давхар</address></p>
-                    </li>
-                    <li>
-                        <img src="Images/footer_mail-icon.png" style="height: 30px;" alt="mail icon">
-                        <a href="mailto:info@primecineplex.mn"><address>@primecineplex.mn</address></a>
-                    </li>
-                    <li>
-                        <img src="Images/footer_phone-icon.png" style="height: 30px;" alt="phone icon">
-                        <p><address>+976-7510-0000</address></p>
-                    </li>
-                </ul>
+                 <address>
+                    <ul>
+                        <li>
+                            <img src="Images/footer_location-icon.png" style="height: 30px;" alt="location icon">
+                            <p>Монгол улс, Улаанбаатар хот, <br>
+                                Хан-Уул дүүрэг 11-р хороо, <br>
+                                Дүнжингаравын гудамж, <br>
+                                Зайсан Хилл Цогцолбор, 1-р давхар</p>
+                        </li>
+                        <li>
+                            <img src="Images/footer_mail-icon.png" style="height: 30px;" alt="mail icon">
+                            <a href="mailto:info@primecineplex.mn">@primecineplex.mn</a>
+                        </li>
+                        <li>
+                            <img src="Images/footer_phone-icon.png" style="height: 30px;" alt="phone icon">
+                            <a href="tel:+976-7510-0000">+976-7510-0000</a>
+                        </li>
+                    </ul>
+                 </address>
             </div>
             <div>
-                 <select name="location" id="">
-                     <option value="">Зайсан Хилл Комплекс</option>
-                     <option value="">Энканто товер</option>
-                     <option value="">Ботаник центер</option>
-                 </select>
-                 <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" style="height: 50px;" alt="google map photo"></a></p>
+                 <a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" style="height: 50px;" alt="google map photo"></a>
             </div> 
          </footer>
     </body>
