@@ -75,71 +75,7 @@ header{
     }
 }
 main{
-    margin-left: 9rem;
-    margin-right: 9rem;
-    margin-bottom: 5rem;
-    & section{
-        & h1{
-            font-size: var(--font-big);
-            margin-bottom: var(--size-none);
-            margin-top: 4rem;
-        }
-        & p{
-            margin-top: var(--size-none);
-            font-size: 1rem;
-        }
-        & ul{
-            list-style: none;
-            & li{
-                margin-top: 2rem;
-                margin-bottom: 1.5rem;
-                border: var(--size-none);
-                border-bottom: var(--border-size) solid var(--gray-color);
-                border-top: var(--border-size) solid var(--gray-color);
-                height: 2.1rem;
-                & input{
-                    color: var(--white-color);
-                    width: 99%;
-                    float: right;
-                    font-size: var(--font-size-small);
-                    background-color: var(--black-color);
-                    border: none;
-                    padding: 0.5rem;
-                }
-                & label{
-                    font-size: var(--size-none);
-                    float: left;
-                }
-                & #lastname {
-                    width: 71rem;
-                }
-                & #firstname {
-                    width: 71rem;
-                }
-                & #dateandtime{
-                    float: left;
-                    width: 71rem;
-                }
-            }
-        }
-        & button{
-            background-color: var(--black-color);
-            color: var(--white-color);
-            border: var(--border-size) solid var(--gray-color);
-            margin-top: 2rem;
-            width: 10rem;
-            height: 2rem;
-        }
-        & #accept_button{
-            transform: scale(4);
-            margin-left: 1rem;
-            margin-top: 1rem;
-        }
-        & #accept_text{
-            margin-left: 2rem;
-            margin-right: 50%;
-        }
-    }
+    
 }
 footer{
     display: flex;
