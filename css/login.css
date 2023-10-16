@@ -2,6 +2,7 @@
     --white-color: #ffffff;
     --gray-color: #808080;
     --black-color: #000000;
+    --red-color: #ff0000;
     --font-big: 2rem;
     --size-none: 0px;
     --border-size: 0.0001rem;
@@ -75,7 +76,32 @@ header{
     }
 }
 main{
-    
+    margin: 5rem;
+    border: var(--border-size) solid var(--red-color);
+    padding: 3rem;
+    height: 20rem;
+    & div{
+        margin: 3rem;
+        float: left;
+        width: 50%;
+        font-size: var(--font-size-movie);
+    }
+    & article{
+        border: var(--border-size) solid var(--red-color);
+        margin-left: 70%;
+        height: 100%;
+        & ul{
+            list-style: none;
+            & li{
+                margin: 1rem;
+            }
+        }
+        & h6{
+            font-size: var(--font-size-movie);
+            margin: 1rem;
+            margin-left: 7rem;
+        }
+    }
 }
 footer{
     display: flex;
