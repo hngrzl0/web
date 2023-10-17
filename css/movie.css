@@ -57,8 +57,34 @@ main{
         width: 19.875rem;
         height: 31.82338rem;
         flex-shrink: 0;
-        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  
+    }
+    iframe[title="PrineCineplex"] {
+        width: 2.5rem;
+        height: 1.25rem;
+        flex-shrink: 0;
+    }
+    h2 {
+        display: flex;
+        width: 43.75rem;
+        height: 3.12606rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h4 {
+        display: flex;
+        width: 50rem;
+        height: 1.87563rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p {
+        display: flex;
+        width: 50rem;
+        height: 12.50425rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    label[for="location_zaisan"] {
+        width: 7.4375rem;
+    }
 }
