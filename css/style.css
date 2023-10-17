@@ -1,0 +1,27 @@
+:root{
+    --white-color: #ffffff;
+    --gray-color: #808080;
+    --black-color: #000000;
+    --red-color: #ff0000;
+    --font-big: 2rem;
+    --size-none: 0px;
+    --border-size: 0.0001rem;
+
+    --color-bg : #000;
+    --color-garchig-main : #FFF;
+    --color-text-engiin: #FFF;
+    --color-border-line: #FFF;
+    --color-border-li:#4F4F4F;
+    --color-footer-text: #7F7F7F;
+
+    --font-header: Arial, Helvetica, sans-serif;
+    --font-lohit : 'Lohit Devanagari', sans-serif;
+    --font-abhaya: 'abhaya-libre-semibold-regular', sans-serif;
+    --font-londrina: 'Londrina Solid', sans-serif;
+    --font-text-engiin: 'Inter', sans-serif;
+    --font-size-big: 1.2rem;
+    --font-size-movie: 2rem;
+    --font-size-small: 0.8rem;
+
+    --percent-hundred: 100%;
+}

@@ -1,0 +1,176 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text-engiin);
+    background-color: var(--color-bg);
+    color: var(--white-color);
+    *::placeholder {
+        color: var(--white-color);
+    }
+}
+header{
+    width: var(--percent-hundred);
+    height: 25vh;
+    background-color: var(--color-bg);
+    color: var(--color-garchig-main);
+    & nav:nth-of-type(2){
+        display: flex;
+        flex-direction: row;
+        & #menu{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            font-size: var(--font-size-big);
+            padding-top: 3rem;
+            padding-left: 2rem;
+            & a{
+                text-decoration: none;
+                font-family: var(--font-header);
+                font-weight: bold;
+                color: var(--color-garchig-main);
+                padding-left: 7rem;
+                 
+            }
+        }
+        & #logo{
+            padding-left: 3rem;
+            height: 8rem;
+        }
+    }
+    & #address_icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding-top: 2rem;
+        padding-right: 5rem;
+        list-style-type: none;
+        & a{
+            padding-right: 0.5rem;
+            & img{
+                height: 1rem;
+            }
+        }
+    }
+}
+main{
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-bottom: 5rem;
+    & section{
+        & h1{
+            font-size: var(--font-big);
+            margin-bottom: var(--size-none);
+            margin-top: 4rem;
+        }
+        & p{
+            margin-top: var(--size-none);
+            font-size: 1rem;
+            color: var(--gray-color);
+        }
+        & ul{
+            list-style: none;
+            & li{
+                margin-top: 2rem;
+                margin-bottom: 1.5rem;
+                border: var(--size-none);
+                border-bottom: var(--border-size) solid var(--color-border-li);
+                border-top: var(--border-size) solid var(--color-border-li);
+                height: 2.1rem;
+                & input{
+                    color: var(--white-color);
+                    width: 99%;
+                    float: right;
+                    font-size: var(--font-size-small);
+                    background-color: var(--black-color);
+                    border: none;
+                    padding: 0.5rem;
+                }
+                & label{
+                    font-size: var(--size-none);
+                    float: left;
+                }
+                & #lastname {
+                    width: 71rem;
+                }
+                & #firstname {
+                    width: 71rem;
+                }
+                & #dateandtime{
+                    float: left;
+                    width: 71rem;
+                }
+                & input-placholder{
+                    color: var(--white-color);
+                }
+            }
+        }
+        & button{
+            background-color: var(--black-color);
+            color: var(--white-color);
+            border: var(--border-size) solid var(--gray-color);
+            margin-top: 2rem;
+            width: 10rem;
+            height: 2rem;
+        }
+        & #accept_button{
+            transform: scale(3);
+            margin-left: 0.5rem;
+            margin-top: 1rem;
+        }
+        & #accept_text{
+            margin-left: 2rem;
+            margin-right: 50%;
+        }
+    }
+}
+footer{
+    display: flex;
+    padding-left: 5rem;
+    & #address_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5rem;
+        & li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: var(--color-footer-text);
+            & a{
+                text-decoration: none;
+                text-align: center;
+                justify-content: center;
+            }
+            & img{
+                padding: 1rem;
+                height: 3rem;
+                width: auto;
+            }
+        }
+    }
+    & #map{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & .location{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 1rem 1rem;
+            & p{
+                padding: 0.5rem;
+                font-family: var(--font-text-engiin);
+                font-size: var(--font-size-big);
+                color: var(--color-footer-text);
+            }
+        }
+        
+        & img{
+            height: 7rem;
+            width: auto;
+        }
+    }
+}
