@@ -87,4 +87,104 @@ main{
     label[for="location_zaisan"] {
         width: 7.4375rem;
     }
-}
+    label[for="location_encanto"] {
+        width: 7.8125rem;
+    }
+    label[for="location_botanik"] {
+        width: 7.375rem;
+    }
+    label[for="date1"] {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    label[for="date2"] {
+        width: 3.125rem;
+        height: 3.12606rem;
+        flex-shrink: 0;
+    }
+    label[for="date3"] {
+        width: 3.125rem;
+        height: 3.12606rem;
+        flex-shrink: 0;    
+    }
+    label[for="date4"] {
+        width: 3.125rem;
+        height: 3.12606rem;
+        flex-shrink: 0;    
+    }
+    label[for="date5"] {
+        width: 3.125rem;
+        height: 3.12606rem;
+        flex-shrink: 0;    
+    }
+    label[for="date6"] {
+        width: 3.125rem;
+        height: 3.12606rem;
+        flex-shrink: 0;    
+    }
+    label[for="date7"] {
+        width: 3.125rem;
+        height: 3.12606rem;
+        flex-shrink: 0;    
+    }
+    ul li a.time1 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    ul li a.time2 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    ul li a.time3 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    ul li a.time4 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    ul li a.time5 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    ul li a.time6 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    ul li a.time7 {
+        display: flex;
+        width: 2.125rem;
+        height: 1.12538rem;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
