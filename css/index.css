@@ -96,7 +96,7 @@ main{
                 padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                 text-align: center;
                 font-size: var(--font-size-small);
-                font-family: var(--font-lohit);
+                font-family: var(--font-text-engiin);
                 & img {
                     width: auto; 
                     height: 1rem;   
