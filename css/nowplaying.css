@@ -65,18 +65,25 @@ main{
         justify-content: space-between;
         & article{
             text-align: center;
-            flex: 0 1 calc(30% - 20px);
+            flex: 0 1 calc(30% - 1rem);
             margin-bottom: 4rem;
-           & .movie_poster{
+            & .rating_icon{
+                height: 1rem;
+            }
+            & .movie_poster{
             height: 28rem;
             margin: 1rem;
             width: auto;
            }
-           & .article-text{
+           & a{
+            text-decoration: none;
             color: var(--white-color);
-            font-size: var(--font-big);
-            margin: 1rem;
-            text-decoration: underline;
+            font-size: var(--font-size-reting);
+                & span{
+                    font-size: var(--font-big);
+                    margin-right: 1rem;
+                    font-weight: bold;
+                }
            }
         }
     }
