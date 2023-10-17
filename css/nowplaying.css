@@ -142,7 +142,3 @@ footer{
         }
     }
 }
-@font-face {
-    font-family: 'Lohit Devanagari';
-    src: url('https://fedorahosted.org/lohit/.ttf') format('truetype'); /* TTF format */
-}
