@@ -203,9 +203,103 @@ footer{
     50%{opacity: 0;}
     100%{opacity: 0;}
 }
-
 section::-webkit-scrollbar {
     display: none; 
+}
+@media(max-width: 48rem){
+    header{
+        height: 30vh;
+        max-width: 48rem;
+        font-size: var(--font-size-reting);
+        & nav:nth-of-type(2){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            & #menu{
+                flex-direction: column;
+            }
+        }
+    }
+    main{
+        & .container_poster{
+            width: auto;
+            padding: 1rem;
+            & #bigposter-container{
+                width: 80%;
+                position: relative;
+                & #bigposter1,
+                & #bigposter2,
+                & #bigposter3{
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    height: auto;
+                    width: var(--percent-hundred);
+                }
+            }
+            & .button{
+                place-self: center;
+                position: absolute;
+                top: 90%;
+                & button{
+                    padding: 0.5rem 1rem;
+                    font-size: var(--font-size-reting);
+                    
+                }
+            }
+        }
+        & section{
+            padding: rem;
+            width: auto;
+            & h2{
+                padding: 2rem 0rem 2rem 1.5rem;
+            }
+            & ul{
+                & a{
+                    padding: 1rem;
+                    font-size: var(--font-size-big);
+                    & img{
+                        height: 21.5rem;
+                        width: auto;
+                    }
+    
+                }
+            }
+        }
+    }
+    footer{
+        padding-left: 2rem;
+        width: auto;
+        justify-content: space-between;
+        & #address_info{
+            padding-left: 4rem;
+            font-size: var(--font-size-small);
+            & li{
+                & img{
+                    padding: 0.5rem;
+                    height: 1.5rem;
+                    width: auto;
+                }
+            }
+        }
+        & #map{
+            flex-direction: column;
+            padding-right: 4rem;
+            & .location{
+                margin: 0.2rem;
+                & p{
+                    padding: 0.2rem;
+                    font-size: var(--font-size-small);
+                   
+                }
+            }
+            & img{
+                height: 3.5rem;
+            }
+        }
+    }
+    
 }
 
 
