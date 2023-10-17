@@ -203,10 +203,7 @@ footer{
     50%{opacity: 0;}
     100%{opacity: 0;}
 }
-@font-face {
-    font-family: 'Lohit Devanagari';
-    src: url('https://fedorahosted.org/lohit/.ttf') format('truetype'); /* TTF format */
-}
+
 section::-webkit-scrollbar {
     display: none; 
 }
