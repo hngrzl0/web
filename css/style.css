@@ -6,11 +6,13 @@
     --font-big: 2rem;
     --size-none: 0px;
     --border-size: 0.0001rem;
+    --font-size-reting: 0.6rem;
 
     --color-bg : #000;
     --color-garchig-main : #FFF;
     --color-text-engiin: #FFF;
     --color-border-line: #FFF;
+    --color-border-li:#4F4F4F;
     --color-footer-text: #7F7F7F;
 
     --font-header: Arial, Helvetica, sans-serif;

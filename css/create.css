@@ -5,6 +5,9 @@
     font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
     color: var(--white-color);
+    *::placeholder {
+        color: var(--white-color);
+    }
 }
 header{
     width: var(--percent-hundred);
@@ -63,6 +66,7 @@ main{
         & p{
             margin-top: var(--size-none);
             font-size: 1rem;
+            color: var(--gray-color);
         }
         & ul{
             list-style: none;
@@ -70,8 +74,8 @@ main{
                 margin-top: 2rem;
                 margin-bottom: 1.5rem;
                 border: var(--size-none);
-                border-bottom: var(--border-size) solid var(--gray-color);
-                border-top: var(--border-size) solid var(--gray-color);
+                border-bottom: var(--border-size) solid var(--color-border-li);
+                border-top: var(--border-size) solid var(--color-border-li);
                 height: 2.1rem;
                 & input{
                     color: var(--white-color);
@@ -96,6 +100,9 @@ main{
                     float: left;
                     width: 71rem;
                 }
+                & input-placholder{
+                    color: var(--white-color);
+                }
             }
         }
         & button{
@@ -107,8 +114,8 @@ main{
             height: 2rem;
         }
         & #accept_button{
-            transform: scale(4);
-            margin-left: 1rem;
+            transform: scale(3);
+            margin-left: 0.5rem;
             margin-top: 1rem;
         }
         & #accept_text{
