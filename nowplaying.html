@@ -6,22 +6,24 @@
     <title>Одоо гарч буй кино</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="description" content="Одоо гарч буй кинонууд, дэлгэцнээ гарч буй кино, кино үзэх">
+    <link rel="stylesheet" href="css/nowplaying.css">
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <header>
         <nav>
             <address>
-                <ul>
-                    <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><img src="Images/header_fb_icon.png" style="height: 10px;" alt="facebook icon"></a></li>
-                    <li><a href="https://www.instagram.com/primecineplex_mongolia/"><img src="Images/header_ig_icon.png" style="height: 10px;" alt="instagram icon"></a></li>
-                    <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><img src="Images/header_yt_icon.png" style="height: 10px;" alt="youtube icon"></a></li>
-                    <li><a href="mailto:info@primecineplex.mn"><img src="Images/footer_mail-icon.png" style="height: 10px;" alt="mail icon"></a></li>
+                <ul id="address_icon">
+                    <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><img src="Images/header_fb_icon.png" alt="facebook icon"></a></li>
+                    <li><a href="https://www.instagram.com/primecineplex_mongolia/"><img src="Images/header_ig_icon.png"  alt="instagram icon"></a></li>
+                    <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><img src="Images/header_yt_icon.png"  alt="youtube icon"></a></li>
+                    <li><a href="mailto:info@primecineplex.mn"><img src="Images/footer_mail-icon.png" alt="mail icon"></a></li>
                 </ul>
             </address>
         </nav>
         <nav>
-            <ul>
-                <li><a href="index.html"><img src="Images/logo.jpg" style="height: 50px;" alt="primeLogo"></a></li>
+            <a href="index.html"><img src="Images/logo.jpg" id="logo" alt="primeLogo"></a>
+            <ul id="menu">
                 <li><a href="nowplaying.html">КИНО</a></li>
                 <li><a href="aboutus.html">ЗӨВХӨН МАНАЙД</a></li>
                 <li><a href="aboutus.html">ҮЙЛЧИЛГЭЭ</a></li>
@@ -33,102 +35,118 @@
     <main>
         <section>
             <article>
-                <a href="movie.html">
-                    <img src="Images/nowplaying_poster1.png" style="height: 100px;" alt="Suzume poster">Suzume
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/nowplaying_poster1.png" alt="Suzume poster">Suzume
                 </a>
-                <a href="https://www.imdb.com/title/tt16428256/?ref_=nv_sr_srsg_3_tt_4_nm_4_q_Suzu">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">7.7
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt16428256/?ref_=nv_sr_srsg_3_tt_4_nm_4_q_Suzu">
+                        <img src="Images/imdb_icon.png"  alt="imdb rating" >7.7
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/suzume">
+                        <img src="Images/rotten_tomatos_icon.png"  alt="rotten tomato rating" >96%
+                    </a>
+                </div>
+            </article>
+            <article>
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/nowplaying_poster2.png" alt="Elemental poster">Elemental
                 </a>
-                <a href="https://www.rottentomatoes.com/m/suzume">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">96%
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt15789038/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_ele">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" >7.0
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/elemental_2023">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" >74%
+                    </a>
+                </div>
+            </article>
+            <article>
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/nowplaying_poster3.png" alt="The NUN poster">The NUN
+                </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt10160976/?ref_=nv_sr_srsg_2_tt_6_nm_0_q_the%2520nun">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" >5.8
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/the_nun_ii">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" >52%
+                    </a>
+                </div>
+            </article>
+            <article>
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/nowplaying_poster4.png"  alt="Будилаан poster">Будилаан
                 </a>
             </article>
             <article>
-                <a href="movie.html">
-                    <img src="Images/nowplaying_poster2.png" style="height: 100px;" alt="Elemental poster">Elemental
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/comingsoon_poster1.png"  alt="The Creator poster">The Creator
                 </a>
-                <a href="https://www.imdb.com/title/tt15789038/?ref_=nv_sr_srsg_0_tt_2_nm_6_q_ele">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">7.0
-                </a>
-                <a href="https://www.rottentomatoes.com/m/elemental_2023">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">74%
-                </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt11858890/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_the%2520crea">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" >7.2
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/the_creator_2023">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" >67%
+                    </a>
+                </div>
             </article>
             <article>
-                <a href="movie.html">
-                    <img src="Images/nowplaying_poster3.png" style="height: 100px;" alt="The NUN poster">The NUN
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/comingsoon_poster2.png"  alt="Paw Patrol poster">Paw Patrol
                 </a>
-                <a href="https://www.imdb.com/title/tt10160976/?ref_=nv_sr_srsg_2_tt_6_nm_0_q_the%2520nun">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">5.8
-                </a>
-                <a href="https://www.rottentomatoes.com/m/the_nun_ii">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">52%
-                </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt15837338/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_paw%2520patrol">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" >6.1
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/paw_patrol_the_mighty_movie">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating">84%
+                    </a>
+                </div>
             </article>
             <article>
-                <a href="movie.html">
-                    <img src="Images/nowplaying_poster4.png" style="height: 100px;" alt="Будилаан poster">Будилаан
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/comingsoon_poster3.png"  alt="Cobweb poster">Cobweb
                 </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt9100018/?ref_=nv_sr_srsg_1_tt_6_nm_1_q_cobwe">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" >5.9
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/cobweb_2023">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" >59%
+                    </a>
+                </div>
             </article>
             <article>
-                <a href="movie.html">
-                    <img src="Images/comingsoon_poster1.png" style="height: 100px;" alt="The Creator poster">The Creator
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/comingsoon_poster4.png"  alt="Saw X poster">Saw X
                 </a>
-                <a href="https://www.imdb.com/title/tt11858890/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_the%2520crea">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">7.2
-                </a>
-                <a href="https://www.rottentomatoes.com/m/the_creator_2023">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">67%
-                </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt21807222/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_saw">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" >7.2
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/saw_x">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" >83%
+                    </a>
+                </div>
             </article>
             <article>
-                <a href="movie.html">
-                    <img src="Images/comingsoon_poster2.png" style="height: 100px;" alt="Paw Patrol poster">Paw Patrol
+                <a href="movie.html" class="movie_poster">
+                    <img src="Images/comingsoon_poster5.png" alt="The Exorcist poster">The Exorcist
                 </a>
-                <a href="https://www.imdb.com/title/tt15837338/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_paw%2520patrol">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">6.1
-                </a>
-                <a href="https://www.rottentomatoes.com/m/paw_patrol_the_mighty_movie">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">84%
-                </a>
-            </article>
-            <article>
-                <a href="movie.html">
-                    <img src="Images/comingsoon_poster3.png" style="height: 100px;" alt="Cobweb poster">Cobweb
-                </a>
-                <a href="https://www.imdb.com/title/tt9100018/?ref_=nv_sr_srsg_1_tt_6_nm_1_q_cobwe">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">5.9
-                </a>
-                <a href="https://www.rottentomatoes.com/m/cobweb_2023">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">59%
-                </a>
-            </article>
-            <article>
-                <a href="movie.html">
-                    <img src="Images/comingsoon_poster4.png" style="height: 100px;" alt="Saw X poster">Saw X
-                </a>
-                <a href="https://www.imdb.com/title/tt21807222/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_saw">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">7.2
-                </a>
-                <a href="https://www.rottentomatoes.com/m/saw_x">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">83%
-                </a>
-            </article>
-            <article>
-                <a href="movie.html">
-                    <img src="Images/comingsoon_poster5.png" style="height: 100px;" alt="The Exorcist poster">The Exorcist
-                </a>
-                <a href="https://www.imdb.com/title/tt12921446/?ref_=nv_sr_srsg_4_tt_7_nm_0_q_the%2520exorcist">
-                    <img src="Images/imdb_icon.png" alt="imdb rating" style="height: 20px;">7.1
-                </a>
-                <a href="https://www.imdb.com/title/tt12921446/?ref_=nv_sr_srsg_4_tt_7_nm_0_q_the%2520exorcist">
-                    <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" style="height: 20px;">96%
-                </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt12921446/?ref_=nv_sr_srsg_4_tt_7_nm_0_q_the%2520exorcist">
+                        <img src="Images/imdb_icon.png" alt="imdb rating" ">7.1
+                    </a>
+                    <a href="https://www.imdb.com/title/tt12921446/?ref_=nv_sr_srsg_4_tt_7_nm_0_q_the%2520exorcist">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating" >96%
+                    </a>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        <div>
+        <div id="address_info">
              <address>
              <ul>
                  <li>
@@ -149,14 +167,20 @@
              </ul>
              </address>
         </div>
-        <div>
-         <p>Зайсан Хилл Комплекс</p>
-         <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" height="50px" alt="google map photo"></a></p>
-         <p>Энканто товер</p>
-         <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" height="50px" alt="google map photo"></a></p>
-         <p>Ботаник центер</p>
-         <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png"height="50px" alt="google map photo"></a></p>
-    </div>  
+        <div id="map">
+            <div class="location">
+                <p>Зайсан Хилл Комплекс</p>
+                <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" alt="google map photo"></a></p>
+            </div>
+            <div class="location">
+                <p>Энканто товер</p>
+                <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" alt="google map photo"></a></p>
+            </div>
+            <div class="location">
+                <p>Ботаник центер</p>
+                <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" alt="google map photo"></a></p>
+            </div>
+        </div>    
      </footer>
 </body>
 </html>
