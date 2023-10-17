@@ -50,37 +50,34 @@ header{
     }
 }
 main{
+    & h2{
+        padding-left: 6rem;
+        color: var(--color-garchig-main);
+        font-family: var(--font-abhaya);
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
     & section{
-        padding: 2rem;
-        max-width: 90%;
-        overflow-x: auto;
-        
-        & h2{
-            padding-left: 6rem;
-            color: var(--color-garchig-main);
-            font-family: var(--font-abhaya);
-        }
-        & ul{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            min-width: 90%;
-            list-style-type: none;
-            & a{
-                display: grid;
-                gap: 2rem;
-                padding: 2rem 5rem 2rem 5rem;
-                text-decoration: none;
-                text-align: center;
-                font-family: var(--font-londrina);
-                font-size: var(--font-size-movie);
-                color: var(--color-text-engiin);
-                & img{
-                    height: 23rem;
-                    width: auto;
-                }
-
-            }
+        margin-left: 8rem;
+        margin-right: 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & article{
+            text-align: center;
+            flex: 0 1 calc(30% - 20px);
+            margin-bottom: 4rem;
+           & .movie_poster{
+            height: 28rem;
+            margin: 1rem;
+            width: auto;
+           }
+           & .article-text{
+            color: var(--white-color);
+            font-size: var(--font-big);
+            margin: 1rem;
+            text-decoration: underline;
+           }
         }
     }
 }
