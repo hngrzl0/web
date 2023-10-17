@@ -84,12 +84,9 @@ main{
                 }
                 & button{
                     margin-top: 2rem;
+                    height: 2rem;
                     width: 100%;
                     border: var(--border-size) solid var(--gray-color);
-                }
-                & .login_button{
-                    height: 50px;
-                    border: var(--size-none);
                 }
             }
         }
