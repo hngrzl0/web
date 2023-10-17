@@ -4,6 +4,9 @@
     font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
     color: var(--white-color);
+    *::placeholder {
+        color: var(--white-color);
+    }
 }
 header{
     width: var(--percent-hundred);
@@ -70,8 +73,8 @@ main{
             list-style: none;
             text-align: center;
             & .input{
-                border-top: var(--border-size) solid var(--gray-color);
-                border-bottom: var(--border-size) solid var(--gray-color);
+                border-top: var(--border-size) solid var(--color-border-li);
+                border-bottom: var(--border-size) solid var(--color-border-li);
             }
             & li{
                 margin: 1rem;
