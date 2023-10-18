@@ -27,6 +27,13 @@ header{
                 padding-left: 7rem;
                  
             }
+            & #login{
+                text-decoration: none;
+                font-family: var(--font-header);
+                font-weight: bold;
+                color: var(--color-red);
+                padding-left: 4rem;
+            }
         }
         & #logo{
             padding-left: 3rem;
@@ -110,6 +117,7 @@ footer{
                 text-decoration: none;
                 text-align: center;
                 justify-content: center;
+                color: var(--color-red);
             }
             & img{
                 padding: 1rem;
