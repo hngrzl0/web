@@ -1,0 +1,40 @@
+*{
+    background-color: var(--color-bg);
+    color: var(--color-text-engiin);
+    font-family: var(--font-text-engiin);
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+        "header sidebar"
+        "screen sidebar"
+        "content sidebar";
+    & #header{
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        & img{
+           height: 10rem;
+           width: auto; 
+        }
+        & h1{
+            align-self: center;
+            padding-left: 10rem;
+        }
+        & a{
+            text-decoration: none;
+        }
+    }
+    & #movie_screen{
+        grid-area: screen;
+    }
+    & #food_and_drinks{
+        grid-area: content;
+    }
+    & aside{
+        grid-area: sidebar;
+    }
+}

@@ -9,16 +9,14 @@
     <title>Ticketing</title>
 </head>
 <body>
-    <nav>
-        <div>
-            <img src="Images/logo.jpg" alt="logo icon" style="width: 10%; height: 10%;">
-            <h1>Захиалга</h1>
-            <a href="login.html">Нэвтрэх</a>
-            <p>Дуусах хугацаа: </p>
-            <p>2:47</p>
-        </div>
+    <nav id="header">
+        <img src="Images/logo.jpg" alt="logo icon">
+        <h1>Захиалга</h1>
+        <a href="login.html">Нэвтрэх</a>
+        <p>Дуусах хугацаа: </p>
+        <p>2:47</p>
     </nav>
-    <div>
+    <div id="movie_screen">
         <h2>Дэлгэц</h2>
         <h3>A</h3>
         <ul>
@@ -405,7 +403,7 @@
         <img src="img_mandah/chair/bolomjgui.PNG" alt="chair" width="3%" height="3%">
         <p>Боломжгүй</p>
     </div> 
-    <div>
+    <div id="food_and_drinks">
         <article>
             <img src="img_mandah/eat & drink/popcorn.png" alt="" width="10%" height="10%">
             <h6>Попкорн</h6>
@@ -471,39 +469,39 @@
         <p>15,000₮</p>
         <p>Нийт</p>
         <p>75,000₮</p>
+    
+        <div>
+            <h3>Төлбөрөө баталгаажуулах</h3>
+            <ul>
+                <li>
+                    <label for="valid_name">Нэр: </label>
+                    <input type="text" placeholder="Нэр" id="valid_name">
+                </li>
+                <li>
+                    <label for="valid_phone">Утас: </label>
+                    <input type="text" placeholder="Утас" id="valid_phone">
+                </li>
+                <li>
+                    <label for="valid_mail">И-Мэйл: </label>
+                    <input type="text" placeholder="И-Мэйл" id="valid_mail">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="internet_bank">Oнлайн банк</label>
+                    <input type="checkbox" id="internet_bank">
+                </li>
+                <li>
+                    <label for="qPay">QPay</label>
+                    <input type="checkbox" id="qPay">
+                </li>
+                <li>
+                    <label for="card">Visa Card</label>
+                    <input type="checkbox" id="card">
+                </li>
+            </ul>
+            <button>Баталгаажуулах</button>
+        </div>
     </aside>
-    <div>
-        <h3>Төлбөрөө баталгаажуулах</h3>
-        <ul>
-            <li>
-                <label for="valid_name">Нэр: </label>
-                <input type="text" placeholder="Нэр" id="valid_name">
-            </li>
-            <li>
-                <label for="valid_phone">Утас: </label>
-                <input type="text" placeholder="Утас" id="valid_phone">
-            </li>
-            <li>
-                <label for="valid_mail">И-Мэйл: </label>
-                <input type="text" placeholder="И-Мэйл" id="valid_mail">
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <label for="internet_bank">Oнлайн банк</label>
-                <input type="checkbox" id="internet_bank">
-            </li>
-            <li>
-                <label for="qPay">QPay</label>
-                <input type="checkbox" id="qPay">
-            </li>
-            <li>
-                <label for="card">Visa Card</label>
-                <input type="checkbox" id="card">
-            </li>
-        </ul>
-        <button>Баталгаажуулах</button>
-    </div>
-
 </body>
 </html>
