@@ -316,6 +316,16 @@ section::-webkit-scrollbar {
                 width: auto;
             }
         }
+        & #address_icon{
+            padding-top: 0.5rem;
+            padding-right: 1.5rem;
+            & a{
+                padding-right: 0.2rem;
+                & img{
+                    height: 0.5rem;
+                }
+            }
+        }
     }
     main{
         & .container_poster{
