@@ -19,19 +19,27 @@ header{
             list-style-type: none;
             font-size: var(--font-size-big);
             padding-top: 3rem;
-            padding-left: 2rem;
+            padding-left: 7rem;
             & a{
                 text-decoration: none;
                 font-family: var(--font-header);
                 font-weight: bold;
                 color: var(--color-garchig-main);
-                padding-left: 7rem;
+                padding-left: 4rem;
                  
             }
+            & #login{
+                text-decoration: none;
+                font-family: var(--font-header);
+                font-weight: bold;
+                color: var(--color-red);
+                padding-left: 4rem;
+            }
+
         }
         & #logo{
             padding-left: 3rem;
-            height: 8rem;
+            height: 10rem;
         }
     }
     & #address_icon{
@@ -95,11 +103,24 @@ main{
                 border-color: var(--color-border-line);
                 padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                 text-align: center;
-                font-size: var(--font-size-small);
+                font-size: var(--font-size-big);
                 font-family: var(--font-text-engiin);
                 & img {
                     width: auto; 
-                    height: 1rem;   
+                    height: 1.5rem;   
+                }
+            }
+            & #buy_button{
+                background-color: var(--color-bg);
+                color: var(--color-red);
+                border-color: var(--color-border-line);
+                padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                text-align: center;
+                font-size: var(--font-size-big);
+                font-weight: bold;
+                & img {
+                    width: auto; 
+                    height: 1.5rem;   
                 }
             }
         }
@@ -112,7 +133,8 @@ main{
         & h2{
             padding-left: 6rem;
             color: var(--color-garchig-main);
-            font-family: var(--font-abhaya);
+            font-family: var(--font-garchig);
+            
         }
         & ul{
             display: flex;
@@ -156,6 +178,7 @@ footer{
                 text-decoration: none;
                 text-align: center;
                 justify-content: center;
+                color: var(--color-red);
             }
             & img{
                 padding: 1rem;
