@@ -52,7 +52,87 @@ header{
         }
     }
 }
-main{
+
+main {
+    & div {
+        display: flex;
+        flex-direction: row;
+        & div {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10%;
+            & img {
+                width: 19.875rem;
+                height: 31.82338rem;
+                flex-shrink: 0;
+                padding: 10%;
+            }
+            & iframe {
+                width: 2.5rem;
+                height: 1.25rem;
+                flex-shrink: 0;
+            }
+        }
+        & div {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10%;
+            & h2 {
+                display: flex;
+                width: 43.75rem;
+                height: 3.12606rem;
+                flex-direction: column;
+                justify-content: center;
+            }
+            & h4 {
+                display: flex;
+                width: 50rem;
+                height: 3rem;
+                flex-direction: column;
+                justify-content: center;
+            }
+            & p {
+                display: flex;
+                width: 50rem;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            & nav {
+                display: flex;
+                flex-direction: column;
+                & ul {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 10px;
+                    width: 15rem%;
+                    padding-top: 3%;
+                    & li {
+                        border-style: solid;
+                        border-color: red;
+                        border-width: 0.1rem;
+                        color: #333; 
+                        padding: 1%;
+                        border: none;
+                        color: white;
+                    }
+                    & .location_zaisan {
+                        background-color: #4CAF50; /* Green */
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* main {
     img[src="Images/nowplaying_poster1.png"] {
         width: 19.875rem;
         height: 31.82338rem;
@@ -186,6 +266,10 @@ main{
         flex-direction: column;
         justify-content: center;
         flex-shrink: 0;
+<<<<<<< HEAD
+    } */
+=======
     }
 
 }
+>>>>>>> 15e90c95f3d3c1bfac9f2e056969b75f5af88f9d
