@@ -3,7 +3,7 @@
     padding: 0;
     font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
-    color: var(--white-color);
+    color: var(--color-white);
     *::placeholder {
         color: var(--white-color);
     }
@@ -67,14 +67,17 @@ main{
     margin-bottom: 5rem;
     & section{
         & h1{
-            font-size: var(--font-big);
+            font-size: 2rem;
             margin-bottom: var(--size-none);
             margin-top: 4rem;
         }
         & p{
             margin-top: var(--size-none);
             font-size: 1rem;
-            color: var(--gray-color);
+            color: var(--color-gray);
+        }
+        & img{
+            height: 2rem;
         }
         & ul{
             list-style: none;
@@ -87,7 +90,7 @@ main{
                 height: 2.2rem;
                 display: list-item;
                 & input{
-                    color: var(--white-color);
+                    color: var(--color-white);
                     width: 99%;
                     float: right;
                     font-size: var(--font-size-small);
@@ -100,21 +103,21 @@ main{
                     float: left;
                 }
                 & #lastname {
-                    width: 91%;
+                    width: 96%;
                 }
                 & #firstname {
-                    width: 91%;
+                    width: 96%;
                 }
                 & #dateandtime{
                     float: left;
-                    width: 91%;
+                    width: 96%;
                 }
             }
         }
         & button{
-            background-color: var(--black-color);
-            color: var(--white-color);
-            border: var(--border-size) solid var(--gray-color);
+            background-color: var(--color-black);
+            color: var(--color-white);
+            border: var(--border-size) solid var(--color-gray);
             margin-top: 2rem;
             width: 10rem;
             height: 2rem;
@@ -198,4 +201,199 @@ footer{
 }
 section::-webkit-scrollbar {
     display: none; 
+}
+@media(max-width: 48rem){
+    header{
+        height: 28vh;
+        max-width: 48rem;
+        & nav:nth-of-type(2){
+            justify-content: space-evenly;
+            & #menu{
+                flex-direction: column;
+                padding: 1.5rem;
+                font-size: var(--font-size-small);
+            }
+        }
+    }
+    main{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+        & section{
+            & h1{
+                margin-top: 3rem;
+            }
+            & img{
+                height: 1.5rem;
+            }
+            & ul{
+                list-style: none;
+                & li{
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                    height: 1.8rem;
+                    & input{
+                        padding: 0.3rem;
+                    }
+                    & #lastname {
+                        width: 94%;
+                    }
+                    & #firstname {
+                        width: 94%;
+                    }
+                    & #dateandtime{
+                        float: left;
+                        width: 94%;
+                    }
+                }
+            }
+            & #accept_text{
+                margin-right: 10%;
+            }
+        }
+    }
+    footer{
+        padding-left: 2rem;
+        width: auto;
+        justify-content: space-between;
+        & #address_info{
+            padding-left: 4rem;
+            font-size: var(--font-size-small);
+            & li{
+                & img{
+                    padding: 0.5rem;
+                    height: 1.5rem;
+                    width: auto;
+                }
+            }
+        }
+        & #map{
+            flex-direction: column;
+            padding-right: 4rem;
+            & .location{
+                margin: 0.2rem;
+                & p{
+                    padding: 0.2rem;
+                    font-size: var(--font-size-small);
+                   
+                }
+            }
+            & img{
+                height: 3.5rem;
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 25rem){
+    header{
+        height: 20vh;
+        max-width: 25rem;
+        & nav:nth-of-type(2){
+            justify-content: center;
+            & #menu{
+                flex-direction: column;
+                padding: 0.5rem;
+                font-size: 0.65rem;
+            }
+            & #logo{
+                height: 5rem;
+                width: auto;
+            }
+        }
+        & #address_icon{
+            padding-top: 0.5rem;
+            padding-right: 1.5rem;
+            & a{
+                padding-right: 0.2rem;
+                & img{
+                    height: 0.5rem;
+                }
+            }
+        }
+    }
+    main{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 0rem;
+        & section{
+            & h1{
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            & p{
+                font-size: 0.6rem;
+            }
+            & img{
+                height: 1rem;
+                width: 1rem;
+            }
+            & ul{
+                & li{
+                    margin-top: 1rem;
+                    margin-bottom: 0.5rem;
+                    height: 1rem;
+                    & input{
+                        font-size: 0.5rem;
+                        padding: 0.2rem;
+                    }
+                    & #lastname {
+                        width: 92%;
+                    }
+                    & #firstname {
+                        width: 92%;
+                    }
+                    & #dateandtime{
+                        width: 92%;
+                    }
+                }
+            }
+            & button{
+                font-size: 0.7rem;
+                margin-top: 2rem;
+                width: 8rem;
+                height: 1.5rem;
+            }
+            & #accept_button{
+                transform: scale(2);
+                margin-left: 0.5rem;
+                margin-top: 1rem;
+            }
+            & #accept_text{
+                font-size: 0.5rem;
+                margin-left: 1rem;
+                margin-right: 10%;
+            }
+        }
+    }
+    footer{
+        padding: 0;
+        justify-content: space-evenly;
+        & #address_info{
+            padding-left: 4rem;
+            font-size: 0.7rem;
+            & li{
+                & img{
+                    padding: 0.5rem;
+                    height: 1rem;
+                    width: auto;
+                }
+            }
+        }
+        & #map{
+            flex-direction: column;
+            padding-right: 4rem;
+            & .location{
+                & p{
+                    font-size: 0.7rem;
+                   
+                }
+            }
+            & img{
+                height: 3rem;
+            }
+        }
+    }
+    
 }
