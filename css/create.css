@@ -22,19 +22,27 @@ header{
             list-style-type: none;
             font-size: var(--font-size-big);
             padding-top: 3rem;
-            padding-left: 2rem;
+            padding-left: 7rem;
             & a{
                 text-decoration: none;
                 font-family: var(--font-header);
                 font-weight: bold;
                 color: var(--color-garchig-main);
-                padding-left: 7rem;
-                
+                padding-left: 4rem;
+                 
             }
+            & #login{
+                text-decoration: none;
+                font-family: var(--font-header);
+                font-weight: bold;
+                color: var(--color-red);
+                padding-left: 4rem;
+            }
+
         }
         & #logo{
             padding-left: 3rem;
-            height: 8rem;
+            height: 10rem;
         }
     }
     & #address_icon{
@@ -52,6 +60,7 @@ header{
         }
     }
 }
+
 main{
     margin-left: 9rem;
     margin-right: 9rem;
@@ -139,6 +148,7 @@ footer{
                 text-decoration: none;
                 text-align: center;
                 justify-content: center;
+                color: var(--color-red);
             }
             & img{
                 padding: 1rem;
@@ -171,196 +181,21 @@ footer{
         }
     }
 }
-
-
-@media(max-width: 48rem){
-    header{
-        height: 28vh;
-        max-width: 48rem;
-        & nav:nth-of-type(2){
-            justify-content: space-evenly;
-            & #menu{
-                flex-direction: column;
-                padding: 1.5rem;
-                font-size: var(--font-size-small);
-            }
-        }
-    }
-    main{
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 3rem;
-        & section{
-            & h1{
-                margin-top: 4rem;
-            }
-            & p{
-                font-size: 0.6rem;
-            }
-            & ul{
-                & li{
-                    margin-top: 1.5rem;
-                    margin-bottom: 1.2rem;
-                    height: 1.7rem;
-                    & input{
-                        width: 99%;
-                        font-size: 0.6rem;
-                        padding: 0.4rem;
-                    }
-                    & #lastname {
-                        width: 90%;
-                    }
-                    & #firstname {
-                        width: 90%;
-                    }
-                    & #dateandtime{
-                        width: 89%;
-                    }
-                }
-            }
-            & button{
-                margin-top: 2rem;
-                width: 10rem;
-                height: 2rem;
-            }
-            & #accept_button{
-                transform: scale(2.5);
-                margin-left: 0.5rem;
-                margin-top: 1rem;
-            }
-            & #accept_text{
-                font-size: 0.7rem;
-                margin-right: 30%;
-            }
-        }
-    }
-    footer{
-        padding-left: 2rem;
-        width: auto;
-        justify-content: space-between;
-        & #address_info{
-            padding-left: 4rem;
-            font-size: var(--font-size-small);
-            & li{
-                & img{
-                    padding: 0.5rem;
-                    height: 1.5rem;
-                    width: auto;
-                }
-            }
-        }
-        & #map{
-            flex-direction: column;
-            padding-right: 4rem;
-            & .location{
-                margin: 0.2rem;
-                & p{
-                    padding: 0.2rem;
-                    font-size: var(--font-size-small);
-                   
-                }
-            }
-            & img{
-                height: 3.5rem;
-            }
-        }
-    }
-    
+@keyframes slide1{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
 }
-
-@media screen and (min-width:0rem) and (max-width: 28rem){
-    header{
-        height: 28vh;
-        max-width: 48rem;
-        & nav:nth-of-type(2){
-            justify-content: space-evenly;
-            & #menu{
-                flex-direction: column;
-                padding: 1.5rem;
-                font-size: var(--font-size-small);
-            }
-        }
-    }
-    main{
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        & section{
-            & h1{
-                font-size: var(--font-size-big);
-                margin-top: 2rem;
-            }
-            & p{
-                font-size: 0.5rem;
-            }
-            & img{
-                height: 0.9rem;
-                width: 0.9rem;
-            }
-            & ul{
-                & li{
-                    margin-top: 1rem;
-                    margin-bottom: 0.8rem;
-                    height: 1.2rem;
-                    & input{
-                        width: 99%;
-                        font-size: 0.5rem;
-                        padding: 0.2rem;
-                    }
-                    & #lastname {
-                        width: 93%;
-                    }
-                    & #firstname {
-                        width: 93%;
-                    }
-                    & #dateandtime{
-                        width: 93%;
-                    }
-                }
-            }
-            & button{
-                margin-top: 2rem;
-                width: 10rem;
-                height: 2rem;
-            }
-            & #accept_button{
-                transform: scale(1.5);
-                margin-left: 0.3rem;
-                margin-top: 0.5rem;
-            }
-            & #accept_text{
-                font-size: 0.5rem;
-                margin-right: 10%;
-            }
-        }
-    }
-    footer{
-        padding: 0;
-        justify-content: space-evenly;
-        & #address_info{
-            padding-left: 4rem;
-            font-size: 0.7rem;
-            & li{
-                & img{
-                    padding: 0.5rem;
-                    height: 1rem;
-                    width: auto;
-                }
-            }
-        }
-        & #map{
-            flex-direction: column;
-            padding-right: 4rem;
-            & .location{
-                & p{
-                    font-size: 0.7rem;
-                   
-                }
-            }
-            & img{
-                height: 3rem;
-            }
-        }
-    }
-    
+@keyframes slide2{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes slide3{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 0;}
+}
+section::-webkit-scrollbar {
+    display: none; 
 }

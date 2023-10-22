@@ -3,6 +3,10 @@
     padding: 0;
     font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
+    color: var(--white-color);
+    *::placeholder {
+        color: var(--white-color);
+    }
 }
 header{
     width: var(--percent-hundred);
@@ -18,13 +22,13 @@ header{
             list-style-type: none;
             font-size: var(--font-size-big);
             padding-top: 3rem;
-            padding-left: 7rem;
+            padding-left: 2rem;
             & a{
                 text-decoration: none;
                 font-family: var(--font-header);
                 font-weight: bold;
                 color: var(--color-garchig-main);
-                padding-left: 4rem;
+                padding-left: 7rem;
                  
             }
             & #login{
@@ -38,7 +42,7 @@ header{
         }
         & #logo{
             padding-left: 3rem;
-            height: 10rem;
+            height: 8rem;
         }
     }
     & #address_icon{
