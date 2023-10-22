@@ -75,7 +75,7 @@ main{
                 border: var(--size-none);
                 border-bottom: var(--border-size) solid var(--color-border-li);
                 border-top: var(--border-size) solid var(--color-border-li);
-                height: 2.1rem;
+                height: 2.2rem;
                 display: list-item;
                 & input{
                     color: var(--white-color);
@@ -91,14 +91,14 @@ main{
                     float: left;
                 }
                 & #lastname {
-                    width: 92%;
+                    width: 91%;
                 }
                 & #firstname {
-                    width: 92%;
+                    width: 91%;
                 }
                 & #dateandtime{
                     float: left;
-                    width: 92%;
+                    width: 91%;
                 }
             }
         }
@@ -208,13 +208,13 @@ footer{
                         padding: 0.4rem;
                     }
                     & #lastname {
-                        width: 92%;
+                        width: 90%;
                     }
                     & #firstname {
-                        width: 92%;
+                        width: 90%;
                     }
                     & #dateandtime{
-                        width: 92%;
+                        width: 89%;
                     }
                 }
             }
@@ -268,7 +268,7 @@ footer{
     
 }
 
-@media(max-width: 25rem){
+@media screen and (min-width:0rem) and (max-width: 28rem){
     header{
         height: 28vh;
         max-width: 48rem;
@@ -291,26 +291,30 @@ footer{
                 margin-top: 2rem;
             }
             & p{
-                font-size: 0.3rem;
+                font-size: 0.5rem;
+            }
+            & img{
+                height: 0.9rem;
+                width: 0.9rem;
             }
             & ul{
                 & li{
                     margin-top: 1rem;
                     margin-bottom: 0.8rem;
-                    height: 1rem;
+                    height: 1.2rem;
                     & input{
                         width: 99%;
-                        font-size: 0.3rem;
-                        padding: 0.4rem;
+                        font-size: 0.5rem;
+                        padding: 0.2rem;
                     }
                     & #lastname {
-                        width: 92%;
+                        width: 93%;
                     }
                     & #firstname {
-                        width: 92%;
+                        width: 93%;
                     }
                     & #dateandtime{
-                        width: 92%;
+                        width: 93%;
                     }
                 }
             }
@@ -320,13 +324,13 @@ footer{
                 height: 2rem;
             }
             & #accept_button{
-                transform: scale(2.5);
-                margin-left: 0.5rem;
-                margin-top: 1rem;
+                transform: scale(1.5);
+                margin-left: 0.3rem;
+                margin-top: 0.5rem;
             }
             & #accept_text{
-                font-size: 0.7rem;
-                margin-right: 30%;
+                font-size: 0.5rem;
+                margin-right: 10%;
             }
         }
     }
