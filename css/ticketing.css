@@ -36,5 +36,43 @@ body{
     }
     & aside{
         grid-area: sidebar;
+        background-color: var(--color-gray);
+        padding: 2rem;
+
+        & h4{
+            color: var(--color-bright-gray);
+            background-color: var(--color-gray);
+            text-align: center;
+        }
+        .line {
+            width: 100%; 
+            height: 0.2rem; 
+            background-color: var(--color-bright-gray); 
+            margin: 1rem 0;
+        }
+        & .movie_details{
+            display: flex;
+            align-items: center;
+            background-color: var(--color-gray);
+            & img {
+                max-width: 10rem;
+                height: auto;
+                margin: 3rem 0;
+            }
+            & #movie_info{
+                display: flex;
+                flex-direction: column;
+                & label {
+                    color: var(--color-text-engiin);
+                    background-color: var(--color-gray);
+                    padding-left: 2rem;
+                }
+                & label[for="movie_name"] {
+                    font-weight: bold;
+                    padding-left: 30%;
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
