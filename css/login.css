@@ -227,7 +227,8 @@ section::-webkit-scrollbar {
                 margin-bottom: 4rem;
             }
             & p{
-                margin-left: 1rem;
+                margin-left: 2rem;
+                font-size: 0.7rem;
             }
         }
     }

@@ -243,11 +243,12 @@ section::-webkit-scrollbar {
                     }
                     & #dateandtime{
                         float: left;
-                        width: 94%;
+                        width: 93%;
                     }
                 }
             }
             & #accept_text{
+                font-size: 0.7rem;
                 margin-right: 10%;
             }
         }
