@@ -65,14 +65,48 @@ body{
                 & label {
                     color: var(--color-text-engiin);
                     background-color: var(--color-gray);
-                    padding-left: 2rem;
+                    padding: 0.62rem 2rem;
+                    font-size: 1rem;
                 }
                 & label[for="movie_name"] {
                     font-weight: bold;
-                    padding-left: 30%;
+                    padding-left: 25%;
                     font-size: 2rem;
                 }
             }
         }
+        & label[for="chair"]{
+            background-color: var(--color-gray);
+            color: var(--color-bright-gray);
+            font-weight: bold;
+        }
+        & li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--color-gray);
+            color: var(--color-gray);
+            & p{
+                background-color: var(--color-gray);
+                color: var(--color-bright-gray);
+                font-weight: bold;
+                
+            }
+            & button{
+                background-color: var(--color-gray);
+                color: var(--color-bright-gray);
+            }
+            & span{
+                background-color: var(--color-gray);
+            }
+            & .cost{
+                
+                color: var(--color-text-engiin);
+            }
+            & button + span{
+                padding: -2rem;
+            }
+        }
+
     }
 }
