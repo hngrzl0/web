@@ -472,14 +472,18 @@
             </li>
         </ul>
         <div class="line"></div>
-        <p>Попкорн</p>
-        <p>3</p>
-        <p>15,000₮</p>
+        <section id="food_drinks_cost">
+            <p class="name_of_food">Попкорн</p>
+            <p>3</p>
+            <p>15,000₮</p>
+        </section>
         <div class="line"></div>
-        <p>Нийт</p>
-        <p>75,000₮</p>
-    
-        <div>
+        <section id="sum_of_all">
+            <p id="sum">НИЙТ</p>
+            <p id="sum_cost">75,000₮</p>
+        </section>
+        <div class="line"></div>
+        <section id="payment_section">
             <h3>Төлбөрөө баталгаажуулах</h3>
             <ul>
                 <li>
@@ -498,19 +502,19 @@
             <ul>
                 <li>
                     <label for="internet_bank">Oнлайн банк</label>
-                    <input type="checkbox" id="internet_bank">
+                    <input type="radio" id="internet_bank">
                 </li>
                 <li>
                     <label for="qPay">QPay</label>
-                    <input type="checkbox" id="qPay">
+                    <input type="radio" id="qPay">
                 </li>
                 <li>
                     <label for="card">Visa Card</label>
-                    <input type="checkbox" id="card">
+                    <input type="radio" id="card">
                 </li>
             </ul>
             <button>Баталгаажуулах</button>
-        </div>
+        </section>
     </aside>
 </body>
 </html>

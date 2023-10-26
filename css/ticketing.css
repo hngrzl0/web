@@ -104,9 +104,58 @@ body{
                 color: var(--color-text-engiin);
             }
             & button + span{
-                padding: -2rem;
+                margin: 0 -9rem 0 -9rem;
             }
         }
+        & #food_drinks_cost{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--color-gray);
+            & p {
+                background-color: var(--color-gray);
+                font-weight: bold;
+            }
+            & .name_of_food{
+                color: var(--color-bright-gray);
+                font-weight: bold;
+            }
+        }
+        & #sum_of_all{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--color-gray);
+            & #sum {
+                background-color: var(--color-gray);
+                color: var(--color-bright-gray);
+                font-weight: bold;
+            }
+            & #sum_cost{
+                background-color: var(--color-gray);
+                font-weight: bold;
 
+            }
+            
+        }
+        & #payment_section{
+            & h3{
+                background-color: var(--color-gray);
+                padding: 4rem 7rem 2rem 7rem;
+            }
+            & label{
+                background-color: var(--color-gray);
+                padding: 1rem;
+            }
+            & input{
+                width: 70%;
+                padding: 0.4rem 0.5rem;
+                border: 0.1rem solid var(--color-border-line);
+                border-radius: 5px;
+                background-color: var(--color-gray);
+                font-weight: bold;
+            }
+        }
     }
 }
