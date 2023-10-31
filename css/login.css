@@ -68,13 +68,19 @@ main{
     padding: 3rem;
     height: 25rem;
     color: var(--color-white);
+    & ::placeholder{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
     & div{
         margin: 3rem;
         float: left;
         width: 55%;
+        font-style: italic;
         font-size: var(--font-size-movie);
     }
     & article{
+        font-weight: bold;
         border: var(--border-size) solid var(--color-red);
         margin-left: 75%;
         height: 100%;
@@ -86,16 +92,22 @@ main{
                 border-bottom: var(--border-size) solid var(--color-border-li);
             }
             & li{
+                height: 2rem;
                 margin: 1rem;
                 & input{
+                    padding: 0.5rem;
                     width: 100%;
                     border: var(--size-none);
+                    font-style: italic;
                 }
                 & button{
-                    margin-top: 2rem;
+                    font-weight: bold;
+                    font-size: var(--font-size-big);
+                    margin-top: 0rem;
                     height: 2rem;
                     width: 100%;
-                    border: var(--border-size) solid var(--color-gray);
+                    border: var(--border-size) solid var(--color-white);
+                    color: var(--color-red);
                 }
             }
         }
@@ -103,10 +115,10 @@ main{
             font-size: var(--font-size-movie);
             margin: 2rem;
             margin-left: 4rem;
-            margin-bottom: 7rem;
+            margin-bottom: 6rem;
         }
         & p{
-            margin-left: 4rem;
+            margin-left: 4em;
         }
     }
 }
@@ -200,6 +212,9 @@ section::-webkit-scrollbar {
         padding: 1.5rem;
         height: 22rem;
         color: var(--color-white);
+        & ::placeholder{
+            font-size: 0.9rem;
+        }
         & div{
             margin: 2rem;
             float: left;
@@ -208,12 +223,18 @@ section::-webkit-scrollbar {
         }
         & article{
             border: var(--border-size) solid var(--color-red);
-            margin-left: 70%;
+            margin-left: 65%;
             height: 100%;
             & ul{
+                & .input{
+                    height: 1.5rem;
+                }
                 & li{
                     margin: 1rem;
                     padding: 0.2rem;
+                    & input{
+                        padding: 0.3rem;
+                    }
                     & button{
                         margin-top: 1rem;
                         height: 2rem;
@@ -223,11 +244,11 @@ section::-webkit-scrollbar {
             & h6{
                 font-size: var(--font-size-movie);
                 margin: 1rem;
-                margin-left: 2rem;
+                margin-left: 3rem;
                 margin-bottom: 4rem;
             }
             & p{
-                margin-left: 2rem;
+                margin-left: 3rem;
                 font-size: 0.7rem;
             }
         }
@@ -319,10 +340,9 @@ section::-webkit-scrollbar {
                         border: var(--size-none);
                     }
                     & button{
-                        margin-top: 2rem;
+                        margin-top: 1rem;
                         height: 2rem;
                         width: 100%;
-                        border: var(--border-size) solid var(--color-gray);
                     }
                 }
             }
@@ -332,7 +352,7 @@ section::-webkit-scrollbar {
                 margin-bottom: 4rem;
             }
             & p{
-                margin-left: 5rem;
+                margin-left: 7rem;
             }
         }
     }
