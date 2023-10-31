@@ -33,6 +33,14 @@ body{
     }
     & #food_and_drinks{
         grid-area: content;
+        display: flex;
+        flex-direction: row;
+        
+        & img{
+            width: 7rem;
+            height: auto;
+            padding: 1rem 3rem;
+        }
     }
     & aside{
         grid-area: sidebar;
@@ -95,6 +103,10 @@ body{
             & button{
                 background-color: var(--color-gray);
                 color: var(--color-bright-gray);
+                padding: 0 0.25em;
+                border-radius: 100%;
+                
+                
             }
             & span{
                 background-color: var(--color-gray);
@@ -140,6 +152,7 @@ body{
             
         }
         & #payment_section{
+            background-color: var(--color-gray);
             & h3{
                 background-color: var(--color-gray);
                 padding: 4rem 7rem 2rem 7rem;
@@ -155,6 +168,31 @@ body{
                 border-radius: 5px;
                 background-color: var(--color-gray);
                 font-weight: bold;
+            }
+            & .custom-radio{
+                display: none;
+            }
+            & .radio-label {
+                color: var(--color-bright-gray);
+              }
+            & .radio-label::before {
+                content: '';
+                display: inline-block;
+                width: 0.7rem; 
+                height: 0.7rem; 
+                margin-right: 2rem; 
+                border: 2px solid var(--color-red); 
+                border-radius: 50%; 
+               
+            }
+            
+            & button{
+                background-color: var(--color-red);
+                border-radius: 5px;
+                padding: 1rem 2rem;
+                margin-left: 10rem;
+                margin-top: 2rem;
+                font-size: 1rem;
             }
         }
     }
