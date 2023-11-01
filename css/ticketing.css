@@ -26,6 +26,14 @@ body{
         }
         & a{
             text-decoration: none;
+            color: var(--color-red);
+            font-weight: bold;
+            padding: 2rem;
+        }
+        & #info_ticketing{
+            border: 1px solid var(--color-red);
+            border-radius: 0.5rem;
+            
         }
     }
     & #movie_screen{
@@ -123,8 +131,10 @@ body{
             & button{
                 background-color: var(--color-gray);
                 color: var(--color-bright-gray);
-                padding: 0 0.25em;
+                padding: 0.25em 0.5em;
+                margin: 0.1rem;
                 border-radius: 100%;
+                border: 1px solid ;
             }
             & span{
                 background-color: var(--color-gray);
@@ -134,7 +144,7 @@ body{
                 color: var(--color-text-engiin);
             }
             & button + span{
-                margin: 0 -9rem 0 -9rem;
+                margin: 0 -6rem 0 -6rem;
             }
         }
         & #food_drinks_cost{
