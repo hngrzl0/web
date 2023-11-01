@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Одоо гарч буй кино</title>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="description" content="Одоо гарч буй кинонууд, дэлгэцнээ гарч буй кино, кино үзэх">
         <link rel="stylesheet" href="css/nowplaying.css">
         <link rel="stylesheet" href="css/style.css"/>
         <script>
@@ -34,8 +37,8 @@
                                     {
                                         name: "Будилаан",
                                         img: "Images/nowplaying_poster4.png",
-                                        imdb: " ",
-                                        rtr: " ",
+                                        imdb: "",
+                                        rtr: "",
                                     },
                                     {
                                         name: "The Creator",
@@ -70,6 +73,10 @@
                     ]; 
                     const p = mov;
                         let data = `
+                        <h2 style="color: var(--color-white);
+                        padding: 2rem;
+                        margin-bottom: 4rem;
+                        ">МАНАЙ ДЭЛГЭЦНЭЭ</h2>
                         <section>`;
                     for( const product of p){
                         const prod=new Product(product);
@@ -107,9 +114,71 @@
         }
         </script>
     </head>
-    <main id="app">
+    <body>
+        <header>
+            <nav>
+                <address>
+                    <ul id="address_icon">
+                        <li><a href="https://www.facebook.com/PrimeCineplexMongolia"><img src="Images/header_fb_icon.png" alt="facebook icon"></a></li>
+                        <li><a href="https://www.instagram.com/primecineplex_mongolia/"><img src="Images/header_ig_icon.png"  alt="instagram icon"></a></li>
+                        <li><a href="https://www.youtube.com/@primecineplexmongolia3406"><img src="Images/header_yt_icon.png"  alt="youtube icon"></a></li>
+                        <li><a href="mailto:info@primecineplex.mn"><img src="Images/footer_mail-icon.png" alt="mail icon"></a></li>
+                    </ul>
+                </address>
+            </nav>
+            <nav>
+                <a href="index.html"><img src="Images/logo.jpg" id="logo" alt="primeLogo"></a>
+                <ul id="menu">
+                    <li><a href="nowplaying.html">КИНО</a></li>
+                    <li><a href="aboutus.html">ЗӨВХӨН МАНАЙД</a></li>
+                    <li><a href="aboutus.html">ҮЙЛЧИЛГЭЭ</a></li>
+                    <li><a href="aboutus.html">БИДНИЙ ТУХАЙ</a></li>
+                    <li><a id="login" href="login.html">НЭВТРЭХ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="app">
     
-    </main>
+        </main>
+        <footer>
+            <div id="address_info">
+                 <address>
+                 <ul>
+                     <li>
+                         <img src="Images/footer_location-icon.png" alt="location icon">
+                         <p>Монгол улс, Улаанбаатар хот, <br>
+                             Хан-Уул дүүрэг 11-р хороо, <br>
+                             Дүнжингаравын гудамж, <br>
+                             Зайсан Хилл Цогцолбор, 1-р давхар</p>
+                     </li>
+                     <li>
+                         <img src="Images/footer_mail-icon.png" alt="mail icon">
+                         <a href="mailto:info@primecineplex.mn">@primecineplex.mn</a>
+                     </li>
+                     <li>
+                         <img src="Images/footer_phone-icon.png"  alt="phone icon">
+                         <a href="tel:+976-7510-0000">+976-7510-0000</a>
+                     </li>
+                 </ul>
+                 </address>
+            </div>
+            <div id="map">
+                <div class="location">
+                    <p>Зайсан Хилл Комплекс</p>
+                    <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" alt="google map photo"></a></p>
+                </div>
+                <div class="location">
+                    <p>Энканто товер</p>
+                    <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" alt="google map photo"></a></p>
+                </div>
+                <div class="location">
+                    <p>Ботаник центер</p>
+                    <p><a href="https://www.google.com/maps"><img src="Images/footer_googlemap.png" alt="google map photo"></a></p>
+                </div>
+            </div>    
+         </footer>
+    </body>
+
     <script>
         var app = new movie();
         app.List();
