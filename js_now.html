@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Одоо гарч буй кино</title>
+        <link rel="stylesheet" href="css/nowplaying.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <script>
+            class movie{
+                constructor(){
+
+                }
+                List(){
+                    const mov = [
+                                    {
+                                        name: "Suzume",
+                                        img: "Images/nowplaying_poster1.png",
+                                        imdb: 7.7,
+                                        rtr: "96%",
+                                    },
+                                    {
+                                        name: "Elemental",
+                                        img: "Images/nowplaying_poster2.png",
+                                        imdb: "7.0",
+                                        rtr: "74%",
+                                    },
+                                    {
+                                        name: "The NUN",
+                                        img: "Images/nowplaying_poster3.png",
+                                        imdb: 5.8,
+                                        rtr: "52%",
+                                    },
+                                    {
+                                        name: "Будилаан",
+                                        img: "Images/nowplaying_poster4.png",
+                                        imdb: " ",
+                                        rtr: " ",
+                                    },
+                                    {
+                                        name: "The Creator",
+                                        img: "Images/comingsoon_poster1.png",
+                                        imdb: 7.2,
+                                        rtr: "67%",
+                                    },
+                                    {
+                                        name: "Paw Patrol",
+                                        img: "Images/comingsoon_poster2.png",
+                                        imdb: 6.1,
+                                        rtr: "84%",
+                                    },
+                                    {
+                                        name: "Cobweb",
+                                        img: "Images/comingsoon_poster3.png",
+                                        imdb: 5.9,
+                                        rtr: "59%",
+                                    },
+                                    {
+                                        name: "Saw X",
+                                        img: "Images/comingsoon_poster4.png",
+                                        imdb: 7.2,
+                                        rtr: "83%",
+                                    },
+                                    {
+                                        name: "The Exorcist",
+                                        img: "Images/comingsoon_poster5.png",
+                                        imdb: 7.1,
+                                        rtr: "96%",
+                                    },
+                    ]; 
+                    const p = mov;
+                        let data = `
+                        <section>`;
+                    for( const product of p){
+                        const prod=new Product(product);
+                        data += prod.Render();
+                    }
+                    data+="</section>";
+                    
+                    document.getElementById("app").insertAdjacentHTML("beforeend", data);
+                }
+            }
+            class Product {
+            constructor(product) {
+                this.name = product.name;
+                this.img = product.img;
+                this.imdb = product.imdb;
+                this.rtr = product.rtr;
+            }
+            
+            Render(){
+                return `
+                <article>
+                <a href="movie.html" class="movie_poster">
+                    <img src="${this.img}" alt="poster">${this.name}
+                </a>
+                <div class="rating">
+                    <a href="https://www.imdb.com/title/tt16428256/?ref_=nv_sr_srsg_3_tt_4_nm_4_q_Suzu">
+                        <img src="Images/imdb_icon.png"  alt="imdb rating" >${this.imdb}
+                    </a>
+                    <a href="https://www.rottentomatoes.com/m/suzume">
+                        <img src="Images/rotten_tomatos_icon.png"  alt="rotten tomato rating" >${this.rtr}
+                    </a>
+                </div>
+            </article>`
+            }
+        }
+        </script>
+    </head>
+    <main id="app">
+    
+    </main>
+    <script>
+        var app = new movie();
+        app.List();
+    </script>
+</html>
