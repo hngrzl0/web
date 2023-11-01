@@ -280,6 +280,7 @@ main {
             flex-direction: column;
             border: var(--color-red);
             border-style: solid;
+            border-radius: 1rem;
             margin-left: 2rem;
             margin-right: 2rem;
             overflow: scroll;
