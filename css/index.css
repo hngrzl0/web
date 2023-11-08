@@ -269,6 +269,16 @@ section::-webkit-scrollbar {
                     
                 }
             }
+            & #buy_button{
+                place-self: center;
+                position: absolute;
+                top: 90%;
+                & button{
+                    padding: 0.5rem 1rem;
+                    font-size: var(--font-size-reting);
+                    
+                }
+            }
         }
         & section{
             padding: rem;
@@ -354,7 +364,7 @@ section::-webkit-scrollbar {
         & .container_poster{
             & .button{
                 place-self: center;
-                position: absolute;
+                position: absolute; 
                 top: 63%;
                 & button{
                     padding: 0.2rem 0.5rem;
@@ -363,7 +373,18 @@ section::-webkit-scrollbar {
                         height: 0.6rem;
                         width: auto;
                     }
-                    
+                }
+                & #buy_button{
+                    top: 0;
+                    font-size: 0.5rem;
+                    padding: 0.25rem 1rem;  
+                    display: inline-flex;
+                    align-items: center;
+                    & img{
+                        height: 0.5rem;
+                        width: auto;
+                        margin-left: 0.2rem;    
+                    }
                 }
             }
         }
