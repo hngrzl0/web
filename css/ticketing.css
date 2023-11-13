@@ -14,8 +14,8 @@ body{
     & #header{
         grid-area: header;
         display: flex;
-        flex-direction: row;
-        padding: 3rem;
+  
+        
         & img{
            height: 10rem;
            width: auto; 
@@ -33,6 +33,7 @@ body{
         & #info_ticketing{
             border: 1px solid var(--color-red);
             border-radius: 0.5rem;
+            height: auto;
             
         }
     }
@@ -203,16 +204,42 @@ body{
             & .radio-label {
                 color: var(--color-bright-gray);
               }
-            & .radio-label::before {
+              .radio-label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
+            
+            & .checkbox-label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
+            
+            & .checkbox-label::before {
                 content: '';
                 display: inline-block;
-                width: 0.7rem; 
-                height: 0.7rem; 
-                margin-right: 2rem; 
-                border: 2px solid var(--color-red); 
-                border-radius: 50%; 
-               
+                width: 0.7rem;
+                height: 0.7rem;
+                margin-right: 1rem;
+                border: 2px solid var(--color-red);
+                border-radius: 4px; /* Use a square border for checkboxes */
             }
+            
+            & .checkbox-label:hover::before {
+                border-color: var(--color-blue); /* Change border color on hover */
+            }
+            
+            & .checkbox-label input[type="checkbox"] {
+                display: none; /* Hide the actual checkbox input */
+            }
+            
+            & .checkbox-label input[type="checkbox"]:checked + .checkbox-label::before {
+                background-color: var(--color-blue); /* Change background color when selected */
+            }
+            
             
             & button{
                 background-color: var(--color-red);
