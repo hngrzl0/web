@@ -16,29 +16,41 @@ body{
         display: flex;
   
         
+        display: flex;  
+        flex-direction: row;
         & img{
            height: 10rem;
            width: auto; 
+           padding: 2rem;
         }
         & h1{
             align-self: center;
             padding-left: 10rem;
         }
-        & a{
-            text-decoration: none;
-            color: var(--color-red);
-            font-weight: bold;
-            padding: 2rem;
-        }
         & #info_ticketing{
-            border: 1px solid var(--color-red);
-            border-radius: 0.5rem;
-            height: auto;
-            
+            display: flex;
+            flex-direction: row-reverse;
+            margin-left: 14rem;
+            & a{
+                text-decoration: none;
+                color: var(--color-red);
+                font-weight: bold;
+                padding: 2rem;
+            }
+            & #time{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 2rem;
+            }
+
         }
     }
     & #movie_screen{
         grid-area: screen;
+        & h3{
+            justify-self: center;
+        }
     }
     & #food_and_drinks{
         width: 90%;
