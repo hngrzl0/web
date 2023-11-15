@@ -88,11 +88,11 @@
                 }
             }
             class Product {
-            constructor(product) {
-                this.name = product.name;
-                this.img = product.img;
-                this.imdb = product.imdb;
-                this.rtr = product.rtr;
+                constructor(product) {
+                    this.name = product.name;
+                    this.img = product.img;
+                    this.imdb = product.imdb;
+                    this.rtr = product.rtr;
             }
             
             Render(){
@@ -112,6 +112,89 @@
             </article>`
             }
         }
+
+
+
+// json2.js
+
+class MovieItem {
+  constructor(movie) {
+    this.title = movie.title;
+    this.category = movie.category;
+    this.imdbRating = movie.imdbRating;
+    this.rottenTomatoesRating = movie.rottenTomatoesRating;
+  }
+
+  Render() {
+    return `<article>
+                <a href="movie.html" class="movie_poster">
+                    <img src="${this.poster}" alt="${this.title}">${this.title}
+                </a>
+                <div class="rating">
+                    <a href="${this.imdbLink}">
+                        <img src="Images/imdb_icon.png" alt="imdb rating">${this.imdbRating}
+                    </a>
+                    <a href="${this.rottenTomatoesLink}">
+                        <img src="Images/rotten_tomatos_icon.png" alt="rotten tomato rating">${this.rottenTomatoesRating}
+                    </a>
+                </div>
+            </article>`;
+  }
+}
+
+class MovieList {
+  constructor(movieDataUrl) {
+    this._movieDataUrl = movieDataUrl;
+    this._movies = [];
+  }
+
+  async FetchData() {
+    try {
+      const response = await fetch(this._movieDataUrl);
+      const data = await response.json();
+      this._movies = data.movies.map(movie => new MovieItem(movie));
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
+
+  FilterByCategory(category) {
+    return category === 'All' ? this._movies : this._movies.filter(movie => movie.category === category);
+  }
+
+  RenderMovies(filteredMovies) {
+    const mainElement = document.getElementById('main');
+    mainElement.innerHTML = filteredMovies.map(movie => movie.Render()).join('');
+  }
+}
+
+const params = new URLSearchParams(document.location.search);
+const categoryFilter = params.get("category");
+
+const movieList = new MovieList("URL_TO_YOUR_JSON_DATA");
+
+document.addEventListener('DOMContentLoaded', async () => {
+  await movieList.FetchData();
+
+  const filteredMovies = movieList.FilterByCategory(categoryFilter);
+  movieList.RenderMovies(filteredMovies);
+});
+
+const categoryLinks = document.querySelectorAll('#category-links a');
+categoryLinks.forEach(link => {
+  link.addEventListener('click', async (event) => {
+    event.preventDefault();
+    const category = event.target.textContent.toLowerCase();
+    
+    const filteredMovies = movieList.FilterByCategory(category);
+    movieList.RenderMovies(filteredMovies);
+  });
+});
+
+
+
+
+
         </script>
     </head>
     <body>
