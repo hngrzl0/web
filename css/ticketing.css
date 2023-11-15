@@ -52,14 +52,14 @@ body{
             background-color: aliceblue;
             height: 1rem;
             width: 50%;
-            margin: 0.8rem 0;
+            margin: 1rem 0;
             transform: rotateX(-45deg);
             box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.75);
         }
         .row {
             display: flex;
             .seat {
-                background-color: antiquewhite;
+                background-color: var(--color-red);
                 height: 3rem;
                 width: 3.2rem;
                 margin: 0.2rem;
@@ -72,7 +72,7 @@ body{
             }
     
             .seat.occupied {
-                background-color: var(--color-bright-gray);
+                background-color: var(--color-gray);
             }
             .seat:nth-of-type(5) {
                 margin-left: 1.2rem;
