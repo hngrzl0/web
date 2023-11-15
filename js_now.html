@@ -9,10 +9,10 @@
         <meta name="description" content="Одоо гарч буй кинонууд, дэлгэцнээ гарч буй кино, кино үзэх">
         <link rel="stylesheet" href="css/nowplaying.css">
         <link rel="stylesheet" href="css/style.css"/>
+        <script type="module" src="json2.js" defer></script>
         <script>
             class movie{
                 constructor(){
-
                 }
                 List(){
                     const mov = [
@@ -21,54 +21,63 @@
                                         img: "Images/nowplaying_poster1.png",
                                         imdb: 7.7,
                                         rtr: "96%",
+                                        category: "Animation",
                                     },
                                     {
                                         name: "Elemental",
                                         img: "Images/nowplaying_poster2.png",
                                         imdb: "7.0",
                                         rtr: "74%",
+                                        category: "Rom-Com",
                                     },
                                     {
                                         name: "The NUN",
                                         img: "Images/nowplaying_poster3.png",
                                         imdb: 5.8,
                                         rtr: "52%",
+                                        category: "Horror",
                                     },
                                     {
                                         name: "Будилаан",
                                         img: "Images/nowplaying_poster4.png",
                                         imdb: "NR",
                                         rtr: "NR",
+                                        category: "Adventure",
                                     },
                                     {
                                         name: "The Creator",
                                         img: "Images/comingsoon_poster1.png",
                                         imdb: 7.2,
                                         rtr: "67%",
+                                        category: "Action",
                                     },
                                     {
                                         name: "Paw Patrol",
                                         img: "Images/comingsoon_poster2.png",
                                         imdb: 6.1,
                                         rtr: "84%",
+                                        category: "Animation",
                                     },
                                     {
                                         name: "Cobweb",
                                         img: "Images/comingsoon_poster3.png",
                                         imdb: 5.9,
                                         rtr: "59%",
+                                        category: "Horror",
                                     },
                                     {
                                         name: "Saw X",
                                         img: "Images/comingsoon_poster4.png",
                                         imdb: 7.2,
                                         rtr: "83%",
+                                        category: "Horror",
                                     },
                                     {
                                         name: "The Exorcist",
                                         img: "Images/comingsoon_poster5.png",
                                         imdb: 7.1,
                                         rtr: "96%",
+                                        category: "Horror",
                                     },
                     ]; 
                     const p = mov;
@@ -93,6 +102,7 @@
                 this.img = product.img;
                 this.imdb = product.imdb;
                 this.rtr = product.rtr;
+                this.category=product.category;
             }
             
             Render(){
