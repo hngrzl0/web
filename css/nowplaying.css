@@ -4,35 +4,9 @@
     font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
 }
-/* Add these styles to your existing CSS file or create a new one */
-
-#category-links {
-    margin-bottom: 20px;
-  }
-  
-  #category-links a {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #333;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #category-links a:hover {
-    background-color: #ddd;
-  }
-  
-  #category-links a.active {
-    background-color: #333;
-    color: #fff;
-  }
-
 header{
     width: var(--percent-hundred);
-    height: 25vh;
+    height: 15vh;
     background-color: var(--color-bg);
     color: var(--color-garchig-main);
     & nav:nth-of-type(2){
@@ -43,15 +17,14 @@ header{
             flex-direction: row;
             list-style-type: none;
             font-size: var(--font-size-big);
-            padding-top: 3rem;
-            padding-left: 2rem;
+            margin-top: 4rem;
+            padding-left: 7rem;
             & a{
                 text-decoration: none;
                 font-family: var(--font-header);
                 font-weight: bold;
                 color: var(--color-garchig-main);
-                padding-left: 7rem;
-                 
+                text-align: center;
             }
             & #login{
                 text-decoration: none;
@@ -60,10 +33,15 @@ header{
                 color: var(--color-red);
                 padding-left: 4rem;
             }
+            & li{
+                margin-right: 10%;
+                display: grid;
+            }
+
         }
         & #logo{
             padding-left: 3rem;
-            height: 8rem;
+            height: 10rem;
         }
     }
     & #address_icon{
@@ -71,8 +49,9 @@ header{
         flex-direction: row;
         justify-content: right;
         padding-top: 2rem;
-        padding-right: 5rem;
+        padding-right: 5%;
         list-style-type: none;
+        float: right;
         & a{
             padding-right: 0.5rem;
             & img{
@@ -160,13 +139,14 @@ footer{
             & img{
                 padding: 1rem;
                 height: 3rem;
-                width: auto;
+                width: 15%;
             }
         }
     }
     & #map{
         display: flex;
         flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-between;
         & .location{
             display: flex;
@@ -181,10 +161,36 @@ footer{
                 color: var(--color-footer-text);
             }
         }
-        
         & img{
             height: 7rem;
             width: auto;
+        }
+    }
+}
+@media(max-width: 68rem){
+    header{
+        height: 14vh;
+        & nav:nth-of-type(2){
+            & #menu{
+                font-size: var(--font-size-small);
+                padding-left: 3rem;
+            }
+        }
+    }
+    footer{
+        & #address_info{
+            width: 40%;
+            padding-right: 0rem;
+            & li{
+                & img{
+                    height: 2.2rem;
+                }
+            }
+        }
+        & #map{
+            & div{
+                width: 100%;
+            }
         }
     }
 }
@@ -193,12 +199,24 @@ footer{
         height: 28vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
-            justify-content: space-evenly;
             & #menu{
+                margin-top: 2rem;
+                margin-left: 40%;
                 flex-direction: column;
-                padding: 1.5rem;
+                padding: 1rem;
                 font-size: var(--font-size-small);
+                & a{
+                    text-align: left;
+                    width: 10rem;
+                }
+                & #login{
+                    padding-left: 0rem;
+                }
             }
+        }
+        & #address_icon{
+            padding-top: 1rem;
+            padding-right: 1%;
         }
     }
     main{
@@ -231,7 +249,6 @@ footer{
         width: auto;
         justify-content: space-between;
         & #address_info{
-            padding-left: 4rem;
             font-size: var(--font-size-small);
             & li{
                 & img{
@@ -257,6 +274,18 @@ footer{
             }
         }
     }
+    
+}
+@media(max-width: 35rem){
+    header{
+        height: 28vh;
+        max-width: 48rem;
+        & nav:nth-of-type(2){
+            & #menu{
+                margin-left: 20%;
+            }
+        }
+    } 
 }
 @media(max-width: 25rem){
     header{
@@ -265,6 +294,7 @@ footer{
         & nav:nth-of-type(2){
             justify-content: center;
             & #menu{
+                margin-left: 30%;
                 flex-direction: column;
                 padding: 0.5rem;
                 font-size: 0.65rem;
@@ -328,16 +358,14 @@ footer{
         }
         & #map{
             flex-direction: column;
-            padding-right: 4rem;
+            padding-right: 0rem;
             & .location{
                 & p{
                     font-size: 0.7rem;
                    
                 }
             }
-            & img{
-                height: 3rem;
-            }
         }
     }
+    
 }
