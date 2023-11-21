@@ -474,7 +474,7 @@ footer{
 }
 @media(max-width: 48rem){
     header{
-        height: 28vh;
+        height: 10vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -531,7 +531,7 @@ footer{
 }
 @media(max-width: 35rem){
     header{
-        height: 28vh;
+        height: 10vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -542,7 +542,7 @@ footer{
 }
 @media(max-width: 25rem){
     header{
-        height: 20vh;
+        height: 5vh;
         max-width: 25rem;
         & nav:nth-of-type(2){
             justify-content: center;

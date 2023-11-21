@@ -63,19 +63,20 @@ header{
 main{
     & .container_poster{
         display: grid;
+        width: 100%;
+        margin-top: 1rem;
         & #bigposter-container{
             place-self: center;
-            width: 70%;
-            height: 38rem;
-            padding-right: 10rem;
+            width: 100%;
+            height: 30rem;
             position: relative;
             overflow: hidden;
             & #bigposter1{
                 position: absolute;
                 top: 10%;
                 left: 12%;
-                width: auto;
-                height: var(--percent-hundred);
+                width: 80%;
+                height: width / 2;
                 opacity: 0;
                 animation: slide1 10s infinite;
             }
@@ -83,8 +84,8 @@ main{
                 position: absolute;
                 top: 10%;
                 left: 12%;
-                width: auto;
-                height: var(--percent-hundred);
+                width: 80%;
+                height: width / 2;
                 opacity: 0;
                 animation: slide2 10s infinite;
             }
@@ -92,8 +93,8 @@ main{
                 position: absolute;
                 top: 10%;
                 left: 12%;
-                width: auto;
-                height: var(--percent-hundred);
+                width: 80%;
+                height: width / 2;
                 opacity: 0;
                 animation: slide3 10s infinite;
             }
@@ -148,7 +149,7 @@ main{
             & a{
                 display: grid;
                 gap: 2rem;
-                padding: 2rem 5rem 2rem 5rem;
+                padding: 2% 8% 2% 5rem;
                 text-decoration: none;
                 text-align: center;
                 font-family: var(--font-londrina);
@@ -232,6 +233,123 @@ footer{
 section::-webkit-scrollbar {
     display: none; 
 }
+@media(max-width: 62.5rem){
+    main{
+        & .container_poster{
+            & #bigposter-container{
+                height: 25rem;
+            }
+        }
+        & section{
+            & ul{
+                & a{
+                    & img{
+                        height: 15rem;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+@media(max-width: 50rem){
+    main{
+        & .container_poster{
+            & #bigposter-container{
+                height: 20rem;
+            }
+            & .button{
+                place-self: center;
+                & button{
+                    background-color: var(--color-bg);
+                    color: var(--color-text-engiin);
+                    border-color: var(--color-border-line);
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                    text-align: center;
+                    font-size: var(--font-size-big);
+                    font-family: var(--font-text-engiin);
+                    & img {
+                        width: auto; 
+                        height: 1rem;   
+                    }
+                }
+                & #buy_button{
+                    background-color: var(--color-bg);
+                    color: var(--color-red);
+                    border-color: var(--color-border-line);
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                    text-align: center;
+                    font-size: var(--font-size-big);
+                    font-weight: bold;
+                    & img {
+                        width: auto; 
+                        height: 1rem;   
+                    }
+                }
+            }
+        }
+        & section{
+            & ul{
+                & a{
+                    font-size: var(--font-size-5);
+                    & img{
+                        height: 10rem;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+@media(max-width: 37.5rem){
+    main{
+        & .container_poster{
+            & #bigposter-container{
+                height: 15rem;
+            }
+            & .button{
+                place-self: center;
+                & button{
+                    background-color: var(--color-bg);
+                    color: var(--color-text-engiin);
+                    border-color: var(--color-border-line);
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                    text-align: center;
+                    font-size: var(--font-size-big);
+                    font-family: var(--font-text-engiin);
+                    & img {
+                        width: auto; 
+                        height: 1rem;   
+                    }
+                }
+                & #buy_button{
+                    background-color: var(--color-bg);
+                    color: var(--color-red);
+                    border-color: var(--color-border-line);
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                    text-align: center;
+                    font-size: var(--font-size-big);
+                    font-weight: bold;
+                    & img {
+                        width: auto; 
+                        height: 1rem;   
+                    }
+                }
+            }
+        }
+        & section{
+            & ul{
+                & a{
+                    font-size: var(--font-size-5);
+                    & img{
+                        height: 7rem;
+                    }
+    
+                }
+            }
+        }
+    }
+}
 @media(max-width: 68rem){
     header{
         height: 14vh;
@@ -261,7 +379,7 @@ section::-webkit-scrollbar {
 }
 @media(max-width: 48rem){
     header{
-        height: 28vh;
+        height: 10vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -318,7 +436,7 @@ section::-webkit-scrollbar {
 }
 @media(max-width: 35rem){
     header{
-        height: 28vh;
+        height: 10vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -329,7 +447,7 @@ section::-webkit-scrollbar {
 }
 @media(max-width: 25rem){
     header{
-        height: 20vh;
+        height: 5vh;
         max-width: 25rem;
         & nav:nth-of-type(2){
             justify-content: center;
