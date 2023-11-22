@@ -61,6 +61,21 @@ header{margin-bottom: 4rem;
         }
     }
 }
+#category-links{
+    margin:  0 6.8rem;
+    & a{
+        border: solid 1px var(--color-red);
+        border-radius: 5px;
+        padding: 0.3rem;
+        margin: 0 0.2rem;
+        background-color: var(--color-red);
+        text-decoration: none;
+        color: var(--color-text-engiin);
+    }
+}
+#category-links a.active {
+    background-color: black;
+}
 main{
     padding-left: 5rem;
     padding-right: 5rem;
