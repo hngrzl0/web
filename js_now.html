@@ -231,10 +231,6 @@
             }
 
             async FetchData() {
-                // Implement this function to fetch your movie data
-                //const response = await fetch('your_movie_api_url');
-                //const data = await response.json();
-                //this.movies = data;
                 this.movies = [
                                     {
                                         id:1,
@@ -328,7 +324,7 @@
 
         document.addEventListener('DOMContentLoaded', async () => {
             const app = new movie();
-            app.List(); // Assign the movie list to the global variable
+            app.List(); 
 
             const movieList = new MovieList();
             await movieList.FetchData();
@@ -342,7 +338,7 @@
                 });
             });
 
-            // Get the category from the URL and filter movies accordingly
+            
             const categoryFromUrl = getCategoryFromUrl();
             filterAndRenderMovies(categoryFromUrl);
 
@@ -350,7 +346,7 @@
                 const filteredMovies = movieList.FilterByCategory(category);
                 movieList.RenderMovies('main section', filteredMovies);
 
-                // Add/remove 'active' class for styling
+                
                 categoryLinks.forEach(link => {
                     const linkCategory = link.getAttribute('data-category');
                     if (linkCategory === category) {
