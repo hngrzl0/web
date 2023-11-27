@@ -1,5 +1,4 @@
 *{
-    
     margin: 0;
     padding: 0;
     font-family: var(--font-text-engiin);
@@ -8,6 +7,7 @@
     *::placeholder {
         color: var(--white-color);
     } 
+    
 }
 header{
     width: var(--percent-hundred);
