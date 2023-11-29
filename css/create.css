@@ -10,6 +10,7 @@
     
 }
 main{
+    margin-top: 11rem;
     margin-left: 9rem;
     margin-right: 9rem;
     margin-bottom: 5rem;
@@ -83,25 +84,10 @@ main{
             margin-left: 2rem;
             margin-right: 50%;
         }
+        & .tseg{
+            list-style: none;
+        }
     }
-}
-@keyframes slide1{
-    0%{opacity: 0;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
-}
-@keyframes slide2{
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
-}
-@keyframes slide3{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 0;}
-}
-section::-webkit-scrollbar {
-    display: none; 
 }
 
 @media(max-width: 1352px){
@@ -139,14 +125,14 @@ section::-webkit-scrollbar {
         margin-bottom: 2rem;
         & section{
             & h1{
-                font-size: var(--font-size-2);
+                font-size: var(--font-size-3);
                 margin-top: 3rem;
             }
             & img{
                 height: var(--font-size-4);
             }
             & p{
-                font-size: var(--font-size-4);
+                font-size: 1rem;
             }
             & ul{
                 & li{
@@ -154,67 +140,17 @@ section::-webkit-scrollbar {
                     margin-bottom: 1rem;
                     height: 1.5rem;
                     & input{
-                        font-size: var(--font-size-4);
+                        font-size: 1rem;
                     }
                     & #lastname {
-                        width: 94%;
+                        width: 10%;
                     }
                     & #firstname {
                         width: 94%;
                     }
                     & #dateandtime{
                         float: left;
-                        width: 95%;
-                    }
-                }
-            }
-            & button{
-                margin-top: 2rem;
-                width: 15rem;
-                font-size: var(--font-size-4);
-                height: 2.5rem;
-            }
-            & #accept_text{
-                font-size: var(--font-size-5);
-                width: 70%;
-                margin-left: 2rem;
-                margin-right: 10%;
-            }
-        }
-}
-@media screen and (min-width:0px) and (max-width: 650){
-    main{
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
-        & section{
-            & h1{
-                font-size: var(--font-size-2);
-                margin-top: 3rem;
-            }
-            & img{
-                height: var(--font-size-4);
-            }
-            & p{
-                font-size: var(--font-size-5);
-            }
-            & ul{
-                & li{
-                    margin-top: 1.5rem;
-                    margin-bottom: 1rem;
-                    height: 1.5rem;
-                    & input{
-                        font-size: var(--font-size-5);
-                    }
-                    & #lastname {
                         width: 94%;
-                    }
-                    & #firstname {
-                        width: 94%;
-                    }
-                    & #dateandtime{
-                        float: left;
-                        width: 95%;
                     }
                 }
             }
@@ -231,10 +167,61 @@ section::-webkit-scrollbar {
             }
             & #accept_text{
                 font-size: var(--font-size-5);
-                width: 70%;
+                width: 100%;
                 margin-left: 2rem;
             }
         }
 }
+}
+
+@media(max-width: 34.375rem){
+main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    & section{
+        & h1{
+            font-size: var(--font-size-2);
+            margin-top: 3rem;
+        }
+        & img{
+            height: 1rem;
+            width: 1rem;
+        }
+        & p{
+            font-size: 0.8rem;
+        }
+        & ul{
+            & li{
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+                height: 1rem;
+                & input{
+                    font-size: 0.6rem;
+                }
+                & #lastname {
+                    width: 94%;
+                }
+                & #firstname {
+                    width: 94%;
+                }
+                & #dateandtime{
+                    float: left;
+                    width: 90%;
+                }
+            }
+        }
+        & button{
+            margin-top: 2rem;
+            width: 15rem;
+            font-size: var(--font-size-4);
+            height: 2.5rem;
+        }
+        & #accept_text{
+            font-size: 0.5rem;
+            width: 90%;
+            margin-left: 2rem;
+            margin-right: 0%;
+        }
+    }
 }
 }

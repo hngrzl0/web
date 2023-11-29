@@ -10,9 +10,10 @@
     
 }
 header{
-    margin-bottom: 4rem;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
     width: var(--percent-hundred);
-    height: 15vh;
     background-color: var(--color-bg);
     color: var(--color-garchig-main);
     & nav:nth-of-type(2){
@@ -67,8 +68,9 @@ header{
     }
 }
 footer{
+    width: 80%;
     display: flex;
-    padding-left: 5rem;
+    padding-left: 10%;
     & #address_info{
         display: flex;
         flex-direction: row;
@@ -119,7 +121,6 @@ footer{
 }
 @media(max-width: 68rem){
     header{
-        height: 14vh;
         & nav:nth-of-type(2){
             & #menu{
                 font-size: var(--font-size-small);
@@ -146,7 +147,6 @@ footer{
 }
 @media(max-width: 48rem){
     header{
-        height: 10vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -170,8 +170,6 @@ footer{
         }
     }
     footer{
-        padding-left: 2rem;
-        width: auto;
         justify-content: space-between;
         & #address_info{
             font-size: var(--font-size-small);
@@ -203,7 +201,6 @@ footer{
 }
 @media(max-width: 35rem){
     header{
-        height: 10vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -214,7 +211,6 @@ footer{
 }
 @media(max-width: 25rem){
     header{
-        height: 20vh;
         max-width: 25rem;
         & nav:nth-of-type(2){
             justify-content: center;
@@ -266,14 +262,8 @@ footer{
         }
     }  
 }
-@media(max-width: 1400px){
-    footer{
-        width: 85%;
-    }
-}
 @media(max-width: 900px){
     header{
-        height: 28vh;
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
@@ -297,8 +287,6 @@ footer{
         }
     }
     footer{
-        padding-left: 2rem;
-        width: auto;
         justify-content: space-between;
         & #address_info{
             font-size: var(--font-size-small);
