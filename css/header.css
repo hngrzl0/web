@@ -25,7 +25,7 @@ header{
             list-style-type: none;
             font-size: var(--font-size-big);
             margin-top: 4rem;
-            padding-left: 7rem;
+            padding-left: 9rem;
             & a{
                 text-decoration: none;
                 font-family: var(--font-header);
@@ -125,6 +125,7 @@ footer{
             & #menu{
                 font-size: var(--font-size-small);
                 padding-left: 3rem;
+                margin-left: 8rem;
             }
         }
     }
@@ -268,7 +269,7 @@ footer{
         & nav:nth-of-type(2){
             & #menu{
                 margin-top: 2rem;
-                margin-left: 40%;
+                margin-left: 30%;
                 flex-direction: column;
                 padding: 1rem;
                 font-size: var(--font-size-small);
