@@ -1,35 +1,46 @@
 class CartContainer extends HTMLElement {
     constructor() {
         super();
-        console.log("daragdlaa");
-        this.innerHTML = `
-        <section id="test">
-        </section>
-        `;
+        this.innerHTML = `<section id="test"></section>`;
     }
 
     connectedCallback() {
         document.addEventListener("addToCart", (e) => {
-            const { title, price } = e.detail;
-            this.renderOrder(title, price);
+            const { title, price, quantity } = e.detail;
+            if (quantity > 0) {
+                this.renderOrder(title, price, quantity);
+            } else {
+                this.removeOrder(title);
+            }
         });
     }
 
-    renderOrder(title, price) {
-        const cart = this.querySelector("#test"); // Use this.querySelector instead of document.getElementById
-        cart.insertAdjacentHTML(
-            "beforeend",
-            `<one-cart title="${title}" price="${price}"></one-cart>`
-        );
+    renderOrder(title, price, quantity) {
+        const cart = this.querySelector("#test");
+        const existingItem = cart.querySelector(`[data-title="${title}"]`);
+    
+        if (existingItem) {
+            existingItem.querySelector('.quantity').textContent = quantity;
+            existingItem.setAttribute('quantity', quantity);
+        } else {
+            cart.insertAdjacentHTML(
+                "beforeend",
+                `<one-cart data-title="${title}" title="${title}" price="${price}" quantity="${quantity}"></one-cart>`
+            );
+        }
     }
 
-    disconnectedCallback() {
-        // Code to run when the element is removed from the DOM
+    removeOrder(title) {
+        const cart = this.querySelector("#test");
+        const itemToRemove = cart.querySelector(`[data-title="${title}"]`);
+        if (itemToRemove) {
+            itemToRemove.remove();
+        }
     }
 
-    attributeChangedCallback() {
-        // Handle attribute changes if needed
-    }
+    disconnectedCallback() {}
+
+    attributeChangedCallback() {}
 }
 
 window.customElements.define("cart-container", CartContainer);
