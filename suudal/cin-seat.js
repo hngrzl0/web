@@ -13,12 +13,12 @@ class CinSeat extends HTMLElement {
     }
 
     init() {
-        // Retrieve seat information from attributes
+        // attribute ashiglad suudlin baiguulav
         this.row = parseInt(this.getAttribute("data-row")) || 0;
         this.column = parseInt(this.getAttribute("data-column")) || 0;
         this.egnee = parseInt(this.getAttribute("data-egnee")) || 0;
 
-        // Fetch seat data from JSON (Assuming you're using a web server, otherwise, you may need additional setup)
+        
         fetch('seats.json')
             .then(response => response.json())
             .then(seats => {
@@ -41,7 +41,7 @@ class CinSeat extends HTMLElement {
             <img width="50" height="50" class="image3" src="img_ts/yellow.png" alt="Picture 3">
         </label>`;
 
-        // Initially hide images 2 and 3
+        // tsenher shar 2iig shuud nuuj ehelev.
         const image2 = this.querySelector('.image2');
         const image3 = this.querySelector('.image3');
         if (image2 && image3) {
@@ -57,16 +57,17 @@ class CinSeat extends HTMLElement {
         const image3 = this.querySelector('.image3');
 
         if (checkbox && image1 && image2 && image3) {
-            checkbox.checked = this.occupied;
+            checkbox.checked = this.occupied;//occupied songogdsn ilerhiileh 
 
             if (this.occupied) {
-                // Show image 1 and hide images 2 and 3 when selected
+                
+                //ulaan bolgov umnu n songogdsn suudal
                 image1.style.display = 'block';
                 image2.style.display = 'none';
                 image3.style.display = 'none';
                 checkbox.disabled = this.occupied;
             } else {
-                // Hide image 1 and show images 2 and 3 when not selected
+                // songoj boloh suudlig haruulj bn tsenhereer
                 image1.style.display = 'none';
                 image2.style.display = 'block';
                 image3.style.display = 'none';
@@ -81,20 +82,23 @@ class CinSeat extends HTMLElement {
         const image3 = this.querySelector('.image3');
 
         if (checkbox && image1 && image2 && image3) {
-            checkbox.checked = this.occupied1;
+            checkbox.checked = this.occupied1; //user songoj bga eseh
 
             if (this.occupied1) {
                 // Show image 1 and hide images 2 and 3 when selected
+                //tsenher bolgov
                 image1.style.display = 'none';
                 image2.style.display = 'none';
                 image3.style.display = 'block';
             } else {
                 // Hide image 1 and show images 2 and 3 when not selected
+                //shar bolgov
                 image1.style.display = 'none';
                 image2.style.display = 'block';
                 image3.style.display = 'none';
+                
             }
-            // Disable the checkbox after selection
+            
         }
     }
     setupCheckboxEvent() {
@@ -102,7 +106,7 @@ class CinSeat extends HTMLElement {
         if (checkbox) {
             checkbox.addEventListener('change', () => {
                 if (!this.occupied) {
-                    // Only update the state if it's not occupied
+                    // songoh uy
                     this.occupied1 = checkbox.checked;
                     this.updateCheckbox();
                 }
