@@ -6,6 +6,9 @@
     margin: 0;
 }
 body{
+    & .select_chair_number{
+        background-color: var(--color-gray);
+    }
     display: grid;
     grid-template-areas: 
         "header sidebar"

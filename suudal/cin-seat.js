@@ -1,3 +1,4 @@
+const suudalInputs = document.getElementsByClassName('select_chair_number');
 class CinSeat extends HTMLElement {
     constructor() {
         super();
@@ -12,7 +13,7 @@ class CinSeat extends HTMLElement {
     init() {
         this.id = this.getAttribute("data-id");
         this.occupied = this.getAttribute("data-tuluw") === "true"; 
-        console.log(this.id)
+        console.log(this.id);
 
         this.#render();
         this.setupCheckboxEvent();
@@ -26,7 +27,7 @@ class CinSeat extends HTMLElement {
                 <img width="50" height="50" class="image2" src="img_ts/blue.png" alt="Picture 2">
                 <img width="50" height="50" class="image3" src="img_ts/yellow.png" alt="Picture 3">
             </label>`;
-
+        
         const image1 = this.querySelector('.image1');
         const image2 = this.querySelector('.image2');
         const image3 = this.querySelector('.image3');
@@ -53,24 +54,48 @@ class CinSeat extends HTMLElement {
                     const image1 = this.querySelector('.image1');
                     const image2 = this.querySelector('.image2');
                     const image3 = this.querySelector('.image3');
-            
+                    
                     if (image1 && image2 && image3) {
                         if (tuluw) {
                             image1.style.display = 'none';
                             image2.style.display = 'none';
                             image3.style.display = 'block';
-                            console.log("+" + this.id);
+                            if (suudalInputs.length > 0) {
+                                suudalInputs[0].innerText += ' ' + this.id;
+                                this.Duplicates();
+                            }
                         } else {
                             image1.style.display = 'none';
                             image2.style.display = 'block';
                             image3.style.display = 'none';
-                            console.log("-" + this.id);
+                            if (suudalInputs.length > 0) {
+                                suudalInputs[0].innerText += ' ' + this.id;
+                                this.Duplicates();
+                            }
                         }
                     }
                 }
             });
         }
     }
+    Duplicates() {
+        const inputString = suudalInputs[0].innerText;
+        const elements = inputString.split(' ');
+
+        const countMap = {};
+        const oddDuplicates = [];
+    
+        elements.forEach((element) => {
+            countMap[element] = (countMap[element] || 0) + 1;
+        });
+        Object.keys(countMap).forEach((element) => {
+            if (countMap[element] % 2 === 1) {
+                oddDuplicates.push(element);
+            }
+        });
+        suudalInputs[0].innerText = oddDuplicates.join(' ');
+    }
+    
 }
 
 customElements.define('cin-seat', CinSeat);
