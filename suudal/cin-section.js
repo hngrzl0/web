@@ -28,7 +28,7 @@ class CinSection extends HTMLElement {
             html += "</div>";
         }
         html += "</div>";
-        this.innerHTML = html; // Set the innerHTML after the fetch operations complete
+        this.innerHTML = html; 
     }
 }
 customElements.define('cin-section', CinSection);
