@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Төлбөр баталгаажуулах, тасалбар захиалах"> 
     <script type="module" src="suudal/cin-section.js"></script>
+    <script type="module" src="webcomp/ticket-type.js"></script>
     <link rel="stylesheet" href="css/ticketing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -66,7 +67,10 @@
         <div class="line"></div>
         <label for="chair">Таны суудал <span class="select_chair_number"></span></label>
         <div class="line"></div>
-        <ul>
+        <ul id="ticket_type">
+            <ticket-type type="Том хүн" cost="15000"></ticket-type>
+            <ticket-type type="Хүүхэд" cost="10000"></ticket-type>
+            <!--
             <li>
                 <p>Том хүн</p>
                 <button>-</button>
@@ -80,7 +84,7 @@
                 <span>0</span>
                 <button>+</button>
                 <p class="cost">60,000₮</p>
-            </li>
+            </li>-->
         </ul>
 
         <div class="line"></div>
