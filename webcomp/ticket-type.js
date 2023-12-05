@@ -3,12 +3,8 @@ class TicketType extends HTMLElement {
         super();
         this.quantity = 0;
         this.cost = 0;
-
-        // Extract attributes
         this.type = this.getAttribute('type') || 'Том Хүн';
         this.costPerTicket = parseFloat(this.getAttribute('cost')) || 15000;
-
-        // Create the item structure
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
             <style>
@@ -54,7 +50,7 @@ class TicketType extends HTMLElement {
     }
 
     connectedCallback() {
-        // Add event listeners here, in the connectedCallback
+
         const incrementButton = this.shadowRoot.getElementById('incrementBtn');
         const decrementButton = this.shadowRoot.getElementById('decrementBtn');
 
@@ -70,7 +66,7 @@ class TicketType extends HTMLElement {
             }
         });
 
-        this.updateQuantityAndCost(); // Initialize the cost
+        this.updateQuantityAndCost(); 
     }
 
     updateQuantityAndCost() {
@@ -94,7 +90,7 @@ class TicketType extends HTMLElement {
     }
 
     disconnectedCallback() {
-        // Remove event listeners here, in the disconnectedCallback if needed
+       
         const incrementButton = this.shadowRoot.getElementById('incrementBtn');
         const decrementButton = this.shadowRoot.getElementById('decrementBtn');
 
