@@ -50,6 +50,13 @@ class OneProduct extends HTMLElement {
                 quantity: this.quantity,
             },
         });
+
+        // Print out the multiplication of price and quantity for Popcorn
+        if (this.getAttribute("title") === "Попкорн") {
+            const totalPrice = this.quantity * parseFloat(this.getAttribute("price").replace(',', ''));
+            console.log(`Total price for Popcorn: ${totalPrice.toLocaleString()}₮`);
+        }
+
         document.dispatchEvent(event);
     }
 

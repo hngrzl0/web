@@ -12,6 +12,9 @@ class CartContainer extends HTMLElement {
             } else {
                 this.removeOrder(title);
             }
+
+            // Calculate and display total cost
+            this.calculateTotalCost();
         });
     }
 
@@ -36,6 +39,27 @@ class CartContainer extends HTMLElement {
         if (itemToRemove) {
             itemToRemove.remove();
         }
+
+        // Calculate and display total cost
+        this.calculateTotalCost();
+    }
+
+    calculateTotalCost() {
+        const cart = this.querySelector("#test");
+        const items = cart.querySelectorAll('one-cart');
+        
+        let totalCost = 0;
+        items.forEach(item => {
+            const itemPrice = parseFloat(item.getAttribute('price').replace(',', '')); // Remove commas from price
+            const itemQuantity = parseInt(item.getAttribute('quantity'));
+            totalCost += itemPrice * itemQuantity;
+        });
+
+        // Update the total cost display
+        const sumCostElement = document.getElementById('sum_cost');
+        if (sumCostElement) {
+            sumCostElement.textContent = `${totalCost.toLocaleString()}₮`; // Display total cost with commas
+        }
     }
 
     disconnectedCallback() {}
@@ -44,3 +68,5 @@ class CartContainer extends HTMLElement {
 }
 
 window.customElements.define("cart-container", CartContainer);
+
+// ... (rest of the code remains unchanged)
