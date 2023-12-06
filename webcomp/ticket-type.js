@@ -7,38 +7,6 @@ class TicketType extends HTMLElement {
         this.costPerTicket = parseFloat(this.getAttribute('cost')) || 15000;
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
-            <style>
-            li{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: var(--color-gray);
-                color: var(--color-gray);
-                & p{
-                    background-color: var(--color-gray);
-                    color: var(--color-bright-gray);
-                    font-weight: bold;
-                    
-                }
-                & button{
-                    background-color: var(--color-gray);
-                    color: var(--color-bright-gray);
-                    padding: 0.25em 0.5em;
-                    margin: 0.1rem;
-                    border-radius: 100%;
-                    border: 1px solid ;
-                }
-                & span{
-                    background-color: var(--color-gray);
-                    color: var(--color-bright-gray);
-                }
-                & .cost{
-                    color: var(--color-text-engiin);
-                }
-                & button + span{
-                    margin: 0 -6rem 0 -6rem;
-                }
-            </style>
             <li id="ticketfor">
                 <p>${this.type}</p>
                 <button id="decrementBtn">-</button>
@@ -50,19 +18,20 @@ class TicketType extends HTMLElement {
     }
 
     connectedCallback() {
-
         const incrementButton = this.shadowRoot.getElementById('incrementBtn');
         const decrementButton = this.shadowRoot.getElementById('decrementBtn');
 
         incrementButton.addEventListener('click', () => {
             this.quantity += 1;
             this.updateQuantityAndCost();
+            this.dispatchEventToCart();
         });
 
         decrementButton.addEventListener('click', () => {
             if (this.quantity > 0) {
                 this.quantity -= 1;
                 this.updateQuantityAndCost();
+                this.dispatchEventToCart();
             }
         });
 
@@ -72,6 +41,8 @@ class TicketType extends HTMLElement {
     updateQuantityAndCost() {
         this.updateQuantity();
         this.updateCost();
+
+        this.dispatchEventToCart();
     }
 
     updateQuantity() {
@@ -89,8 +60,19 @@ class TicketType extends HTMLElement {
         return this.cost;
     }
 
+    dispatchEventToCart() {
+        const event = new CustomEvent("addToCart", {
+            detail: {
+                title: this.getAttribute("type"),  
+                price: this.getAttribute("cost"),  
+                quantity: this.quantity,
+            },
+        });
+
+        document.dispatchEvent(event);
+    }
+
     disconnectedCallback() {
-       
         const incrementButton = this.shadowRoot.getElementById('incrementBtn');
         const decrementButton = this.shadowRoot.getElementById('decrementBtn');
 
@@ -109,5 +91,3 @@ class TicketType extends HTMLElement {
 }
 
 customElements.define('ticket-type', TicketType);
-
-
