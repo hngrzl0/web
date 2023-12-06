@@ -6,6 +6,7 @@
     <meta name="description" content="Төлбөр баталгаажуулах, тасалбар захиалах"> 
     <script type="module" src="suudal/cin-section.js"></script>
     <script type="module" src="webcomp/ticket-type.js"></script>
+    <script type="module" src="webcomp/total-sum.js"></script>
     <link rel="stylesheet" href="css/ticketing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -70,36 +71,20 @@
         <ul id="ticket_type">
             <ticket-type type="Том хүн" cost="15000"></ticket-type>
             <ticket-type type="Хүүхэд" cost="10000"></ticket-type>
-            <!--
-            <li>
-                <p>Том хүн</p>
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
-                <p class="cost">60,000₮</p>
-            </li>
-            <li>
-                <p>Хүүхэд_</p>
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
-                <p class="cost">60,000₮</p>
-            </li>-->
         </ul>
 
         <div class="line"></div>
-        <!-- <section id="food_drinks_cost">
-            <p class="name_of_food">Попкорн</p>
-            <p>3</p>
-            <p>15,000₮</p>
-        </section> -->
         <cart-container></cart-container>
     
         <div class="line"></div>
+        <!--<total-sum></total-sum>-->
+        
         <section id="sum_of_all">
             <p id="sum">НИЙТ</p>
             <p id="sum_cost">75,000₮</p>
         </section>
+        
+
         <div class="line"></div>
         <section id="payment_section">
             <h3>Төлбөрөө баталгаажуулах</h3>
