@@ -18,7 +18,6 @@ class OneProduct extends HTMLElement {
     }
 
     connectedCallback() {
-        // Add event listeners here, in the connectedCallback
         const incrementButton = this.querySelector('#increment');
         const decrementButton = this.querySelector('#decrement');
 
@@ -51,7 +50,6 @@ class OneProduct extends HTMLElement {
             },
         });
 
-        // Print out the multiplication of price and quantity for Popcorn
         if (this.getAttribute("title") === "Попкорн") {
             const totalPrice = this.quantity * parseFloat(this.getAttribute("price").replace(',', ''));
             console.log(`Total price for Popcorn: ${totalPrice.toLocaleString()}₮`);
@@ -61,7 +59,6 @@ class OneProduct extends HTMLElement {
     }
 
     disconnectedCallback() {
-        // Remove event listeners here, in the disconnectedCallback if needed
         const incrementButton = this.querySelector('#increment');
         const decrementButton = this.querySelector('#decrement');
 
