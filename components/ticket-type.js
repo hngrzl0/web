@@ -5,7 +5,7 @@ class TicketType extends HTMLElement {
         this.cost = 0;
         this.type = this.getAttribute('type') || 'Том Хүн';
         this.costPerTicket = parseFloat(this.getAttribute('cost')) || 15000;
-        this.attachShadow({ mode: 'closed' });
+        this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
         <style>
             li{
