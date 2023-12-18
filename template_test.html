@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Star Rating Custom Element</title>
+    </head>
+    <body>
+
+        <template id="input_header">
+            <form>
+                    <section>
+                        <slot name="title"><h1>Гарчиг</h1></slot>
+                        <slot name="more"><p>Тайлбар</p></slot>
+                    </section>
+            </form>
+        </template>
+
+        <i_h>
+            <h1 slot="title">Нэвтрэх нэр</h1>
+            <p slot="more">Бүх талбарыг бөглөнө үү!</p>
+        </i_h>
+        <i_h>
+            <h1 slot="title">Хувийн мэдээлэл</h1>
+            <p slot="more">Бүх талбарыг бөглөнө үү!</p>
+        </i_h>
+        <i_h>
+            <h1 slot="title">Нууц үг</h1>
+            <p slot="more">Бүртгэлээ үүсгэх сүүлийн алхам. Хамгийн багадаа 8 тэмдэгт. Хамгийн багадаа: 1 том үсэг, 1 тоо агуулсан байх ёстой.</p>
+        </i_h>
+
+        <script>
+        customElements.define('i_h', class extends HTMLElement {
+            constructor() {
+            super();
+            const starRating = document.getElementById('input_header').content;
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.appendChild(starRating.cloneNode(true));
+            }
+        });
+        </script>
+    </body>
+</html>
