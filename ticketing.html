@@ -20,6 +20,14 @@
             }
     </style>
 </head>
+<template id="seat">
+    <form>
+      <label>
+          <slot name="suudal"><img class="image1" src="img_ts/red.png" alt="Picture 1"></slot>
+          <slot name="newSlot"></slot>
+      </label>`
+    </form>
+</template>
 <body>
     <nav id="header">
         <img src="Images/logo.jpg" alt="logo icon">
@@ -151,4 +159,14 @@
         }, 3 * 60 * 1000);
     </script>
 </body>
+<script>
+    customElements.define('suudal', class extends HTMLElement {
+      constructor() {
+        super();
+        const starRating = document.getElementById('seat').content;
+        const shadowRoot = this.attachShadow({ mode: 'closed' });
+        shadowRoot.appendChild(starRating.cloneNode(true));
+      }
+    });
+</script>
 </html>

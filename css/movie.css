@@ -9,7 +9,7 @@
         color: var(--white-color);
     }
 }
-main {
+main {margin-top: 11rem;
     & div {
         display: flex;
         flex-direction: row;

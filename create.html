@@ -33,10 +33,20 @@
                 </ul>
             </nav>
         </header>
+        <template id="input_header">
+            <form>
+                    <section>
+                        <slot name="title"><h1>Гарчиг</h1></slot>
+                        <slot name="more"><p>Тайлбар</p></slot>
+                    </section>
+            </form>
+        </template>
         <main>
             <section>
-                <h1>Нэвтрэх нэр</h1>
-                <p>Бүх талбарыг бөглөнө үү!</p>
+                <i_h>
+                    <h1 slot="title">Нэвтрэх нэр</h1>
+                    <p slot="more">Бүх талбарыг бөглөнө үү!</p>
+                </i_h>
                 <ul>
                     <li>
                         <label for="email_req">Email:</label>
@@ -49,8 +59,10 @@
                 </ul>
             </section>
             <section>
-                <h1>Хувийн мэдээлэл</h1>
-                <p>Бүх талбарыг бөглөнө үү!</p>
+                <i_h>
+                    <h1 slot="title">Хувийн мэдээлэл</h1>
+                    <p slot="more">Бүх талбарыг бөглөнө үү!</p>
+                </i_h>
                 <ul>
                     <li><img height="25px" src="img_ts/icon_pro.png" alt="icon">
                         <label for="lastname">Овог:</label>
@@ -76,8 +88,10 @@
                 </ul>
             </section>
             <section>
-                <h1>Нууц үг</h1>
-                <p>Бүртгэлээ үүсгэх сүүлийн алхам. Хамгийн багадаа 8 тэмдэгт. Хамгийн багадаа: 1 том үсэг, 1 тоо агуулсан байх ёстой.</p>
+                <i_h>
+                    <h1 slot="title">Нууц үг</h1>
+                    <p slot="more">Бүртгэлээ үүсгэх сүүлийн алхам. Хамгийн багадаа 8 тэмдэгт. Хамгийн багадаа: 1 том үсэг, 1 тоо агуулсан байх ёстой.</p>
+                </i_h>
                 <ul>
                     <li>
                         <label for="pass">Нууц үг үүсгэх:</label>
@@ -97,6 +111,16 @@
             </section>
             
         </main>
+        <script>
+            customElements.define('i_h', class extends HTMLElement {
+                constructor() {
+                super();
+                const starRating = document.getElementById('input_header').content;
+                const shadowRoot = this.attachShadow({ mode: 'open' });
+                shadowRoot.appendChild(starRating.cloneNode(true));
+                }
+            });
+        </script>
         <footer>
             <div id="address_info">
                  <address>

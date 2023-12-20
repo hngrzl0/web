@@ -23,9 +23,15 @@ class CinSeat extends HTMLElement {
         this.innerHTML = `
             <label>
                 <input type='checkbox' ${this.occupied ? 'checked' : ''} ${this.occupied ? 'disabled' : ''}>
-                <img width="50" height="50" class="image1" src="img_ts/red.png" alt="Picture 1">
-                <img width="50" height="50" class="image2" src="img_ts/blue.png" alt="Picture 2">
-                <img width="50" height="50" class="image3" src="img_ts/yellow.png" alt="Picture 3">
+                <suudal>
+                    <img width="50" height="50" class="image1" slot="suudal" src="img_ts/red.png">
+                </suudal>
+                <suudal>
+                    <img width="50" height="50" class="image2"  slot="suudal" src="img_ts/blue.png">
+                </suudal>
+                <suudal>
+                    <img width="50" height="50" class="image3"  slot="suudal" src="img_ts/yellow.png">
+                </suudal>
             </label>`;
         
         const image1 = this.querySelector('.image1');
