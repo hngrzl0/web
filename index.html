@@ -34,6 +34,26 @@
         </nav>
     </header>
     <main>
+        <button id="theme-switcher">Switch Theme</button>
+        <script>
+            const themeSwitcher = document.getElementById('theme-switcher');
+            let darkMode = false;
+        
+            themeSwitcher.addEventListener('click', () => {
+                darkMode = !darkMode;
+                if (darkMode) {
+                    document.documentElement.style.setProperty('--color-bg', 'var(--color-bg-dark)');
+                    document.documentElement.style.setProperty('--color-text', 'var(--color-text-dark)');
+                    themeSwitcher.textContent = 'Light Mode';
+                } else {
+                    document.documentElement.style.setProperty('--color-bg', '#ffffff');
+                    document.documentElement.style.setProperty('--color-text', '#000000');
+                    themeSwitcher.textContent = 'Dark Mode';
+                }
+            });
+            
+        </script>
+        
         <div class="container_poster">
             <ul id="bigposter-container">
                 <li><img src="Images/bigposter1.png" id="bigposter1" alt="Elemental poster"></li>

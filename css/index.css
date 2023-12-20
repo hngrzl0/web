@@ -229,5 +229,39 @@ section::-webkit-scrollbar {
 }
 
 
+:root {
+    --color-bg: #ffffff; /* Light mode background */
+    --color-text: #000000; /* Light mode text */
+    --color-bg-dark: #000000; /* Dark mode background */
+    --color-text-dark: #ffffff; /* Dark mode text */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: var(--color-bg-dark);
+        --color-text: var(--color-text-dark);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .special-element {
+        background-color: /* some dark mode specific color */;
+        /* other dark mode specific styles */
+    }
+}
+
+#theme-switcher {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
 
   
