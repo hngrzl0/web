@@ -1,7 +1,6 @@
-
 import path from 'path';
 import express from 'express';
-import cookieParser from 'cookie-parser';
+//import cookieParser from 'cookie-parser';
 import { login } from './login.mjs'
 import Login from './login.mjs';
 
@@ -12,8 +11,11 @@ const __dirname = path.resolve(path.dirname(''));
 const options = {
     root: path.join(__dirname)
 };
-app.use(cookieParser());
+//app.use(cookieParser());
 app.use(express.json());
+
+login.users.set('zul', { fullname: "Zul", password: "123" });
+login.users.set('admin', { fullname: "Admin", password: "123" });
 
 
 app.get('/', (req, res) => {
@@ -33,6 +35,7 @@ app.get('/emails', (req, res) => {
         res.sendFile('./forbidden.html', options);
         return;
     }
+
     res.send(`<html><h1>Inbox for ${login.sessions.get(Number(req.cookies.session_id)).fullname} </h1><ul><li>Email1</li><li>Email2</li></ul></html>`);
 })
 

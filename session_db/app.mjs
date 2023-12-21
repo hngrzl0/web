@@ -19,10 +19,10 @@ app.get('/', (req, res) => {
 
 app.post('/login', (req, res)=> user.verifyLogin(req, res));
 
-app.get('/logout', (req, res) => { 
+/*app.get('/logout', (req, res) => { 
     user.sessions.delete(Number(req.cookies.session_id));
     res.status(200).send();
-});
+});*/
 
 app.get('/emails', (req, res) => {
     console.log(user.sessions);

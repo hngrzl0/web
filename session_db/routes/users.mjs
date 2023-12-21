@@ -30,7 +30,6 @@ class User {
 
     async verifyLogin(req, res) {
         const email = req.body.email, pass = req.body.password;
-        console.log(email, pass);
         const dbUser = await db_user.login(email, pass);
 
         if (dbUser ==null) {
