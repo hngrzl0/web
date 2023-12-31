@@ -31,7 +31,7 @@ class DbUser {
   async selectUsers() {
     const users = await sql`
     SELECT 
-        id, loginname, password, fullname
+        id, loginname, fullname
 	  FROM 
         public.web_user;
   `

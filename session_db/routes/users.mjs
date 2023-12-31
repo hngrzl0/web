@@ -36,7 +36,7 @@ class User {
             res.status(200).send(result);
             return;
         } catch (error) {
-            res.status(400).send("error occured");
+            res.status(500).send("Error occured in getUser");
         }
 
     }
@@ -50,7 +50,6 @@ class User {
             res.end();
             return;
         }
-        
         const sid = Math.floor(Math.random() * 100_000_000_000_000);
         this.sessions.set(sid,
             {
