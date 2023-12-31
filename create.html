@@ -25,10 +25,10 @@
                 })
                 .then(result => {
                     if (result.status !== 200) {
-                        alert("Status 200s uur");
+                        alert("Бүртгэл амжилтгүй!");
                         return;
                     }
-                result.json().then(registerResponse => alert(registerResponse.username));
+                result.json().then(registerResponse => alert(registerResponse.username+" хэрэглэгчийг амжилттай бүртгэв."));
                 });
                 
 
