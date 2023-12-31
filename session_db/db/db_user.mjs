@@ -52,6 +52,21 @@ class DbUser {
   `
     return user;
   }
+  
+
+    async  getUserByEmail(email) {
+      
+      const result = await sql`
+          SELECT * FROM public.web_user
+          WHERE loginname = ${email};
+      `;
+      if (result && result.length > 0) {
+          return result[0]; 
+      } else {
+          return null; 
+      }
+      
+  }
 }
 
 const dbUser = new DbUser();
