@@ -32,7 +32,7 @@
                     .then(result => {
                         if (result.status != 200)
                             {   
-                                alert("Нэвтрэх нэр, нууц үг буруу байна.");
+                                alert("Нэвтрэх нэр, нууц үг буруу байна!");
                                 return;}
 
                         result.json().then(loginResponse => document.getElementById("username").innerHTML = loginResponse.username);
