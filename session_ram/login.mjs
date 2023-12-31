@@ -6,7 +6,6 @@ export default class Login {
 
     verifyLogin(req, res) {
         const email = req.body.email, pass = req.body.password;
-        console.log(email, pass);
 
         if (!this.users.has(email) || this.users.get(email).password != pass) {
             res.status(403).end();

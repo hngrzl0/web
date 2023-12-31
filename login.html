@@ -38,19 +38,6 @@
                         result.json().then(loginResponse => document.getElementById("username").innerHTML = loginResponse.username+'<button onclick="logout();">LOGOUT</button>');
                     });
             }
-            function logout(){
-                fetch("http://localhost:3000/logout",
-                {
-                    method: 'POST',
-                    cache: "no-cache",   
-                })
-                .then(result => {
-                    if(result.status != 200){
-                        alert("Гаралт амжилтгүй боллоо.")
-                    }
-                    result.sendFile("./login.html", options);
-                })
-            }
         </script>
         <body>
             <header>
@@ -88,7 +75,7 @@
                         <h2>Welcome, <span id="username">Guest</span></h2>
                         <a href="./emails" >Check email</a>
                         
-                        <li><a href="create.html">Бүртгүүлэх</a></li>
+                        <li><a href="./register">Бүртгүүлэх</a></li>
                     </ul>
                     <p>Нууц үгээ мартсан уу?</p>
                 </article>
@@ -132,3 +119,4 @@
              </footer>
         </body>
     </html>
+    <!--"start": "node ./session_ram/app.mjs",-->

@@ -6,15 +6,28 @@ class User {
         this.sessions = new Map();
     }
 
-    async addUser(req, res, { email, password, fullname }) { 
+    async verifyRegister(req, res, { email, password, fullname }) { 
         const result = await dbUser.addUser(email, password, fullname);
+        
         if (result.id == -1) { 
             res.status(400).end();
             return;
         }
-
+        const sid = Math.floor(Math.random() * 100_000_000_000_000);
+        this.sessions.set(sid,
+            {
+                user: email,
+                fullname: dbUser[0].fullname,
+                logged: Date.now()
+            });
+        console.log(this.sessions);
+        res.status(200);
+        res.cookie("session_id", sid);
+        res.send({
+            result: "OK",
+            username: dbUser[0].fullname
+        });
         res.send(result);
-
     }
 
     async getUsers(req, res) { 
@@ -47,7 +60,7 @@ class User {
             });
         console.log(this.sessions);
 
-        res.statusCode = 200;
+        res.status(200);
         res.cookie("session_id", sid);
         res.send({
             result: "OK",

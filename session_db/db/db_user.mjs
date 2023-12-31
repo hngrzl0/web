@@ -8,19 +8,25 @@ class DbUser {
 
   async addUser(loginName, password, fullname) {
     try {
+        console.log('Adding user:', loginName, password, fullname);
 
-      const userId = await sql`
-    INSERT INTO public.web_user
-    (loginname, password, fullname)
-    VALUES
-    (${loginName},${password},${fullname})
-    returning id;
-    `
-      return userId;
+        const userId = await sql`
+            INSERT INTO public.web_user
+            (loginname, password, fullname)
+            VALUES
+            (${loginName}, ${password}, ${fullname})
+            RETURNING id;
+        `;
+
+        console.log('User ID:', userId);
+
+        return userId;
     } catch (error) {
-      return { id: -1 }
+        console.error('Error in addUser:', error);
+        return { id: -1 };
     }
-  }
+}
+
 
   async selectUsers() {
     const users = await sql`
@@ -49,5 +55,4 @@ class DbUser {
 }
 
 const dbUser = new DbUser();
-
 export default dbUser;

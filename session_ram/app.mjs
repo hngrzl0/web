@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express';
 //import cookieParser from 'cookie-parser';
 import { login } from './login.mjs'
-import Login from './login.mjs';
+import { register } from './register.mjs';
 
 
 const app = express()
@@ -24,10 +24,11 @@ app.get('/', (req, res) => {
 
 app.post('/login', login.verifyLogin.bind(login));
 
-app.get('/logout', (req, res) => { 
-    user.sessions.delete(Number(req.cookies.session_id));
-    res.status(200).send();
+app.get('/register', (req, res) => {
+    res.sendFile("create.html", options);
 });
+
+app.post('/registeruser', register.verifyRegister.bind(register));
 
 app.get('/emails', (req, res) => {
     if (!login.sessions.has(Number(req.cookies.session_id)))
