@@ -14,12 +14,25 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.sendFile("./login.html", options);
 })
-
 app.post('/login', login.verifyLogin.bind(login));
-
 app.get('/register', (req, res) => {
     res.sendFile("create.html", options);
 });
 app.post('/registeruser', register.verifyRegister.bind(register));
 app.get('/users', getusers.get.bind(getusers));
+app.get('/index.html', (req, res) => {
+    res.sendFile("index.html", options);
+});
+app.get('/js_now.html', (req, res) => {
+    res.sendFile("js_now.html", options);
+});
+app.get('/movie.html', (req, res) => {
+    res.sendFile("movie.html", options);
+});
+app.get('/ticketing.html', (req, res) => {
+    res.sendFile("ticketing.html", options);
+});
+app.get('/login.html', (req, res) => {
+    res.sendFile("login.html", options);
+})
 app.listen(port, () => console.log(`Example app listening on port http://localhost:${port}`))
