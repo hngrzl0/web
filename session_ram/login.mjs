@@ -2,7 +2,6 @@ import dbUser from "../session_db/db/db_user.mjs";
 export default class Login {
     constructor() {
         this.sessions = new Map();
-        //this.users = new Map();
     }
 
     async verifyLogin(req, res) {
