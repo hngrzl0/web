@@ -16,13 +16,13 @@ main{
     margin-bottom: 5rem;
     & section{
         & h1{
-            font-size: var(--font-size-1);
+            font-size: var(--font-size-2);
             margin-bottom: var(--size-none);
             margin-top: 8rem;
         }
         & p{
             margin-top: var(--size-none);
-            font-size: var(--font-size-2);
+            font-size: var(--font-size-4);
             color: var(--color-gray);
         }
         & img{
@@ -41,10 +41,9 @@ main{
                 & input{
                     width: 99%;
                     float: right;
-                    font-size: var(--font-size-small);
                     background-color: var(--black-color);
                     border: none;
-                    font-size: var(--font-size-3);
+                    font-size: var(--font-size-4);
                     font-weight: bold;
                     font-style: italic;
                 }
@@ -69,9 +68,9 @@ main{
             color: var(--color-white);
             border: var(--border-size) solid var(--color-white);
             margin-top: 2rem;
-            width: 20rem;
+            width: 15rem;
             color:var(--color-red);
-            font-size: var(--font-size-3);
+            font-size: var(--font-size-4);
             font-weight: bold;
             height: 3rem;
         }
@@ -125,11 +124,11 @@ main{
         margin-bottom: 2rem;
         & section{
             & h1{
-                font-size: var(--font-size-3);
+                font-size: var(--font-size-4);
                 margin-top: 3rem;
             }
             & img{
-                height: var(--font-size-4);
+                height: var(--font-size-5);
             }
             & p{
                 font-size: 1rem;
@@ -140,7 +139,7 @@ main{
                     margin-bottom: 1rem;
                     height: 1.5rem;
                     & input{
-                        font-size: 1rem;
+                        font-size: var(--font-size-5);
                     }
                     & #lastname {
                         width: 10%;
@@ -157,7 +156,7 @@ main{
             & button{
                 margin-top: 2rem;
                 width: 100%;
-                font-size: var(--font-size-4);
+                font-size: var(--font-size-5);
                 height: 2.5rem;
             }
             & #accept_button{
