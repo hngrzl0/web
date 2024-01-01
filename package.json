@@ -1,12 +1,15 @@
 {
+  "type": "module", 
+
   "dependencies": {
-    "postgres": "^3.4.3"
+    "postgres": "^3.4.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   },
   "scripts": {
     "start": "node ./session_ram/app.mjs",
     "serve": "webpack serve"
   },
-  
   "devDependencies": {
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
