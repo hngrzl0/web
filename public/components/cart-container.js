@@ -76,6 +76,9 @@ class CartContainer extends HTMLElement {
 
         localStorage.setItem(this.cartDataKey, JSON.stringify(cartData));
     }
+    clearLocalStorage() {
+        localStorage.clear();
+    }
 
     loadCartData() {
         const savedData = localStorage.getItem(this.cartDataKey);
