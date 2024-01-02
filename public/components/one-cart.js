@@ -1,6 +1,7 @@
 class OneCart extends HTMLElement {
     constructor() {
-        super();
+        super();//superclass iin constructor function duudah
+        //inner HTMl -d n beltgesn html utgaa uguh
         this.innerHTML = `
             <section id="food_drinks_cost">
                 <p class="name_of_food">${this.getAttribute("title")}</p>
@@ -9,16 +10,13 @@ class OneCart extends HTMLElement {
             </section>
         `;
     }
-
-    connectedCallback() {}
-
-    disconnectedCallback() {}
-
+    //oorchloltod ashiglah attribute uudig zaaj uguh method
     static get observedAttributes() {
         return ['title', 'price', 'quantity'];
     }
-
+    //attribute uurchlugduhud duudagdah method
     attributeChangedCallback(name, oldValue, newValue) {
+        //ali attribute uurhclgdsnig shalgah shinechleh
         if (name === 'title') {
             this.querySelector('.name_of_food').textContent = newValue;
         } else if (name === 'price') {
@@ -28,5 +26,5 @@ class OneCart extends HTMLElement {
         }
     }
 }
-
+//component ee register hiih 
 window.customElements.define("one-cart", OneCart);
