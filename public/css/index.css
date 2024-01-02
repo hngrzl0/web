@@ -40,6 +40,7 @@ main{
         }
         & .button{
             place-self: center;
+            text-decoration: none;
             & button{
                 background-color: var(--color-bg);
                 color: var(--color-text-engiin);
@@ -51,6 +52,9 @@ main{
                 & img {
                     width: auto; 
                     height: 1.5rem;   
+                }
+                & a{
+                    text-decoration: none;
                 }
             }
             & #buy_button{
@@ -64,6 +68,9 @@ main{
                 & img {
                     width: auto; 
                     height: 1.5rem;   
+                }
+                & a{
+                    color: var(--color-red);
                 }
             }
         }
