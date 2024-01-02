@@ -12,17 +12,21 @@
     </head>
     <script>
             async function register() {
+                //inputees id ashglan ner email pass aa todrhoilno
                 const email = document.getElementById("email_req").value;
                 const fullname = document.getElementById("firstname").value;
                 const password = document.getElementById("pass").value;
+                //doorh url ruu post huselt hiine
                 fetch("http://localhost:3000/registeruser", {
                     method: 'POST',
                     cache: "no-cache",
                     headers: {
                         "Content-Type": 'application/json; charset=UTF-8'
                     },
+                    //email pass ner 3 aa json bolgood requestd yvulna
                     body: JSON.stringify({ email, fullname, password })
                 })
+                //server iin response
                 .then(result => {
                     if (result.status !== 200) {
                         alert("Бүртгэл амжилтгүй!");
