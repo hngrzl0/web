@@ -11,9 +11,9 @@ class CinSeat extends HTMLElement {
     connectedCallback() {
         this.init();
     }
-    //suudal initialize hiih method
+    //suudal ehluuleh buyu initialize hiih method
     init() {
-        //suudlin ogogdliig attribute eer avah
+        //suudlin ogogdliig attribute eer avah cin-section.js irne
         this.id = this.getAttribute("data-id");
         this.occupied = this.getAttribute("data-tuluw") === "true"; 
         //suudlaa renderleh
