@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/ticketing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <script type="module" src="./components/one-product.js"></script>
+    <script type="module" src="./components/one-cart.js"></script>
+    <script type="module" src="./components/cart-container.js"></script>
     <title>Ticketing</title>
 </head>
 <template id="seat">
@@ -112,64 +115,71 @@
             <button>Баталгаажуулах</button>
         </section>
     </aside>
-    <script type="module" src="./components/one-product.js"></script>
-    <script type="module" src="./components/one-cart.js"></script>
-    <script type="module" src="./components/cart-container.js"></script>
     <script>
+        //3min hugatsaa yvah script
         function startTimer(duration, display) {
             let timer = duration, minutes, seconds;
+            //second tutamd delgetsed shinechlegdeh interval
             const intervalId = setInterval(function () {
                 minutes = parseInt(timer / 60, 10);
                 seconds = parseInt(timer % 60, 10);
-    
+                //timer utgaas minute secondiig todrhoilno
                 minutes = minutes < 10 ? "0" + minutes : minutes;
                 seconds = seconds < 10 ? "0" + seconds : seconds;
-    
+                //delgetsed haruulna
                 display.textContent = minutes + ":" + seconds;
-    
+                //timer 0 bolhod interval aa tseverlene .
                 if (--timer < 0) {
                     clearInterval(intervalId); 
                     display.textContent = "Time's up!";
                 }
             }, 1000);
         }
-    
+        //page load hiihed timer ehlene
         window.onload = function () {
-            const threeMinutes = 60 * 3,
-                display = document.querySelector('#timer');
-            startTimer(threeMinutes, display);
+            const threeMinutes = 60 * 3,   //urgeljleh hugatsaag 3min tohiruulna
+                display = document.querySelector('#timer'); //tuhain tsag haragdah elementee avna
+            startTimer(threeMinutes, display);  //tsagaa ehluulne
         };
     </script>
     <script>
+        //3min daraa time out boloh uyd handle hiih script
         setTimeout(() => {
+            //cart-container element avah
             const cartContainer = document.querySelector("cart-container");
             if (cartContainer) {
+                //cart-containert element bvl local storage iig tseverleh
                 cartContainer.clearLocalStorage();
             }
+            //nuur huudsand shiljeh
             window.location.href = 'index.html';
         }, 3 * 60 * 1000);
     </script>
-</body>
-<script>
-    customElements.define('suudal', class extends HTMLElement {
-      constructor() {
-        super();
-        const starRating = document.getElementById('seat').content;
-        const shadowRoot = this.attachShadow({ mode: 'closed' });
-        shadowRoot.appendChild(starRating.cloneNode(true));
-      }
-    });
-</script>
-<script>
-    const body = document.body;
-    function toggleDarkMode() {
-        body.classList.toggle('dark-mode');
-    }
-    const darkModeButton = document.getElementById('darkModeButton'); 
-    if (darkModeButton) {
-        darkModeButton.addEventListener('click', () => {
-            toggleDarkMode();
+    <script>
+        customElements.define('suudal', class extends HTMLElement {
+          constructor() {
+            super();
+            //id n seat baih elementuudig avad shadow domd hiih
+            const starRating = document.getElementById('seat').content;
+            const shadowRoot = this.attachShadow({ mode: 'closed' });
+            shadowRoot.appendChild(starRating.cloneNode(true));
+          }
         });
-    }
-</script>
+    </script>
+    <script>
+        const body = document.body;
+        //dark mode iig bodynd nemj hasah function
+        function toggleDarkMode() {
+            body.classList.toggle('dark-mode');
+        }
+        // dark mode click hiigdh button avah.
+        const darkModeButton = document.getElementById('darkModeButton'); 
+        if (darkModeButton) {
+            //button dre click event duudagdh uyd dark mode asah
+            darkModeButton.addEventListener('click', () => {
+                toggleDarkMode();
+            });
+        }
+    </script>
+</body>
 </html>
