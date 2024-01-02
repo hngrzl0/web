@@ -33,4 +33,12 @@
 
     --percent-hundred: 100%;
 }
-
+body.dark-mode {
+    --color-gray: #222;
+    --color-bright-gray: #999;
+    --color-text-engiin: #006cc2;
+    --color-border-line: #555;
+    --color-red: #9f0000;
+    --color-white: #999;
+    --color-black: #424242;
+}
