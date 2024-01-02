@@ -39,6 +39,8 @@ main{
             }
         }
         & .button{
+            margin-top: 30%;
+            position: absolute;
             place-self: center;
             text-decoration: none;
             & button{
@@ -128,25 +130,23 @@ main{
 section::-webkit-scrollbar {
     display: none; 
 }
-@media(max-width: 48rem){
+@media (max-width: 71.875rem) {
+    main {
+        .container_poster {
+            .button {
+                margin-top: 20%;
+            }
+        }
+    }
+}
+@media(max-width: 56.25rem) {
     main{
-        & .container_poster{
-            padding: 1rem;
+        .container_poster{
             & #bigposter-container{
-                width: 80%;
-                position: relative;
-                & #bigposter1,
-                & #bigposter2,
-                & #bigposter3{
-                    position: absolute;
-                    height: auto;
-                    width: var(--percent-hundred);
-                }
+                height: 20rem;
             }
             & .button{
-                margin-left: 10%;
-                position: absolute;
-                place-self:unset;
+                margin-top: 30%;
                 & button{
                     background-color: var(--color-bg);
                     color: var(--color-text-engiin);
@@ -175,6 +175,28 @@ section::-webkit-scrollbar {
                 }
             }
         }
+    }
+}
+
+@media(max-width: 48rem){
+    main{
+        & .container_poster{
+            padding: 1rem;
+            & #bigposter-container{
+                width: 80%;
+                position: relative;
+                & #bigposter1,
+                & #bigposter2,
+                & #bigposter3{
+                    position: absolute;
+                    height: auto;
+                    width: var(--percent-hundred);
+                }
+            }
+            & .button{
+                margin-top: 40%;
+            }
+        }
         & section{
             padding: rem;
             width: auto;
@@ -195,23 +217,25 @@ section::-webkit-scrollbar {
         }
     }
 }
-
-@media(max-width: 25rem){
+@media(max-width: 37.5rem){
+    @media (max-width: 71.875rem) {
+        main {
+            .container_poster {
+                & #bigposter-container{
+                    height: 15rem;
+                }
+                .button {
+                    margin-top: 35%;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 31.25rem){
     main{
         & .container_poster{
             & .button{
-                place-self: center;
-                position: absolute;
-                top: 63%;
-                & button{
-                    padding: 0.2rem 0.5rem;
-                    font-size: 0.5rem;
-                    & img{
-                        height: 0.6rem;
-                        width: auto;
-                    }
-                    
-                }
+                margin-top: 30%;
             }
         }
         & section{
@@ -230,6 +254,15 @@ section::-webkit-scrollbar {
                         width: auto;
                     }
                 }
+            }
+        }
+    }
+}
+@media(max-width: 25rem){
+    main{
+        & .container_poster{
+            & .button{
+                margin-top: 30%;
             }
         }
     }
