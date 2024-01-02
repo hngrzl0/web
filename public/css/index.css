@@ -159,48 +159,8 @@ section::-webkit-scrollbar {
                 }
             }
         }
-    }
+    } 
 }
-
-@media(max-width: 25rem){
-    main{
-        & .container_poster{
-            & .button{
-                place-self: center;
-                position: absolute;
-                top: 63%;
-                & button{
-                    padding: 0.2rem 0.5rem;
-                    font-size: 0.5rem;
-                    & img{
-                        height: 0.6rem;
-                        width: auto;
-                    }
-                    
-                }
-            }
-        }
-        & section{
-            padding: 0;
-            width: auto;
-            & h2{
-                padding: 1rem 0rem 2rem 0.5rem;
-                font-size: var(--font-size-small);
-            }
-            & ul{
-                & a{
-                    padding: 1rem;
-                    font-size: var(--font-size-reting);
-                    & img{
-                        height: 10rem;
-                        width: auto;
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 
   
