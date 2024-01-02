@@ -51,24 +51,11 @@ main{
                 border-color: var(--color-border-line);
                 padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                 text-align: center;
-                font-size: var(--font-size-big);
+                font-size: var(--font-size-small);
                 font-family: var(--font-text-engiin);
                 & img {
                     width: auto; 
-                    height: 1.5rem;   
-                }
-            }
-            & #buy_button{
-                background-color: var(--color-bg);
-                color: var(--color-red);
-                border-color: var(--color-border-line);
-                padding: 0.7rem 1.7rem 0.7rem 1.7rem;
-                text-align: center;
-                font-size: var(--font-size-big);
-                font-weight: bold;
-                & img {
-                    width: auto; 
-                    height: 1.5rem;   
+                    height: 1rem;   
                 }
             }
         }
@@ -81,8 +68,7 @@ main{
         & h2{
             padding-left: 6rem;
             color: var(--color-garchig-main);
-            font-family: var(--font-garchig);
-            
+            font-family: var(--font-abhaya);
         }
         & ul{
             display: flex;
@@ -214,3 +200,7 @@ section::-webkit-scrollbar {
         }
     }
 }
+
+
+
+  
