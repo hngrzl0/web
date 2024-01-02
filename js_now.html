@@ -40,8 +40,7 @@
             <a href="?category=Adventure" id="adventure-link" data-category="Adventure">Adventure</a>
             <a href="?category=Action" id="action-link" data-category="Action">Action</a>
         </nav>
-        <main id="app">
-        </main>
+        <main id="app"></main>
         <footer>
             <div id="address_info">
                  <address>
@@ -82,6 +81,7 @@
          <script>
             class Product {
                 constructor(product) {
+                    //prodcuct buyu kinogoo todrhoiloh
                     this.id = product.id;
                     this.category = product.category;
                     this.name = product.name;
@@ -89,6 +89,7 @@
                     this.imdb = product.imdb;
                     this.rtr = product.rtr;
                 }
+                //kinonuudaa renderleh
                 Render() {
                     return `
                     <article>
@@ -107,9 +108,8 @@
                 }
             }
             class movie{
-                constructor(){
-
-                }
+                constructor(){}
+                //app elementiig listeer duurgeh
                 List(){
                     const mov = [
                                     {
@@ -192,6 +192,7 @@
                         margin-bottom: 1rem;
                         ">МАНАЙ ДЭЛГЭЦНЭЭ</h2>
                         <section>`;
+                    //kino tus bureer loopled porduct uusgej renderleh
                     for( const product of p){
                         const prod=new Product(product);
                         data += prod.Render();
@@ -200,6 +201,7 @@
                     document.getElementById("app").insertAdjacentHTML("beforeend", data);
                 }
             }
+            //js2
             class MovieItem {
             constructor(movie) {
                 this.id = movie.id;
@@ -228,9 +230,9 @@
         }
         class MovieList {
             constructor() {
-                this.movies = [];
+                this.movies=[];
             }
-
+            //kinonuuda fetch hiine
             async FetchData() {
                 this.movies = [
                                     {
@@ -307,15 +309,19 @@
                                     },
                 ]; 
             }
-
+            //categoryoor n kinogoo filterleh method
             FilterByCategory(category) {
+                //herev category ugugdsn bol ter kinonuudig ugui bol buh kinog bucaana
                 return category ? this.movies.filter(movie => movie.category === category) : this.movies;
             }
-
+            //todrhoi kinog l renderlene
             RenderMovies(targetElement, movies) {
+                //tuhain target elementee barij avna
                 const movieSection = document.querySelector(targetElement);
+                //baigaa buh content oo arilgana
                 movieSection.innerHTML = '';
                 movies.forEach(movie => {
+                    //kino bureer aylaad article element uusged kinogo renderled target element ee ugnu
                     const article = document.createElement('article');
                     article.innerHTML = new MovieItem(movie).Render();
                     movieSection.appendChild(article);
@@ -324,30 +330,33 @@
         }
 
         document.addEventListener('DOMContentLoaded', async () => {
+            //app elemnted kinogoo duurgene
             const app = new movie();
             app.List(); 
-
+            //movielist class uusged fetchlene
             const movieList = new MovieList();
             await movieList.FetchData();
-
+            //categorylink uudee avna
             const categoryLinks = document.querySelectorAll('#category-links a');
             categoryLinks.forEach(link => {
+                //category bur deer click event sonsono
                 link.addEventListener('click', function (event) {
                     event.preventDefault();
+                    //songogdsn categoryg avad tuhain category dh kinonuudig shuuged renderlene
                     const selectedCategory = this.getAttribute('data-category');
                     filterAndRenderMovies(selectedCategory);
                 });
             });
-
-            
+            //url aas category oo avj kinonuudaa shuugeed renderlene
             const categoryFromUrl = getCategoryFromUrl();
             filterAndRenderMovies(categoryFromUrl);
-
+            //damjuulagdsn category-oor kinog shuuged render hiih method
             async function filterAndRenderMovies(category) {
+                //filter hiigdsn kinonuud
                 const filteredMovies = movieList.FilterByCategory(category);
+                //filter hiigdsn kinonuudaa renderlene
                 movieList.RenderMovies('main section', filteredMovies);
-
-                
+                //songogdsn category oo actove bolgono 
                 categoryLinks.forEach(link => {
                     const linkCategory = link.getAttribute('data-category');
                     if (linkCategory === category) {
@@ -357,6 +366,7 @@
                     }
                 });
             }
+            //url aas category avah method
             function getCategoryFromUrl() {
                 const urlParams = new URLSearchParams(window.location.search);
                 return urlParams.get('category');
