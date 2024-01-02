@@ -10,7 +10,7 @@ class OneCart extends HTMLElement {
             </section>
         `;
     }
-    //oorchloltod ashiglah attribute uudig zaaj uguh method
+    //oorchloltod ashiglah attribute uudig ajiglah(observe hiih) method
     static get observedAttributes() {
         return ['title', 'price', 'quantity'];
     }

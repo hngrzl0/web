@@ -95,7 +95,7 @@ class TicketType extends HTMLElement {
         this.cost = this.quantity * this.costPerTicket;
         return this.cost;
     }
-    ////addToCart custom elementiig ticketnii type cost iin hamt dispatch hiih method
+    ////addToCart custom eventiig ticketnii type cost iin hamt dispatch hiih method
     dispatchEventToCart() {
         const event = new CustomEvent("addToCart", {
             detail: {
