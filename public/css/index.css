@@ -250,7 +250,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     .special-element {
-        background-color: /* some dark mode specific color */;
+        background-color: var(--color-bg-dark)
         /* other dark mode specific styles */
     }
 }
