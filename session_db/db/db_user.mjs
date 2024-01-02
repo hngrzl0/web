@@ -1,15 +1,14 @@
-// db_user.js
 import sql from './db.mjs'
 
 class DbUser {
   constructor() {
 
   }
-
+  //hereglegch nemeh function
   async addUser(loginName, password, fullname) {
     try {
         console.log('Adding user:', loginName, password, fullname);
-
+        //nemeh gj bga useriin medeelel 
         const userId = await sql`
             INSERT INTO public.web_user
             (loginname, password, fullname)
@@ -17,9 +16,9 @@ class DbUser {
             (${loginName}, ${password}, ${fullname})
             RETURNING id;
         `;
-
+        //db-d nemegdsnii dra bucaagdsn id haruulna
         console.log('User ID:', userId);
-
+        //amjilttai nemegdsn bol id bucaana
         return userId;
     } catch (error) {
         console.error('Error in addUser:', error);
@@ -27,7 +26,7 @@ class DbUser {
     }
 }
 
-
+  //hereglegchdiig bucaah query
   async selectUsers() {
     const users = await sql`
     SELECT 
@@ -37,7 +36,7 @@ class DbUser {
   `
     return users;
   }
-
+  //email password oor damjuulan hereglegchiig shalgaj baival hereglegciig bucaana
   async login(email, password) {
   
     const user = await sql`
@@ -53,7 +52,7 @@ class DbUser {
     return user;
   }
   
-
+    //emaileer n heregelgchiig haij bucaana
     async  getUserByEmail(email) {
       
       const result = await sql`
@@ -68,6 +67,6 @@ class DbUser {
       
   }
 }
-
+//dbuser object uusged exportlono
 const dbUser = new DbUser();
 export default dbUser;

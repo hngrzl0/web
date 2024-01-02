@@ -42,7 +42,7 @@ class OneProduct extends HTMLElement {
         const quantityElement = this.querySelector('span');
         quantityElement.textContent = this.quantity;
     }
-    //addToCart custom elementiig title price quantity giin hamt dispatch hiih method.  
+    //addToCart custom eventiig title price quantity giin hamt dispatch hiih method.  
     dispatchEventToCart() {
         const event = new CustomEvent("addToCart", {
             detail: {
