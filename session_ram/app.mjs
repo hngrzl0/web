@@ -10,11 +10,15 @@ const port = 3000
 const __dirname = path.resolve(path.dirname(''));
 //json data huleej avdg bolno
 app.use(express.json());
+//static file zam aa zov zaana css zurg evdrhgui
 app.use(express.static(path.join(__dirname, 'public')));
+//static file bolon swaggert optionuudig todrhoiloh
 const options = {
     root: path.join(__dirname),
     swaggerDefinition: {
+        // Swagger/OpenAPI version
         openapi: "3.0.0",
+        // API mdeelluud
         info: {
             title: "TEK API",
             version: "1.0.0",
@@ -30,14 +34,17 @@ const options = {
                 email: "21B1NUM0165@num.edu.mn"
             }
         },
+        // Server iin medeelel
         servers: [
             {
                 url: "http://localhost:3000/"
             }
         ]
     },
+     //  Swagger documentation aguulj bui file iin zam(path)
     apis: ["session_ram/app.mjs"]
 };
+//documentation oo uusgeh
 const specs = swaggerJsondoc(options);
 app.use("/docs", swaggerUi.serve);
 app.get(
