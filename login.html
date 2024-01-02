@@ -12,16 +12,19 @@
         </head>
         <script>
             async function login() {
+                //email password oo iput utgas id aar n avna
                 const email = document.getElementById("email").value;
                 const password = document.getElementById("password").value;
-
+                //doorh url ruu post huselt hiih
                 fetch("http://localhost:3000/login",
                     {
-                        method: 'POST',
-                        cache: "no-cache",
+                        method: 'POST',     
+                        cache: "no-cache", //cache avahgui
                         headers: {
+                            //header dr damjuulah medeelel
                             "Content-Type": 'application/json; charset=UTF-8'
                         },
+                        //email pass aa json ugugdul bolgood damjuulna
                         body: JSON.stringify(
                             { 
                                 email: email, 
@@ -29,6 +32,7 @@
                             }
                             )
                     })
+                    //serveriin response
                     .then(result => {
                         if (result.status != 200)
                             {   
@@ -116,4 +120,4 @@
              </footer>
         </body>
     </html>
-    <!--"start": "node ./session_ram/app.mjs",-->
+   
