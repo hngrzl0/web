@@ -50,6 +50,7 @@
         <one-product img="Images/cola.png" title="Кока Кола" price="3,000"></one-product>
     </div>
     <aside>
+        <button id="darkModeButton">DarkMode</button>
         <h4>ТАНЫ СОНГОЛТ</h4>
         <div class="line"></div>
         <article class="movie_details">
@@ -70,17 +71,13 @@
             <ticket-type type="Том хүн" cost="15000"></ticket-type>
             <ticket-type type="Хүүхэд" cost="10000"></ticket-type>
         </ul>
-
         <div class="line"></div>
         <cart-container></cart-container>
-    
         <div class="line"></div>
-        
         <section id="sum_of_all">
             <p id="sum">НИЙТ</p>
             <p id="sum_cost">75,000₮</p>
         </section>
-        
         <div class="line"></div>
         <section id="payment_section">
             <h3>Төлбөрөө баталгаажуулах</h3>
@@ -143,7 +140,6 @@
             startTimer(threeMinutes, display);
         };
     </script>
-    
     <script>
         setTimeout(() => {
             const cartContainer = document.querySelector("cart-container");
@@ -163,5 +159,17 @@
         shadowRoot.appendChild(starRating.cloneNode(true));
       }
     });
+</script>
+<script>
+    const body = document.body;
+    function toggleDarkMode() {
+        body.classList.toggle('dark-mode');
+    }
+    const darkModeButton = document.getElementById('darkModeButton'); 
+    if (darkModeButton) {
+        darkModeButton.addEventListener('click', () => {
+            toggleDarkMode();
+        });
+    }
 </script>
 </html>
