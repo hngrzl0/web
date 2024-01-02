@@ -61,10 +61,12 @@
                 </ul>
             </nav>
         </header>
-        <template id="input_header">
+        <template id="input_header"> //hereglegciin todorhoilson template - iig vvsgeh
             <form>
                     <section>
+                        //garcigiig todorhoiloh slot
                         <slot name="title"><h1>Гарчиг</h1></slot>
+                        //tailbariig todorhoiloh slot
                         <slot name="more"><p>Тайлбар</p></slot>
                     </section>
             </form>
@@ -139,7 +141,7 @@
             </section>
             
         </main>
-        <script>
+        <script>//i_h tag iig ashiglah uyd #input_header id tai templated d oorclolt orno
             customElements.define('i_h', class extends HTMLElement {
                 constructor() {
                 super();
