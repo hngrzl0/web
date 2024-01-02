@@ -4,41 +4,36 @@
     padding: 0;
     font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
+    list-style: none;
 }
 main{
+    margin-top: 12rem;
     & .container_poster{
         display: grid;
         & #bigposter-container{
             place-self: center;
-            width: 76rem;
-            height: 38rem;
-            padding-right: 10rem;
+            width: 60%;
+            height: 30rem;
             position: relative;
             overflow: hidden;
             & #bigposter1{
                 position: absolute;
-                top: 10%;
-                left: 12%;
-                width: auto;
-                height: var(--percent-hundred);
+                width: 100%;
+                height: auto;
                 opacity: 0;
                 animation: slide1 10s infinite;
             }
             & #bigposter2{
                 position: absolute;
-                top: 10%;
-                left: 12%;
-                width: auto;
-                height: var(--percent-hundred);
+                width: 100%;
+                height: auto;
                 opacity: 0;
                 animation: slide2 10s infinite;
             }
             & #bigposter3{
                 position: absolute;
-                top: 10%;
-                left: 12%;
-                width: auto;
-                height: var(--percent-hundred);
+                width: 100%;
+                height: auto;
                 opacity: 0;
                 animation: slide3 10s infinite;
             }
@@ -51,11 +46,24 @@ main{
                 border-color: var(--color-border-line);
                 padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                 text-align: center;
-                font-size: var(--font-size-small);
+                font-size: var(--font-size-big);
                 font-family: var(--font-text-engiin);
                 & img {
                     width: auto; 
-                    height: 1rem;   
+                    height: 1.5rem;   
+                }
+            }
+            & #buy_button{
+                background-color: var(--color-bg);
+                color: var(--color-red);
+                border-color: var(--color-border-line);
+                padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                text-align: center;
+                font-size: var(--font-size-big);
+                font-weight: bold;
+                & img {
+                    width: auto; 
+                    height: 1.5rem;   
                 }
             }
         }
@@ -68,7 +76,8 @@ main{
         & h2{
             padding-left: 6rem;
             color: var(--color-garchig-main);
-            font-family: var(--font-abhaya);
+            font-family: var(--font-garchig);
+            
         }
         & ul{
             display: flex;
@@ -115,7 +124,6 @@ section::-webkit-scrollbar {
 @media(max-width: 48rem){
     main{
         & .container_poster{
-            width: auto;
             padding: 1rem;
             & #bigposter-container{
                 width: 80%;
@@ -124,20 +132,39 @@ section::-webkit-scrollbar {
                 & #bigposter2,
                 & #bigposter3{
                     position: absolute;
-                    top: 0%;
-                    left: 0%;
                     height: auto;
                     width: var(--percent-hundred);
                 }
             }
             & .button{
-                place-self: center;
+                margin-left: 10%;
                 position: absolute;
-                top: 90%;
+                place-self:unset;
                 & button{
-                    padding: 0.5rem 1rem;
-                    font-size: var(--font-size-reting);
-                    
+                    background-color: var(--color-bg);
+                    color: var(--color-text-engiin);
+                    border-color: var(--color-border-line);
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                    text-align: center;
+                    font-size: var(--font-size-small);
+                    font-family: var(--font-text-engiin);
+                    & img {
+                        width: auto; 
+                        height: 0.8rem;   
+                    }
+                }
+                & #buy_button{
+                    background-color: var(--color-bg);
+                    color: var(--color-red);
+                    border-color: var(--color-border-line);
+                    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+                    text-align: center;
+                    font-size: var(--font-size-small);
+                    font-weight: bold;
+                    & img {
+                        width: auto; 
+                        height: 0.8rem;   
+                    }
                 }
             }
         }
@@ -159,8 +186,82 @@ section::-webkit-scrollbar {
                 }
             }
         }
-    } 
+    }
 }
 
+@media(max-width: 25rem){
+    main{
+        & .container_poster{
+            & .button{
+                place-self: center;
+                position: absolute;
+                top: 63%;
+                & button{
+                    padding: 0.2rem 0.5rem;
+                    font-size: 0.5rem;
+                    & img{
+                        height: 0.6rem;
+                        width: auto;
+                    }
+                    
+                }
+            }
+        }
+        & section{
+            padding: 0;
+            width: auto;
+            & h2{
+                padding: 1rem 0rem 2rem 0.5rem;
+                font-size: var(--font-size-small);
+            }
+            & ul{
+                & a{
+                    padding: 1rem;
+                    font-size: var(--font-size-reting);
+                    & img{
+                        height: 10rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+:root {
+    --color-bg: #ffffff; /* Light mode background */
+    --color-text: #000000; /* Light mode text */
+    --color-bg-dark: #000000; /* Dark mode background */
+    --color-text-dark: #ffffff; /* Dark mode text */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: var(--color-bg-dark);
+        --color-text: var(--color-text-dark);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .special-element {
+        background-color: var(--color-bg-dark)
+        /* other dark mode specific styles */
+    }
+}
+
+#theme-switcher {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
 
   
