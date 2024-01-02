@@ -1,21 +1,24 @@
+//select_chair_number' classd bga buh elementuudig avch hadgalah
 const suudalInputs = document.getElementsByClassName('select_chair_number');
 class CinSeat extends HTMLElement {
     constructor() {
-        super();
+        super(); //superclass iin constructor duudagdna.
+        //hergtei ugudluudee todrhoilno.
         this.id = "FFF";
         this.occupied = false;
     }
-
+    //DOM-d holbogdoh uyd suudluuda init hiine
     connectedCallback() {
         this.init();
     }
-
+    //suudal initialize hiih method
     init() {
+        //suudlin ogogdliig attribute eer avah
         this.id = this.getAttribute("data-id");
         this.occupied = this.getAttribute("data-tuluw") === "true"; 
-        console.log(this.id);
-
+        //suudlaa renderleh
         this.#render();
+        //event handler tohiruulah
         this.setupCheckboxEvent();
     }
 
@@ -40,20 +43,24 @@ class CinSeat extends HTMLElement {
 
         if (image1 && image2 && image3) {
             if (this.occupied) {
+                //songoh bolomjgui suudluud buyu ulaan suudluud
                 image1.style.display = 'block';
                 image2.style.display = 'none';
                 image3.style.display = 'none';
             } else {
+                //songoh bolomjtoi suudluud buyu tsenher suudluud
                 image1.style.display = 'none';
                 image2.style.display = 'block';
                 image3.style.display = 'none';
             }
         }
     }
-
+    //suudal checkleh uydeh eventiig zohicuulah method
     setupCheckboxEvent() {
+        //checkboxuudaa avah
         const checkbox = this.querySelector('input[type="checkbox"]');
         if (checkbox) {
+            //change eventiig sonsoh
             checkbox.addEventListener('change', () => {
                 if (!this.occupied) {
                     let tuluw = checkbox.checked;
@@ -63,6 +70,7 @@ class CinSeat extends HTMLElement {
                     
                     if (image1 && image2 && image3) {
                         if (tuluw) {
+                            //checkbox checklegdsn uyd suudla shar bolgoh 
                             image1.style.display = 'none';
                             image2.style.display = 'none';
                             image3.style.display = 'block';
@@ -84,13 +92,15 @@ class CinSeat extends HTMLElement {
             });
         }
     }
+    //suudalInputs iin duplicateuudig handle hiih method
     Duplicates() {
+        //suudalInputsiin utga avah
         const inputString = suudalInputs[0].innerText;
         const elements = inputString.split(' ');
 
         const countMap = {};
         const oddDuplicates = [];
-    
+        //elementuuder aylaj count iig nemeh
         elements.forEach((element) => {
             countMap[element] = (countMap[element] || 0) + 1;
         });
