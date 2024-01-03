@@ -35,19 +35,6 @@ main{
         font-weight: bold;
         border: var(--border-size) solid var(--color-red);
         & ul{
-
-
-
-
-
-
-
-
-
-
-
-
-            
             list-style: none;
             text-align: center;
             & .input{
@@ -59,27 +46,27 @@ main{
                 height: 2rem;
                 margin: 1rem;
                 & input{
-                    padding: 0.5rem;
                     width: 90%;
+                    padding: 0.5rem;
                     border: var(--size-none);
                     font-style: italic;
                 }
                 & button{
-                    font-weight: bold;
-                    font-size: var(--font-size-big);
-                    margin-top: 0rem;
                     height: 2rem;
                     width: 100%;
+                    margin-top: 0rem;
                     border: var(--border-size) solid var(--color-white);
                     color: var(--color-red);
+                    font-weight: bold;
+                    font-size: var(--font-size-big);
                 }
             }
         }
         & h6{
-            font-size: var(--font-size-movie);
-            text-align: center;
             margin: 2rem;
             margin-bottom: 6rem;
+            text-align: center;
+            font-size: var(--font-size-movie);
         }
         & p{
             width: 98%;
@@ -87,21 +74,21 @@ main{
         }
     }
 }
-@media(max-width: 62.5rem){
+@media(max-width: 1000px){
     main{
-        padding: 0.5rem;
         height: 40rem;
         margin-bottom: 1rem;
+        padding: 0.5rem;
         & div{
+            width: 95%;
             margin: 1rem;
             float: left;
-            width: 95%;
             font-size: 1rem;
         }
         & article{
+            height: 74%;
             margin-left: 0%;
             margin-top: 10rem;
-            height: 74%;
             & ul{
                 width: 98%;
                 list-style: none;
@@ -126,7 +113,7 @@ main{
         }
     }
 }
-@media(max-width: 25rem){
+@media(max-width: 400px){
     main{
         & p{
             font-size: var(--font-size-5);

@@ -1,17 +1,17 @@
 *{  
     margin: 0;
     padding: 0;
-    font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
+    font-family: var(--font-text-engiin);
 }
 #category-links{
     margin:  0 6.8rem;
     margin-top: 11rem;
     & a{
+        margin: 0 0.2rem;
+        padding: 0.3rem;
         border: solid 1px var(--color-red);
         border-radius: 5px;
-        padding: 0.3rem;
-        margin: 0 0.2rem;
         background-color: var(--color-red);
         text-decoration: none;
         color: var(--color-text-engiin);
@@ -31,38 +31,38 @@ main{
             position: relative;
             & .movie_poster{
                 display: grid;
+                padding-bottom: 6rem;
                 text-decoration: none;
                 text-align: center;
-                padding-bottom: 6rem;
+                color: var(--color-text-engiin);
                 font-family: var(--font-londrina);
                 font-size: var(--font-size-movie);
-                color: var(--color-text-engiin);
                 & img{
-                    place-self: center;
                     height: 23rem;
                     width: auto;
+                    place-self: center;
                 }
             }
             & .rating{
-                position: absolute;
-                top: 0;
-                left: 50%;
-                width: 30%;
-                height: 7%;
                 display: flex;
+                position: absolute;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                color: var(--color-text-engiin);
+                width: 30%;
+                height: 7%;
+                top: 0;
+                left: 50%;
                 padding: 0.6rem; 
-                box-sizing: border-box; 
                 text-align: center;
+                color: var(--color-text-engiin);
+                box-sizing: border-box; 
                 & a{
-                    text-decoration: none;
-                    color: var(--color-text-engiin); 
                     display: flex;
                     align-items: center;
                     padding-left: 0.5rem;
+                    text-decoration: none;
+                    color: var(--color-text-engiin); 
                     font-size: 1vw; 
                     & img{
                         width: 1.5rem; 
@@ -76,7 +76,7 @@ main{
         }
     }
 }
-@media(max-width: 48rem){
+@media(max-width: 768px){
     main{
         & section{
             grid-gap: 1rem;
@@ -103,7 +103,7 @@ main{
         }
     }
 }
-@media(max-width: 25rem){
+@media(max-width: 400px){
     main{
         & section{
             width: auto;
@@ -132,7 +132,7 @@ main{
         }
     }
 }
-@media(max-width: 87.5rem){
+@media(max-width: 1400px){
     main{
         padding-left: 5rem;
         padding-right: 5rem;
@@ -145,15 +145,15 @@ main{
                     }
                 }
                 & .rating{
-                    left: 50%;
                     width: 30%;
+                    left: 50%;
                 }
                 
             }
         }
     }
 }
-@media(max-width: 68.75rem){
+@media(max-width: 1100px){
     main{
         padding-left: 4rem;
         padding-right: 4rem;
@@ -166,8 +166,8 @@ main{
                     }
                 }
                 & .rating{
-                    left: 50%;
                     width: 30%;
+                    left: 50%;
                     padding: 0.6rem;
                 }
                 
@@ -175,7 +175,7 @@ main{
         }
     }
 }
-@media(max-width: 56.25rem){
+@media(max-width: 900px){
     main{
         padding-left: 3rem;
         padding-right: 3rem;
@@ -188,16 +188,16 @@ main{
                     }
                 }
                 & .rating{
-                    left: 50%;
                     width: 30%;
                     height: 5%;
+                    left: 50%;
                 }
                 
             }
         }
     }
 }
-@media(max-width: 50rem){
+@media(max-width: 800px){
     main{
         padding-left: 2rem;
         padding-right: 2rem;
@@ -209,12 +209,12 @@ main{
                 position: relative;
                 & .movie_poster{
                     display: grid;
+                    padding-bottom: 4rem;
                     text-decoration: none;
                     text-align: center;
-                    padding-bottom: 4rem;
+                    color: var(--color-text-engiin);
                     font-family: var(--font-londrina);
                     font-size: var(--font-size-3);
-                    color: var(--color-text-engiin);
                     & img{
                         place-self: center;
                         height: 14rem;
@@ -222,25 +222,25 @@ main{
                     }
                 }
                 & .rating{
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    width: 30%;
-                    height: 5%;
                     display: flex;
+                    position: absolute;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
+                    width: 30%;
+                    height: 5%;
+                    top: 0;
+                    left: 50%;
+                    padding: 0.6rem;
+                    text-align: center; 
                     color: var(--color-text-engiin);
-                    padding: 0.6rem; 
                     box-sizing: border-box; 
-                    text-align: center;
                     & a{
-                        text-decoration: none;
-                        color: var(--color-text-engiin); 
                         display: flex;
                         align-items: center;
                         padding-left: 0.5rem;
+                        text-decoration: none;
+                        color: var(--color-text-engiin); 
                         font-size: 1vw; 
                         & img{
                             width: 1.5rem; 
@@ -254,19 +254,19 @@ main{
         }
     }
 }
-@media(max-width: 37.5rem){
+@media(max-width: 600px){
     #category-links{
         margin-left:  2rem;
         & a{
+            margin-bottom: 2rem;
+            margin: 0 0.2rem;
+            padding: 0.3rem;
+            background-color: var(--color-red);
             border: solid 1px var(--color-red);
             border-radius: 5px;
-            padding: 0.3rem;
-            margin: 0 0.2rem;
-            font-size: var(--font-size-5);
-            background-color: var(--color-red);
             text-decoration: none;
             color: var(--color-text-engiin);
-            margin-bottom: 2rem;
+            font-size: var(--font-size-5);
         }
     }
     main{
@@ -290,7 +290,7 @@ main{
         }
     }
 }
-@media(max-width: 37.5rem){
+@media(max-width: 600px){
     main{
         & section{
             & article{
@@ -317,19 +317,19 @@ main{
         }
     }
 }
-@media(max-width: 25rem){
+@media(max-width: 400px){
     #category-links{
         margin-left:  2rem;
         & a{
-            border: solid 1px var(--color-red);
-            border-radius: 5px;
             padding: 0.3rem;
             margin: 0 0.2rem;
-            font-size: 0.5rem;
+            margin-bottom: 2rem;
             background-color: var(--color-red);
+            border: solid 1px var(--color-red);
+            border-radius: 5px;
             text-decoration: none;
             color: var(--color-text-engiin);
-            margin-bottom: 2rem;
+            font-size: 0.5rem;
         }
     }
     & h2{

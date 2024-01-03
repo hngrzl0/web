@@ -128,7 +128,7 @@ main{
 section::-webkit-scrollbar {
     display: none; 
 }
-@media (max-width: 71.875rem) {
+@media (max-width: 1150px) {
     main {
         .container_poster {
             .button {
@@ -137,7 +137,7 @@ section::-webkit-scrollbar {
         }
     }
 }
-@media(max-width: 56.25rem) {
+@media(max-width: 900px) {
     main{
         .container_poster{
             & #bigposter-container{
@@ -176,7 +176,7 @@ section::-webkit-scrollbar {
     }
 }
 
-@media(max-width: 48rem){
+@media(max-width: 768px){
     main{
         & .container_poster{
             padding: 1rem;
@@ -214,7 +214,7 @@ section::-webkit-scrollbar {
         }
     }
 }
-@media(max-width: 37.5rem){
+@media(max-width: 600px){
     @media (max-width: 71.875rem) {
         main {
             .container_poster {
@@ -228,7 +228,7 @@ section::-webkit-scrollbar {
         }
     }
 }
-@media(max-width: 31.25rem){
+@media(max-width: 500px){
     main{
         & .container_poster{
             & .button{
@@ -255,7 +255,7 @@ section::-webkit-scrollbar {
         }
     }
 }
-@media(max-width: 25rem){
+@media(max-width: 400px){
     main{
         & .container_poster{
             & .button{

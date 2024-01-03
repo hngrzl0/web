@@ -1,10 +1,10 @@
 *{
+    max-width: 99%;
     margin: 0;
     padding: 0;
-    font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
     color: var(--white-color);
-    max-width: 99%;
+    font-family: var(--font-text-engiin);
     *::placeholder {
         color: var(--white-color);
     }
@@ -15,18 +15,18 @@ main {margin-top: 11rem;
         flex-direction: row;
         padding: 2rem;
         & a img {
+            flex-shrink: 0;
             width: 20rem;
             height: auto;
-            flex-shrink: 0;
             margin: 1rem;
         }
         & div {
             display: flex;
             flex-direction: column;
             & iframe {
+                flex-shrink: 0;
                 width: 25rem;
                 height: 15rem;
-                flex-shrink: 0;
             }
             
         }
@@ -36,55 +36,55 @@ main {margin-top: 11rem;
             padding: 2rem;
             & h2 {
                 display: flex;
-                width: 43.75rem;
-                height: auto;
                 flex-direction: column;
                 justify-content: center;
+                width: 43.75rem;
+                height: auto;
+                padding-bottom: 0.5rem;
                 color: var(--color-red);
                 font-weight: bold;
                 font-size: 300%;
-                padding-bottom: 0.5rem;
             }
             & h4 {
                 display: flex;
-                width: 65rem;
-                height: 3rem;
                 flex-direction: column;
                 justify-content: center;
+                width: 65rem;
+                height: 3rem;
+                padding-bottom: 0.5rem; 
                 color: var(--color-text-engiin);
                 font-size: 150%;
-                padding-bottom: 0.5rem; 
             }
             & p {
                 display: flex;
-                width: 65rem;
                 flex-direction: column;
                 justify-content: center;
+                width: 65rem;
+                padding-bottom: 0.5rem;
                 color: var(--color-text-engiin);
                 font-size: 110%;
-                padding-bottom: 0.5rem;
             }
             
             & div {
                 display: flex;
-                width: 65rem;
                 flex-direction: row;
+                width: 65rem;
+                margin-bottom: -2rem;
                 padding-top: 0.5rem;
                 padding-left: 0;
-                margin-bottom: -2rem;
                 & .tab {
                     display: inline-block;
                     flex-direction: column;
                     margin: 1rem;
                     padding: 1rem 5rem;
                     background:var(--color-bg);
-                    color:var(--color-text-engiin);
                     cursor: pointer;
                     border-radius: 0.8rem;   
                     border: 2px solid var(--color-white);
-                    font-size: 1.25rem;
                     text-align: center;
+                    color:var(--color-text-engiin);
                     font-weight: bold;
+                    font-size: 1.25rem;
                     }
                 & .radio {
                     display:none;
@@ -93,30 +93,29 @@ main {margin-top: 11rem;
                 #botanik:checked ~ .tabs #botanik-tab,
                 #encanto:checked ~ .tabs #encanto-tab {
                     background:var(--color-red);
-                    color:var(--color-white);
                     border: 2px solid var(--color-red);
+                    color:var(--color-white);
                 }  
                 & .tab2 {
                     display: inline-block;
                     flex-direction: column;
+                    justify-self: center;
                     margin: 0.5rem;
                     padding: 1.25rem 3rem;
                     background: var(--color-bg);
-                    color:var(--color-text-engiin);
                     cursor: pointer;
                     border-radius: 0.8rem;   
                     border: 2px solid var(--color-white);
-                    font-size: 1.5rem;
                     text-align: center;
-                    justify-self: center;
+                    color:var(--color-text-engiin);
                     align-self: center;
-                    
+                    font-size: 1.5rem;
                     }
                 & .tab2_1 {
-                    border: 2px solid var(--color-bg);
                     padding: 2rem;
-                    color:var(--color-text-engiin);
+                    border: 2px solid var(--color-bg);
                     cursor: pointer;
+                    color:var(--color-text-engiin);
                     font-size: 2rem;
                    } 
                 & .radio2 {
@@ -130,20 +129,20 @@ main {margin-top: 11rem;
                 #date6:checked ~ .tabs2 #date6-tab2,
                 #date7:checked ~ .tabs2 #date7-tab2 {
                     background:var(--color-red);
-                    color:var(--color-white);
                     border: 2px solid var(--color-red);
+                    color:var(--color-white);
                 }   
                 & .tab3 {
                     display: inline-block;
                     flex-direction: column;
+                    width: 40rem;
                     margin-right: 2rem;
                     padding: 0.5rem;
-                    background:var(--color-bg);
-                    color:var(--color-white);
-                    cursor: pointer;
                     border-radius: 00.8rem;   
                     border: 2px solid var(--color-white);
-                    width: 40rem;
+                    cursor: pointer;
+                    background:var(--color-bg);
+                    color:var(--color-white);
                     }
                 & .radio3 {
                     display:none;
@@ -156,8 +155,8 @@ main {margin-top: 11rem;
                 #time6:checked ~ .tabs3 #time6-tab3,
                 #time7:checked ~ .tabs3 #time7-tab3 {
                     background:var(--color-red);
-                    color:var(--color-white);
                     border: 2px solid var(--color-red);
+                    color:var(--color-white);
                 }  
             }
             & a{
@@ -182,8 +181,8 @@ main {margin-top: 11rem;
                         font-weight: bold;
                     }
                     & p {
-                        color: var(--color-text-engiin);
                         padding-top: 0.5rem;
+                        color: var(--color-text-engiin);
                     }
                 }
                 & img {
@@ -197,14 +196,14 @@ main {margin-top: 11rem;
             }
         }
         & .container {
-            width: 60rem;
             display: flex;
             flex-direction: column;
+            width: 60rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
             border: var(--color-red);
             border-style: solid;
             border-radius: 1rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
             & .reviews{
                 height: 75rem;
                 overflow-y: auto;
@@ -219,12 +218,12 @@ main {margin-top: 11rem;
                   }
             }
             & article{
+                display: inline-block;
                 margin: 1.5rem;
+                padding: 1.5rem;
                 border: var(--color-red);
                 border-style: solid;
                 border-radius: 4rem;
-                padding: 1.5rem;
-                display: inline-block;
                 & #neg {
                     display: flex;
                     flex-direction: row;
@@ -232,14 +231,14 @@ main {margin-top: 11rem;
                         width: 3rem;
                     }
                     & h4 {
-                        color: var(--color-white);
                         padding-left: 0.2rem;
                         padding-top: 0.5rem;
+                        color: var(--color-white);
                     }
                     & p {
-                        color: var(--color-white);
                         padding-left: 0.2rem;
                         padding-top: 0.5rem;
+                        color: var(--color-white);
                     }
                 }
                 & #hoyor {
@@ -255,8 +254,8 @@ main {margin-top: 11rem;
                 }
 
                 & input[type="checkbox"] {
-                    height: 2em;
                     display: block;
+                    height: 2em;
                     appearance: none;
                 }
                 & label {
@@ -293,33 +292,31 @@ main {margin-top: 11rem;
                     flex-direction: row;
                 }
                 & h3 {
-                    color: var(--color-white);
-                    font-size: large;
                     margin-bottom: 0.5rem;
                     margin-right: 0.5rem;
-
+                    color: var(--color-white);
+                    font-size: large;
                 }
                 & p {
-                    color: var(--color-text-engiin);
                     margin-right: 0.5rem;
+                    color: var(--color-text-engiin);
                 }
                 & label {
                     color: var(--color-text-engiin);
                 }
                 & textarea {
-                    color: var(--color-text-engiin);
                     padding: 0.5rem;
+                    color: var(--color-text-engiin);
                 }
                 & button {
-                    color: var(--color-text-engiin);
-                    background-color: var(--color-red);
-                    padding: 0.5rem 1rem;
-                    cursor: pointer;
-                    border-radius: 0.5rem;
-                    font-size: 1rem;
                     margin-left: auto;
                     margin-top: 0.5rem;
-                    
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    background-color: var(--color-red);
+                    cursor: pointer;
+                    color: var(--color-text-engiin);
+                    font-size: 1rem;
                 }
             }
         }

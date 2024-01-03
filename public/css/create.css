@@ -173,7 +173,7 @@ main{
 }
 }
 
-@media(max-width: 34.375rem){
+@media(max-width: 550px){
 main{
     margin-left: 1rem;
     margin-right: 1rem;
