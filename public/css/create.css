@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
     color: var(--color-white);
+    font-family: var(--font-text-engiin);
     *::placeholder {
         color: var(--white-color);
     } 
@@ -16,14 +16,14 @@ main{
     margin-bottom: 5rem;
     & section{
         & h1{
-            font-size: var(--font-size-2);
-            margin-bottom: var(--size-none);
             margin-top: 8rem;
+            margin-bottom: var(--size-none);
+            font-size: var(--font-size-2);
         }
         & p{
             margin-top: var(--size-none);
-            font-size: var(--font-size-4);
             color: var(--color-gray);
+            font-size: var(--font-size-4);
         }
         & img{
             height: var(--image-size);
@@ -31,18 +31,18 @@ main{
         & ul{
             list-style: none;
             & li{
+                display: list-item;
+                height: 2.2rem;
                 margin-top: 2rem;
                 margin-bottom: 1.5rem;
                 border: var(--size-none);
                 border-bottom: var(--border-size) solid var(--color-border-li);
                 border-top: var(--border-size) solid var(--color-border-li);
-                height: 2.2rem;
-                display: list-item;
                 & input{
                     width: 99%;
-                    float: right;
                     background-color: var(--black-color);
                     border: none;
+                    float: right;
                     font-size: var(--font-size-4);
                     font-weight: bold;
                     font-style: italic;
@@ -64,15 +64,15 @@ main{
             }
         }
         & button{
-            background-color: var(--color-black);
-            color: var(--color-white);
-            border: var(--border-size) solid var(--color-white);
-            margin-top: 2rem;
             width: 15rem;
+            height: 3rem;
+            margin-top: 2rem;
+            background-color: var(--color-black);
+            border: var(--border-size) solid var(--color-white);
+            color: var(--color-white);
             color:var(--color-red);
             font-size: var(--font-size-4);
             font-weight: bold;
-            height: 3rem;
         }
         & #accept_button{
             transform: scale(3);
@@ -111,8 +111,8 @@ main{
                 margin-top: 4rem;
             }
             & #accept_text{
-                font-size: 1rem;
                 margin-right: 30%;
+                font-size: 1rem;
             }
         }
     }
@@ -124,8 +124,8 @@ main{
         margin-bottom: 2rem;
         & section{
             & h1{
-                font-size: var(--font-size-4);
                 margin-top: 3rem;
+                font-size: var(--font-size-4);
             }
             & img{
                 height: var(--font-size-5);
@@ -148,16 +148,16 @@ main{
                         width: 94%;
                     }
                     & #dateandtime{
-                        float: left;
                         width: 94%;
+                        float: left;
                     }
                 }
             }
             & button{
-                margin-top: 2rem;
                 width: 100%;
-                font-size: var(--font-size-5);
                 height: 2.5rem;
+                margin-top: 2rem;
+                font-size: var(--font-size-5);
             }
             & #accept_button{
                 transform: scale(2);
@@ -165,9 +165,9 @@ main{
                 margin-top: 1rem;
             }
             & #accept_text{
-                font-size: var(--font-size-5);
                 width: 100%;
                 margin-left: 2rem;
+                font-size: var(--font-size-5);
             }
         }
 }
@@ -179,8 +179,8 @@ main{
     margin-right: 1rem;
     & section{
         & h1{
-            font-size: var(--font-size-2);
             margin-top: 3rem;
+            font-size: var(--font-size-2);
         }
         & img{
             height: 1rem;
@@ -191,9 +191,9 @@ main{
         }
         & ul{
             & li{
+                height: 1rem;
                 margin-top: 1.5rem;
                 margin-bottom: 1rem;
-                height: 1rem;
                 & input{
                     font-size: 0.6rem;
                 }
@@ -204,22 +204,22 @@ main{
                     width: 94%;
                 }
                 & #dateandtime{
-                    float: left;
                     width: 90%;
+                    float: left;
                 }
             }
         }
         & button{
-            margin-top: 2rem;
             width: 15rem;
-            font-size: var(--font-size-4);
             height: 2.5rem;
+            margin-top: 2rem;
+            font-size: var(--font-size-4);
         }
         & #accept_text{
-            font-size: 0.5rem;
             width: 90%;
             margin-left: 2rem;
             margin-right: 0%;
+            font-size: 0.5rem;
         }
     }
 }
