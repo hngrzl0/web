@@ -146,7 +146,7 @@ body{
                 }
             }
         }
-        & label[for="chair"]{
+        & p{
             background-color: var(--color-gray);
             color: var(--color-bright-gray);
             font-weight: bold;
