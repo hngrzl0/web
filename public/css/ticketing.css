@@ -1,9 +1,9 @@
 *{
-    margin: 0;
-    padding: 0;
     background-color: var(--color-bg);
     color: var(--color-text-engiin);
     font-family: var(--font-text-engiin);
+    padding: 0;
+    margin: 0;
 }
 body{
     & .select_chair_number{
@@ -32,16 +32,16 @@ body{
             flex-direction: row-reverse;
             margin-left: 14rem;
             & a{
-                padding: 2rem;
                 text-decoration: none;
                 color: var(--color-red);
                 font-weight: bold;
+                padding: 2rem;
             }
             & #time{
                 display: flex;
                 flex-direction: column;
-                padding-top: 2rem;
                 text-align: center;
+                padding-top: 2rem;
             }
 
         }
@@ -82,15 +82,15 @@ body{
             align-items: center;
             text-align: center;
             & p{
-                padding: 0.5rem;
                 color: var(--color-bright-gray);
+                padding: 0.5rem;
             }
             & button{
+                color: var(--color-red);
                 padding: 0.25em 0.5em;
                 margin: 0.5rem;
                 border-radius: 100%;
                 border: 0.5px solid var(--color-red);
-                color: var(--color-red);
             }
             & img{
                 width: auto;
@@ -101,23 +101,23 @@ body{
     }
     & aside{
         grid-area: sidebar;
-        padding: 2rem;
         background-color: var(--color-gray);
+        padding: 2rem;
         & button{
-            padding: 0.5rem 1rem;
             background-color: var(--color-gray);
             border: 1px solid var(--color-white);
+            padding: 0.5rem 1rem;
         }
         & h4{
-            background-color: var(--color-gray);
             color: var(--color-bright-gray);
+            background-color: var(--color-gray);
             text-align: center;
         }
         .line {
             width: 100%; 
             height: 0.2rem; 
-            margin: 1rem 0;
             background-color: var(--color-bright-gray); 
+            margin: 1rem 0;
         }
         & .movie_details{
             display: flex;
@@ -134,8 +134,6 @@ body{
                 
                 & p {
                     color: var(--color-text-engiin);
-                & label {
-                    padding: 0.62rem 2rem;
                     background-color: var(--color-gray);
                     padding: 0.62rem 0.5rem;
                     font-size: 1rem;
@@ -143,7 +141,6 @@ body{
                 & h2 {
                     font-weight: bold;
                     padding-left: 25%;
-                    font-weight: bold;
                     font-size: 2rem;
                     background-color: var(--color-gray);
                 }
@@ -160,6 +157,7 @@ body{
             align-items: center;
             background-color: var(--color-gray);
             color: var(--color-gray);
+            
         }
         & #food_drinks_cost{
             display: flex;
@@ -217,11 +215,11 @@ body{
                 font-weight: bold;
             }
             & button{
-                margin-left: 10rem;
-                margin-top: 2rem;
-                padding: 1rem 2rem;
                 background-color: var(--color-red);
                 border-radius: 5px;
+                padding: 1rem 2rem;
+                margin-left: 10rem;
+                margin-top: 2rem;
                 font-size: 1rem;
             }
         }
@@ -230,4 +228,3 @@ body{
 #food_and_drinks::-webkit-scrollbar {
     display: none; 
 }
-
