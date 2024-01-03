@@ -11,7 +11,7 @@ class TicketType extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
         <style>
-            li{
+            #ticketfor{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -42,13 +42,13 @@ class TicketType extends HTMLElement {
                     margin: 0 -6rem 0 -6rem;
                 }
             </style>
-            <li id="ticketfor">
+            <div id="ticketfor">
                 <p>${this.type}</p>
                 <button id="decrementBtn">-</button>
                 <span>${this.quantity}</span>
                 <button id="incrementBtn">+</button>
                 <p class="cost">${this.calculateCost()}₮</p>
-            </li>
+            </div>
         `;
     }
     //element DOM-d holbogdh uyd duudagdh method
