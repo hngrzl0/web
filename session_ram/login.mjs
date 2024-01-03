@@ -26,7 +26,7 @@ export default class Login {
         });
         console.log(this.sessions);
         //login amjilttai uyd response status 200 bolgod ok iin hamt useriin neriig bucaana 
-        res.statusCode = 200;
+        res.status(200);
         res.cookie("session_id", sid);
         res.send({
             result: "OK",
