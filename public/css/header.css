@@ -11,9 +11,9 @@
 }
 header{
     position: fixed;
-    top: 0px;
     z-index: 10;
     width: var(--percent-hundred);
+    top: 0px;
     background-color: var(--color-bg);
     color: var(--color-garchig-main);
     & nav:nth-of-type(2){
@@ -22,33 +22,33 @@ header{
         & #menu{
             display: flex;
             flex-direction: row;
-            list-style-type: none;
-            font-size: var(--font-size-big);
             margin-top: 4rem;
             padding-left: 9rem;
+            list-style-type: none;
+            font-size: var(--font-size-big);
             & a{
                 text-decoration: none;
+                text-align: center;
+                color: var(--color-garchig-main);
                 font-family: var(--font-header);
                 font-weight: bold;
-                color: var(--color-garchig-main);
-                text-align: center;
             }
             & #login{
+                padding-left: 4rem;
                 text-decoration: none;
                 font-family: var(--font-header);
                 font-weight: bold;
                 color: var(--color-red);
-                padding-left: 4rem;
             }
             & li{
-                margin-right: 10%;
                 display: grid;
+                margin-right: 10%;
             }
 
         }
         & #logo{
-            padding-left: 3rem;
             height: 10rem;
+            padding-left: 3rem;
         }
     }
     & #address_icon{
@@ -68,8 +68,8 @@ header{
     }
 }
 footer{
-    width: 80%;
     display: flex;
+    width: 80%;
     padding-left: 10%;
     & #address_info{
         display: flex;
@@ -83,9 +83,9 @@ footer{
             align-items: center;
             color: var(--color-footer-text);
             & a{
+                justify-content: center;
                 text-decoration: none;
                 text-align: center;
-                justify-content: center;
                 color: var(--color-red);
             }
             & img{
@@ -108,9 +108,9 @@ footer{
             margin: 1rem 1rem;
             & p{
                 padding: 0.5rem;
+                color: var(--color-footer-text);
                 font-family: var(--font-text-engiin);
                 font-size: var(--font-size-big);
-                color: var(--color-footer-text);
             }
         }
         & img{
@@ -123,9 +123,9 @@ footer{
     header{
         & nav:nth-of-type(2){
             & #menu{
-                font-size: var(--font-size-small);
-                padding-left: 3rem;
                 margin-left: 8rem;
+                padding-left: 3rem;
+                font-size: var(--font-size-small);
             }
         }
     }
@@ -151,14 +151,14 @@ footer{
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
+                flex-direction: column;
                 margin-top: 2rem;
                 margin-left: 40%;
-                flex-direction: column;
                 padding: 1rem;
                 font-size: var(--font-size-small);
                 & a{
-                    text-align: left;
                     width: 10rem;
+                    text-align: left;
                 }
                 & #login{
                     padding-left: 0rem;
@@ -176,9 +176,9 @@ footer{
             font-size: var(--font-size-small);
             & li{
                 & img{
-                    padding: 0.5rem;
                     height: 1.5rem;
                     width: auto;
+                    padding: 0.5rem;
                 }
             }
         }
@@ -190,7 +190,6 @@ footer{
                 & p{
                     padding: 0.2rem;
                     font-size: var(--font-size-small);
-                   
                 }
             }
             & img{
@@ -216,9 +215,9 @@ footer{
         & nav:nth-of-type(2){
             justify-content: center;
             & #menu{
-                margin-left: 30%;
                 flex-direction: column;
                 padding: 0.5rem;
+                margin-left: 30%;
                 font-size: 0.65rem;
             }
             & #logo{
@@ -238,16 +237,16 @@ footer{
         }
     }
     footer{
-        padding: 0;
         justify-content: space-evenly;
+        padding: 0;
         & #address_info{
             padding-left: 4rem;
             font-size: 0.7rem;
             & li{
                 & img{
-                    padding: 0.5rem;
                     height: 1rem;
                     width: auto;
+                    padding: 0.5rem;
                 }
             }
         }
@@ -257,7 +256,6 @@ footer{
             & .location{
                 & p{
                     font-size: 0.7rem;
-                   
                 }
             }
         }
@@ -268,14 +266,14 @@ footer{
         max-width: 48rem;
         & nav:nth-of-type(2){
             & #menu{
+                flex-direction: column;
                 margin-top: 2rem;
                 margin-left: 30%;
-                flex-direction: column;
                 padding: 1rem;
                 font-size: var(--font-size-small);
                 & a{
-                    text-align: left;
                     width: 10rem;
+                    text-align: left;
                 }
                 & #login{
                     padding-left: 0rem;
@@ -293,9 +291,9 @@ footer{
             font-size: var(--font-size-small);
             & li{
                 & img{
-                    padding: 0.5rem;
                     height: 1.5rem;
                     width: auto;
+                    padding: 0.5rem;
                 }
             }
         }
@@ -307,7 +305,6 @@ footer{
                 & p{
                     padding: 0.2rem;
                     font-size: var(--font-size-small);
-                   
                 }
             }
             & img{
