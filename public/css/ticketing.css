@@ -131,16 +131,18 @@ body{
             & #movie_info{
                 display: flex;
                 flex-direction: column;
-                & label {
+                
+                & p {
                     color: var(--color-text-engiin);
                     background-color: var(--color-gray);
-                    padding: 0.62rem 2rem;
+                    padding: 0.62rem 0.5rem;
                     font-size: 1rem;
                 }
-                & label[for="movie_name"] {
+                & h2 {
                     font-weight: bold;
                     padding-left: 25%;
                     font-size: 2rem;
+                    background-color: var(--color-gray);
                 }
             }
         }
