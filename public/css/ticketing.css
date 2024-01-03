@@ -131,20 +131,25 @@ body{
             & #movie_info{
                 display: flex;
                 flex-direction: column;
+                
+                & p {
+                    color: var(--color-text-engiin);
                 & label {
                     padding: 0.62rem 2rem;
                     background-color: var(--color-gray);
-                    color: var(--color-text-engiin);
+                    padding: 0.62rem 0.5rem;
                     font-size: 1rem;
                 }
-                & label[for="movie_name"] {
+                & h2 {
+                    font-weight: bold;
                     padding-left: 25%;
                     font-weight: bold;
                     font-size: 2rem;
+                    background-color: var(--color-gray);
                 }
             }
         }
-        & label[for="chair"]{
+        & p{
             background-color: var(--color-gray);
             color: var(--color-bright-gray);
             font-weight: bold;
