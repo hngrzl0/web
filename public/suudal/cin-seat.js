@@ -27,13 +27,13 @@ class CinSeat extends HTMLElement {
             <label>
                 <input type='checkbox' ${this.occupied ? 'checked' : ''} ${this.occupied ? 'disabled' : ''}>
                 <suudal>
-                    <img width="50" height="50" class="image1" slot="suudal" src="img_ts/red.png">
+                    <img width="50" alt="ulaan_suudal" height="50" class="image1" slot="suudal" src="img_ts/red.png">
                 </suudal>
                 <suudal>
-                    <img width="50" height="50" class="image2"  slot="suudal" src="img_ts/blue.png">
+                    <img width="50" alt="tsenher_suudal" height="50" class="image2"  slot="suudal" src="img_ts/blue.png">
                 </suudal>
                 <suudal>
-                    <img width="50" height="50" class="image3"  slot="suudal" src="img_ts/yellow.png">
+                    <img width="50" alt="shar_suudal" height="50" class="image3"  slot="suudal" src="img_ts/yellow.png">
                 </suudal>
             </label>`;
         

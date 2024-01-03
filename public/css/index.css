@@ -2,8 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: var(--font-text-engiin);
     background-color: var(--color-bg);
+    font-family: var(--font-text-engiin);
     list-style: none;
 }
 main{
@@ -11,11 +11,11 @@ main{
     & .container_poster{
         display: grid;
         & #bigposter-container{
+            position: relative;
+            overflow: hidden;
             place-self: center;
             width: 60%;
             height: 30rem;
-            position: relative;
-            overflow: hidden;
             & #bigposter1{
                 position: absolute;
                 width: 100%;
@@ -45,10 +45,10 @@ main{
             text-decoration: none;
             & button{
                 background-color: var(--color-bg);
-                color: var(--color-text-engiin);
                 border-color: var(--color-border-line);
                 padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                 text-align: center;
+                color: var(--color-text-engiin);
                 font-size: var(--font-size-big);
                 font-family: var(--font-text-engiin);
                 & img {
@@ -61,10 +61,10 @@ main{
             }
             & #buy_button{
                 background-color: var(--color-bg);
-                color: var(--color-red);
                 border-color: var(--color-border-line);
                 padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                 text-align: center;
+                color: var(--color-red);
                 font-size: var(--font-size-big);
                 font-weight: bold;
                 & img {
@@ -81,12 +81,10 @@ main{
         padding: 2rem;
         max-width: 90%;
         overflow-x: auto;
-        
         & h2{
             padding-left: 6rem;
             color: var(--color-garchig-main);
             font-family: var(--font-garchig);
-            
         }
         & ul{
             display: flex;
@@ -100,9 +98,9 @@ main{
                 padding: 2rem 5rem 2rem 5rem;
                 text-decoration: none;
                 text-align: center;
+                color: var(--color-text-engiin);
                 font-family: var(--font-londrina);
                 font-size: var(--font-size-movie);
-                color: var(--color-text-engiin);
                 & img{
                     height: 23rem;
                     width: auto;
@@ -149,10 +147,10 @@ section::-webkit-scrollbar {
                 margin-top: 30%;
                 & button{
                     background-color: var(--color-bg);
-                    color: var(--color-text-engiin);
                     border-color: var(--color-border-line);
                     padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                     text-align: center;
+                    color: var(--color-text-engiin);
                     font-size: var(--font-size-small);
                     font-family: var(--font-text-engiin);
                     & img {
@@ -162,10 +160,10 @@ section::-webkit-scrollbar {
                 }
                 & #buy_button{
                     background-color: var(--color-bg);
-                    color: var(--color-red);
                     border-color: var(--color-border-line);
                     padding: 0.7rem 1.7rem 0.7rem 1.7rem;
                     text-align: center;
+                    color: var(--color-red);
                     font-size: var(--font-size-small);
                     font-weight: bold;
                     & img {
@@ -183,8 +181,8 @@ section::-webkit-scrollbar {
         & .container_poster{
             padding: 1rem;
             & #bigposter-container{
-                width: 80%;
                 position: relative;
+                width: 80%;
                 & #bigposter1,
                 & #bigposter2,
                 & #bigposter3{
@@ -198,7 +196,6 @@ section::-webkit-scrollbar {
             }
         }
         & section{
-            padding: rem;
             width: auto;
             & h2{
                 padding: 2rem 0rem 2rem 1.5rem;
@@ -239,8 +236,8 @@ section::-webkit-scrollbar {
             }
         }
         & section{
-            padding: 0;
             width: auto;
+            padding: 0;
             & h2{
                 padding: 1rem 0rem 2rem 0.5rem;
                 font-size: var(--font-size-small);
