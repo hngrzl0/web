@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'path'; //zaawar baih buguud login.mjs register.mjs users.mjs iig duudaj baigaa
 import express from 'express';
 import { login } from './login.mjs'
 import { register } from './register.mjs';
@@ -41,7 +41,7 @@ const options = {
             }
         ]
     },
-     //  Swagger documentation aguulj bui file iin zam(path)
+    //  Swagger documentation aguulj bui file iin zam(path)
     apis: ["session_ram/app.mjs"]
 };
 //documentation oo uusgeh

@@ -1,4 +1,4 @@
-import sql from './db.mjs'
+import sql from './db.mjs'//db handah query vvdiig bicij ogson
 
 class DbUser {
   constructor() {

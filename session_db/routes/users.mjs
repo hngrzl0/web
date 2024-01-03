@@ -1,4 +1,4 @@
-import db_user from "../db/db_user.mjs";
+import db_user from "../db/db_user.mjs"; //db_user.mjs duudaj bgaa
 
 class User { 
     constructor() { 
